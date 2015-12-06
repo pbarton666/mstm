@@ -1,55 +1,50 @@
-"""This latest attempt reads in mapping data from an input file and does the following for each scenario.  
-      
-      Each scenario and income group is in its own table.  
-	  
-	  Data columns will be created for each cost category (e.g., WalkTIme), purpose (e.g., HBW) by OD pair.  
-	  
-	  Other data columns aggregate these costs  by type e.g. (Transit_Time, Highway_Time, Highway_Auto-miles).    
-	  
-	  Except for tolls, these are not yet monotized, but do embody the allocation to 	  the 'home zones' 
-	  of the travelers and reflect a  'discount' for time spent in various activities to reflect the fact that 
-	  walk/wait time is valued at the fully burdened wage of the traveler and rid time is value at half that.   
-	  Highway times are adjusted for occupancy.    
-	  
-	  As result, we should be able to provide the average wage of travelers to the aggregated time 
-	  without further adjustments when we monotize costs/benefits.
-"""
+#analyze_main.py
+#
+#Uses input data and file locations specified in mappings.py
+#
+#Creates database tables rolling up benefits by transportation zone.  Benefits are in terms of
+#   natural units (time, distance, toll cost).   The level of aggregation of benefits, the names of the
+#  input files, and other settings are specified in the input file (also identified in mappings.py)
 
-##TODO: for non-home-based trips, do we just attribute trips to the origin?
-##TODO: for mid-day and night-time highway trips we attribute 50% of the trips to the home base and 50% to the destination.  Right?
+#Highway times are adjusted for hov occupancy, but other adjustments need to be applied when 
+#   time and auto costs are settled e.g., what % of annual wage is applied to wait versus ride time.
+
+#Benefits, calculated 'cell-wise' by OD pair and for each leg of round-trip journeys, are rolled up 
+#  to the home zone of the traveler by summing benefits across destination nodes.   (A transpose
+#  trip matrix is used for the return leg of the journey).
+
+"Consumer surplus benefits calculator for the Maryland transportation network"
 
 import csv
 import os
 import sys
+from datetime import datetime
+
 import numpy as np
 import psycopg2
 
+from  database import *  #login credentials
+from mappings import *  #constants for file locations, run-time settings, database name, etc.
 import logger_setup
 from logger_setup import logger
-from  database import *
-from mappings import *  #constants for file locations, etc.
-
-ZONES=1179
-DB = 'naacp_benefits'
-CREATE_NEW_TABLES=True #create fresh tables if True, build on old if False
-
-import logging
-import logging.handlers
-
-#set to 'WARN' to capure only data loading issues.  'DEBUG' is verbose.
-LOG_LEVEL='DEBUG'   
-
-#**********************************************************
 
 logger.setLevel(LOG_LEVEL)
+start=datetime.now()
 
 def grabinfo(line):
-	"gleans information from a line of the mapping file, adjusting where needed (screens out annotations, etc.)"
+	"screens out annotations, etc. from the file names provided in the setup file"
 	ret_dict=line
-	#the trip file may have a 'transpose' flag; the first bit is the file name
-	ret_dict['trip_file']=line['trips'].split()[0]
-	#the cost file may have annotations for time discounts, etc.; the first bit is the file name
-	ret_dict['cost_file']=line['cost'].split()[0]
+	try:
+		#the trip file may have a 'transpose' flag; the first bit is the file name
+		ret_dict['trip_file']=line['trip_file'].split()[0]
+	except:
+		pass #the file no longer has annotations (there will be no spaces in the name)
+	try:
+		#the cost file may have annotations for time discounts, etc.; the first bit is the file name
+		ret_dict['cost_file']=line['cost_file'].split()[0]
+	except:
+		pass #the file no longer has annotations (there will be no spaces in the name)		
+	
 	return ret_dict
 
 def make_OD_array(rows=None, cols=None, start_row=1, max_row=99999):
@@ -74,19 +69,21 @@ def make_OD_array(rows=None, cols=None, start_row=1, max_row=99999):
 
 
 def npa_from_file(file_name):
-	"creates a np array from a csv file; strips headers from first row and first column"
+	"""Creates a np array from a csv file; strips headers from first row and first column"""
 	return  np.genfromtxt( file_name, delimiter=',', dtype='float')
 
-def get_costs(cost_per_trip=None,  trips=None, transpose=None,   pct_hb=None, hov_adj=None):
-	"""Calculates the costs for some transport segment; returns an aggregate np array w/ OD columns - creating if needed
-	      Returns a tuple of np arrays:  (trips*cost/trip array, trips)     both  stripped of OD headers  """
+def prep_data(cost_per_trip=None,  trips=None, transpose=None,   hov_adj=None):
+	"""Preps the data in the original data files.  Strips OD headers;  also, since some table have
+	      extra (null) rows/cols, prune each to standard size.  Adjusts costs for hov occupancy (this
+	      is provided in the input file to increase time costs by 2 for hov2 and 3 for hov3).   Transposes trip
+		  array to account for return journy (also provided in input file).  """
 	
-	#adjust the cost per trip to account for hov occupancy (probably best to adjust for wage pct elsewhere)
-	cost_per_trip=cost_per_trip[1:,1:]
+	cost_per_trip_used=cost_per_trip[1:,1:]
 	trips=trips[1:,1:]
 	
+	#adjust the cost per trip to account for hov occupancy (probably best to adjust for wage pct elsewhere)
 	if hov_adj:
-		cost_per_trip = cost_per_trip * int(hov_adj)
+		cost_per_trip_used = cost_per_trip_used * int(hov_adj)
 	
 	#transpose trip array if required and  multiply by cost_per_trip
 	if transpose:
@@ -94,7 +91,12 @@ def get_costs(cost_per_trip=None,  trips=None, transpose=None,   pct_hb=None, ho
 	else:
 		trips_used=trips
 		
-	return  (trips_used * cost_per_trip, trips_used)
+	return  (cost_per_trip_used, trips_used)	
+
+def get_total_costs(cost_per_trip=None,  trips=None, transpose=None,   hov_adj=None):
+	"""  Returns a tuple of np arrays:  (trips*cost/trip array, trips).  """
+	cost_per_trip_used, trips_used =prep_data(cost_per_trip,  trips, transpose,   hov_adj)		
+	return  (trips_used * cost_per_trip_used, trips_used)
 
 def row_sum(npa=None):
 	"returns vector of row sums of square matrix"
@@ -120,10 +122,15 @@ def get_cs_delta(base_trips=None, test_trips=None, base_costs=None, test_costs=N
 def main():
 	"main entry point - loops over scenarios"
 	
+	msg='{} Starting benefits calculations using input file {}'
+	logger.info(msg.format(datetime.now().strftime("%b %d %Y %H:%M:%S"), map_file))
+	print(msg.format(datetime.now().strftime("%b %d %Y %H:%M:%S"), map_file))
+	
 	#This isn't the most efficient way to do it, but it's the most transparent:  we'll loop through each base:scenario pair.  For each, we'll read
 	#  the input file a line at a time and draw our consumer surplus benefits
 	
 	arr_dict={}
+	base_scenario = scenarios[0]
 	
 	for s in scenarios[1:]:
 		#grab a reader for the input file
@@ -146,35 +153,44 @@ def main():
 			table_name=s['name']+"_"+dmap['dbtable']			
 			
 			#get information for the base case
-			base_dir=scenarios[0]['location']		#root directory location
-			base_name=scenarios[0]['name']		#name for this scenari
+			base_dir=base_scenario['location']		#root directory location
+			base_name=base_scenario['name']		#name for this scenari
 			
 			#Build fully specified path names built from locations in mappyings.py; subdirectory determined by file name
 			#   then create np arrays out of them
 			base_cost_file=get_full_filename(location=base_dir, filename=dmap['cost_file'])
 			base_trips_file=get_full_filename(location=base_dir,  filename=dmap['trip_file'])
+			
+			#try to create npa arrays from the raw data files; if they don't exist go on to the next line
 			try:
-				base_trips = npa_from_file( base_trips_file)
-				base_cost_per_trip = npa_from_file( base_cost_file)	
+				base_trips_raw = npa_from_file( base_trips_file)
+				base_cost_per_trip_raw = npa_from_file( base_cost_file)	
 			except:
 				exc_type, exc_value, exc_traceback = sys.exc_info()
-				print('Scenario {}: could not open requisite files \n {} {}'.format(s['name'], exc_type, exc_value))
+				msg='Scenario {}: could not open requisite files \n {} {} specified in line {} of {}'
+				logger.warn(msg.format(s['name'], exc_type, exc_value, line_ix, map_file))
 				continue
+
 			
-			#Costs (trips*cost_per_trip) for the base case - returns  base costs, base trips as  square np 
+
+			#Costs and trips for the base case - returns  base costs, base trips as  square np 
 			#   arrays w/o OD headers, trips transposed if needed
-			base_costs, base_trips=get_costs( base_cost_per_trip , base_trips,  transpose,  hov_adj )
+			base_costs, base_trips=prep_data( base_cost_per_trip_raw , base_trips_raw,  transpose,  hov_adj )
 			
 			#Process the scenario costs and trips the same way
 			test_dir = s['location']
 			#grab the files and put them in np arrays
 			test_cost_file=get_full_filename(location=test_dir, filename=dmap['cost_file'])
 			test_trip_file=get_full_filename(location=test_dir,  filename=dmap['trip_file'])
-			test_trips = npa_from_file( test_trip_file)
-			test_cost_per_trip = npa_from_file( test_cost_file)					
+			test_trips_raw = npa_from_file( test_trip_file)
+			test_cost_per_trip_raw = npa_from_file( test_cost_file)					
 			test_name=s['name']
 			#Scenario case trips*cost/trip and trips used 
-			test_costs, test_trips=get_costs( cost_per_trip=test_cost_per_trip , trips=test_trips,  transpose=transpose,   hov_adj=hov_adj  )			
+			
+			if base_trips_file=='/home/pat/Dropbox/Maryland_TDM_RedLine_ProjectShare/MSTM_Output_2030_NoRedLine - NoHwyImprovements/TOD_OD_byPurposeIncomeTODOccupancy/TOD_HBW_Inc1_AM_SOV.csv':
+				if '/home/pat/Dropbox/Maryland_TDM_RedLine_ProjectShare/MSTM_Output_2030_NoRedLine - NoHwyImprovements/Loaded_HWY_OD_TimeCost/LOADED_HWY_DISTANCE_SOV_AM.csv':
+					a=1			
+			test_costs, test_trips=prep_data( cost_per_trip=test_cost_per_trip_raw , trips=test_trips_raw,  transpose=transpose,   hov_adj=hov_adj  )			
 			
 			#With all costs gathered, calculate the change in consumer surplus in square np array; produces a square np array
 			cs_delta = get_cs_delta(base_trips, test_trips, base_costs, test_costs)
@@ -183,9 +199,7 @@ def main():
 			#  For home-based transit trips, both outbound and return accrue to home node, as do am and pm highway trips.
 			#  For mid-day and night-time highway trips, the benefit is split between origin and dest nodes.
 			benefits_by_zone = calculate_benefits(cs_delta, pct_hb)
-			
 
-	
 			#the balance of this block stores the benefits and other information for posterity/more analysis
 			
 			#We'll aggregate the cs_delta by benefit type, denominated in natural units (minutes, dollars, miles).  We can use scalars to transform
@@ -212,15 +226,23 @@ def main():
 			                                          'column': column_name,
 			                                           'table': table_name
 			                                           }
-			logger.debug('{} -versus- {} \n\t {}  \n\t {} \n\t base trips: {}  test trips: {}  sum dlta cs: {}  (summary stats - not used in benefit calcs)'.format(
+			logger.debug('line {}\n\t{} -versus- {} \n\t {}  \n\t {} \n\t base trips: {}  test trips: {}  sum dlta cs: {}  (summary stats - not used in benefit calcs)'.format(
+			            line_ix,
 				         base_name, test_name, 
-			             dmap['trips'],
-			             dmap['cost'].split()[0],
+			             dmap['trip_file'],
+			             dmap['cost_file'].split()[0],
 			             np.sum(base_trips), np.sum(test_trips),
 			            np.sum(cs_delta)))
 		
-		#store the arrays in db tables	(TODO: move out one level)
+		#store the arrays in db tables	
 		store_data(arr_dict=arr_dict, db=DB)
+	
+	finish = datetime.now()
+	msg='Finished at {}.  Processed {} files in {}.'
+	elapsed=str(finish-start).split('.')[0]
+	print(msg.format(datetime.now().strftime("%b %d %Y %H:%M:%S"), line_ix, elapsed))
+	logger.info(msg.format(datetime.now().strftime("%b %d %Y %H:%M:%S"), line_ix, elapsed))
+	
 
 def store_data(arr_dict=None, db = DB, create_new_tables=CREATE_NEW_TABLES, zones=ZONES):
 	"""Stores data from all the benefits calculations made to date into a relational database.
@@ -294,7 +316,7 @@ def store_data(arr_dict=None, db = DB, create_new_tables=CREATE_NEW_TABLES, zone
 			conn.commit()			
 		
 	
-def create_empty_np_array(max_index_val=ZONES):
+def create_one_col_np_array(max_index_val=ZONES):
 	"creates a one-column np array with (1x np_rows) and index values (1, 2, 3 ...)"
 	index_values=[i for i in range(1, max_index_val+1)]
 	npa = np.zeros((max_index_val, 1))
@@ -304,7 +326,7 @@ def create_empty_np_array(max_index_val=ZONES):
 def accrete_col_to_np_array(npa=None, vector=None, max_index_val=ZONES):
 	"Adds a vector to a np array,  If np array does  not exist, create an array (1x np_rows) with index values (1, 2, 3 ...)"
 	if  npa is None:
-		npa=create_empty_np_array(max_index_val=max_index_val)
+		npa=create_one_col_np_array(max_index_val=max_index_val)
 	npa=np.c_[npa, vector]
 	return npa
 
@@ -312,7 +334,7 @@ def accrete_col_to_np_array(npa=None, vector=None, max_index_val=ZONES):
 def sum_col_to_np_array(npa=None, vector=None, max_index_val=ZONES):
 	"Adds a vector to to values in last colum of a np array,  If np array does  not exist, create it w/ index and vector value"
 	if  npa is None:
-		npa=create_empty_np_array(max_index_val=max_index_val)
+		npa=create_one_col_np_array(max_index_val=max_index_val)
 		npa=accrete_col_to_np_array(npa=npa, vector=vector)
 		return npa
 	npa[:,-1]+=vector

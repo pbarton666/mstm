@@ -144,8 +144,8 @@ def main():
 			                                           }
 			logger.debug('{} -versus- {} \n\t {}  \n\t {} \n\t base trips: {}  test trips: {}  sum dlta costs: {}  (summary stats - not used in benefit calcs)'.format(
 			    base_name, test_name, 
-			    dmap['trips'],
-			    dmap['cost'].split()[0],
+			    dmap['trip_file'],
+			    dmap['cost_file'].split()[0],
 			    np.sum(base_trips), np.sum(test_trips),
 			    np.sum(total_cost_delta)))
 

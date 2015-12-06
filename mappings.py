@@ -1,45 +1,33 @@
-
-"""mappings.py
-
-Contains file name encodings and mapping to model concepts
-
-"""
-
+#mappings.py
+#
+#Contains file name encodings, mapping to model concepts, and run-time parameters
+#
+#
+#main setup file - one row per trip, cost/trip matrix combination
 import os
-#incomes=['inc1', 'inc2', 'inc3', 'inc4', 'inc5']
-#rail_modes=['wrail', 'wcrail', 'drail', 'dcrail']
-#bus_modes=['wexpbus', 'wbus', 'dexpbus', 'dbus']
-#drive_modes=['da', 'sr2', 'sr3']
-#purposes_pk=['hbw', 'nhbw']
-#purposes_op=['obo', 'hbs', 'hbo']
-#purposes = purposes_pk + purposes_op
+import logging
 
-##Some trip purposes inherently involve a round trip, others one way.
-##   Home-based trips are assumed round-trip
-#purposes_round_trip=['hbw', 'hbo', 'hbs']
-#purposes_one_way=['obo', 'nhbw']
+map_file = 'map_file.csv'
 
-##transit metrics. These exclude fares (picked up from fares_fares table)    
-#transit_time_metrics=['xferwaittime', 'walktime', 'railtime', 'initialwaittime', 'bustime', 'autotime']
-#transit_other_metrics=['autodistance']
-#transit_metrics=transit_time_metrics + transit_other_metrics
+#database for results
+DB = 'naacp_benefits'
 
-#occupancy_hwy_loaded=['hov', 'sov']
-#occupancy_hwy_tod=['sov', 'hov2', 'hov3']
+#Set following to True to delete existing data tables.  If set to False, any new columns 
+#   created will overwrite existing ones of the same name.  If the columns do not yet
+#   exist, they will be created
 
-#tod_hwy_loaded = ['am', 'pm', 'md', 'nt']
-#tod_transit_times=['pk', 'op']
-#tod_fares=tod_transit_times
-#metrics=['toll', 'time', 'distance']    
+CREATE_NEW_TABLES=True #create fresh tables if True, build on old if False
 
-##mappings to purpose
-#purpose_peak_flag={}  #mapped to abbreviations in tables
-#for p in purposes_pk:
-	#purpose_peak_flag[p] = 'pk'
-#for p in purposes_op:
-	#purpose_peak_flag[p] = 'op'
+#set to 'WARN' to capure only data loading issues.  'DEBUG' is verbose.
+#options:  ERROR, CRITICAL, WARNING, INFO, DEBUG
+LOG_LEVEL=logging.DEBUG
 
-#	scenario mappings
+
+#	specify the shape and location of the raw data files here
+
+#assuming square matrices, the number of transportation zones (rows/columns)
+ZONES=1179
+
 ROOT_DIR= '/home/pat/Dropbox/Maryland_TDM_RedLine_ProjectShare'
 scenarios = [
                {'name': 'nored_nohwy',
@@ -58,18 +46,8 @@ scenarios = [
 #subdirectory locations (these relative to scenario root, the first bit of the file name is the key)
 subdir_map={'MODE': 'ModeChoice_OD_byPurposeIncomeMode',  
             'TRANSIT':'TRANSIT_OD_TimeCost' ,
-            'FARE':'rootdir|Fares',   ##Yes, this is ugly, but signals that this is scenario-independe and found off root
+            'FARE':'rootdir|Fares',   ##Yes, this is ugly, but signals that this is scenario-independent and found off root
             'TOD':'TOD_OD_byPurposeIncomeTODOccupancy',
             'LOADED': 'Loaded_HWY_OD_TimeCost'}
 
-#map file (maps costs and trips)
-map_file = 'map_file.csv'
 
-matrix_size=1179
-
-
-
-#hwy_costs = 'Loaded_HWY_OD_TimeCost'
-#transit_costs='TRANSIT_OD_TimeCost'
-#hwy_trips='ModeChoice_OD_byPurposeIncomeMode'
-#transit_trips='TOD_OD_byPurposeIncomeTODOccupancy'

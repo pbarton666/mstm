@@ -26,8 +26,8 @@ class Tests(unittest.TestCase):
 		transpose=False    #use transposed version of trips file (for return leg)
 		hov_adj=0               #multiplies time costs for hov highway trips
 				
-		#test the get_costs() routine
-		costs, trips_used = analyze_main.get_costs(base_costs, base_trips)
+		#test the get_total_costs() routine (This does trips*cost/trip for reporting purposes).
+		costs, trips_used = analyze_main.get_total_costs(base_costs, base_trips)
 		
 		#expected values for trips and costs
 		exp_trips=np.array(([[11, 12, 13],                              #same as base trips
@@ -54,7 +54,7 @@ class Tests(unittest.TestCase):
 				                                        [  9.1,  18.4,  29.7]]))            #[13*.7     23*.8    33*.9]
 		
 		transpose=True    #use transposed version of trips file (for return leg)
-		costs, trips_used = analyze_main.get_costs(base_costs, base_trips, transpose)
+		costs, trips_used = analyze_main.get_total_costs(base_costs, base_trips, transpose)
 		
 		#make sure we're really using the transposed trips matrix and the cell-wise costs are right
 		self.assertTrue( np.isclose(trips_used, exp_trips_T).all())
@@ -85,8 +85,8 @@ class Tests(unittest.TestCase):
 				                                        [21.7,  25.6,  29.7]]))              #[.5*(31+31*3)*(.70-.70/2),     .5*(32+32*3)*(.80-.80/2),    .5*(33+33*3)*(.90-.90/2)]]
 		
 		#run get_costs() on both the base and test case - calculates cell-wise trips*cost/trip
-		base_costs,  base_trips_used = analyze_main.get_costs(base_cost_per_trip, base_trips)
-		test_costs,    test_trips_used = analyze_main.get_costs(test_cost_per_trip, test_trips)
+		base_costs,  base_trips_used = analyze_main.prep_data(base_cost_per_trip, base_trips)
+		test_costs,    test_trips_used = analyze_main.prep_data(test_cost_per_trip, test_trips)
 		
 		#calculate the consumer surplus delta with get_cs_delta(), cell-wise
 		cs_delta = analyze_main.get_cs_delta(base_trips_used, test_trips_used, base_cost_per_trip[1:,1:], test_cost_per_trip[1:,1:])
@@ -142,7 +142,9 @@ class TestUtils(unittest.TestCase):
 		self.assertTrue( np.array_equal( npa, np.array(([[ 1.,  1., 666],  [ 2.,  2., 667],  [ 3.,  3., 668],  [ 4.,  4., 669]])))  )
 	
 	def test_sum_col_to_np_array(self):
-		#test adding a vector the last column of the npa array; first don't provide an array
+		"tests adding the *values* of a vector to the existing values of the last column of a numpy array"
+		
+		#test adding a vector the last column of the npa array; first don't provide an array (should be created automatically)
 		vector=[1,2,3,4]
 		npa = analyze_main.sum_col_to_np_array(vector=vector, max_index_val=len(vector))
 		self.assertTrue( np.array_equal(npa, np.array(([[ 1.,  1.],  [ 2.,  2.],  [ 3.,  3.],  [ 4.,  4.]]))) )
@@ -232,7 +234,65 @@ class TestUtils(unittest.TestCase):
 		
 		self.assertTrue( np.isclose(exp_table1, actual_table1).all())
 		self.assertTrue ( np.isclose(exp_table2, actual_table2).all())
-
-
+	
+	def test_prep_data(self):
+		"ensure that the initial data prep step works - strip headers, apply transpose, apply hov_adj"
+		base_trips=np.array(([  [ 0,   1,    2,   3],  
+				                                      [1,   11, 12, 13],      
+				                                      [2,   21, 22, 23],       
+				                                      [3,   31, 32, 33]   ]))
+		base_cost_per_trip=np.array(([   
+				                                    [0,    1,    2,    3], 
+				                                    [1, .10, .20, .30],   
+				                                    [2, .40, .50, .60],  
+				                                    [3, .70, .80, .90]    ]))
+		
+		#headers stripped?
+		exp_base_trips=np.array(([  [  11, 12, 13],      
+		                                                       [  21, 22, 23],       
+		                                                       [  31, 32, 33]   ]))
+		exp_base_cost_per_trip=np.array(([    [ .10, .20, .30],   
+		                                                                           [.40, .50, .60],  
+		                                                                           [ .70, .80, .90]    ]))		
+		
+		cost_per_trip_used, trips_used=analyze_main.prep_data(cost_per_trip=base_cost_per_trip,  trips=base_trips, transpose=None,   hov_adj=None)	
+		self.assertTrue ( np.isclose(trips_used, exp_base_trips).all())
+		self.assertTrue ( np.isclose(cost_per_trip_used, exp_base_cost_per_trip).all())
+		
+		#hov adjustment OK?
+		hov_adj=10
+		exp_base_cost_per_trip=np.array(([    [ 1,2,3],   
+		                                                                           [4,5,6],  
+		                                                                           [ 7,8,9]    ]))			
+		
+		cost_per_trip_used, trips_used=analyze_main.prep_data(cost_per_trip=base_cost_per_trip,  trips=base_trips, transpose=None,   hov_adj=hov_adj)	
+		self.assertTrue ( np.isclose(trips_used, exp_base_trips).all())
+		self.assertTrue ( np.isclose(cost_per_trip_used, exp_base_cost_per_trip).all())		
+		
+		#transpose working?
+		hov_adj=1
+		exp_base_trips=np.array(([  [  11, 21, 31],      
+		                                                       [  12, 22, 32],       
+		                                                       [  13, 23, 33]   ]))
+		exp_base_cost_per_trip=np.array(([    [ .10, .20, .30],   
+		                                                                           [.40, .50, .60],  
+		                                                                           [ .70, .80, .90]    ]))		
+		
+		cost_per_trip_used, trips_used=analyze_main.prep_data(cost_per_trip=base_cost_per_trip,  trips=base_trips, transpose=1,   hov_adj=hov_adj)	
+		self.assertTrue ( np.isclose(trips_used, exp_base_trips).all())
+		self.assertTrue ( np.isclose(cost_per_trip_used, exp_base_cost_per_trip).all())			
+		a=1
+		
 if __name__=='__main__':
 	unittest.main()
+	
+	"""TODO:
+	arg parser
+
+	summary db columns
+	average mpg of 2030 fleet
+	logic to roll up cost to drive
+	logic to spread income/zone to race
+	are race data yet available?
+
+	"""
