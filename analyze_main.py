@@ -233,7 +233,7 @@ def main():
 			             dmap['trip_file'],
 			             dmap['cost_file'].split()[0],
 			             np.sum(base_trips), np.sum(test_trips),
-			            np.sum(cs_delta)))
+			             np.sum(cs_delta)))
 		
 		#store the arrays in db tables	(written after all the processing for a scenario is completed.)
 		store_data(arr_dict=arr_dict, db=DB)
