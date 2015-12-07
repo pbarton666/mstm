@@ -207,7 +207,8 @@ def main():
 					
 			#We'll create an aggregation array if requested in the 'aggregate to' column.  	This bit of code adds the array to the arr_dict if needed,
 			#   then creates a null np array if needed.   It adds a column of current benefits_by_zone to the array if the array is null; it increments 
-			#  the array by the benefits just calculated otherwise.
+			#  the array by the benefits just calculated otherwise.   This essentially creates a bundle of an array containing all the summary information 
+			#  we've gleaned from a scenario and where to store it when we're done.
 			
 			#to hold the results, we'll make a dict   arr_dict{'aggregate_to':  {'data':npa_of_data,
 			#                                                                                                                              'column': 'aggregate_to',  
@@ -234,7 +235,7 @@ def main():
 			             np.sum(base_trips), np.sum(test_trips),
 			            np.sum(cs_delta)))
 		
-		#store the arrays in db tables	
+		#store the arrays in db tables	(written after all the processing for a scenario is completed.)
 		store_data(arr_dict=arr_dict, db=DB)
 	
 	finish = datetime.now()
