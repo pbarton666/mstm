@@ -69,8 +69,11 @@ def make_OD_array(rows=None, cols=None, start_row=1, max_row=99999):
 
 
 def npa_from_file(file_name):
-	"""Creates a np array from a csv file; strips headers from first row and first column"""
-	return  np.genfromtxt( file_name, delimiter=',', dtype='float')
+	"""Creates a np array from a csv file, first checking if a pickled version is available"""
+	try:
+		return np.load(file_name + ".pkl")
+	except:
+		return  np.genfromtxt( file_name, delimiter=',', dtype='float')
 
 def prep_data(cost_per_trip=None,  trips=None, transpose=None,   hov_adj=None):
 	"""Preps the data in the original data files.  Strips OD headers;  also, since some table have
@@ -168,10 +171,8 @@ def main():
 			except:
 				exc_type, exc_value, exc_traceback = sys.exc_info()
 				msg='Scenario {}: could not open requisite files \n {} {} specified in line {} of {}'
-				logger.warn(msg.format(s['name'], exc_type, exc_value, line_ix, map_file))
+				logger.warning(msg.format(s['name'], exc_type, exc_value, line_ix, map_file))
 				continue
-
-			
 
 			#Costs and trips for the base case - returns  base costs, base trips as  square np 
 			#   arrays w/o OD headers, trips transposed if needed
@@ -180,8 +181,12 @@ def main():
 			#Process the scenario costs and trips the same way
 			test_dir = s['location']
 			#grab the files and put them in np arrays
-			test_cost_file=get_full_filename(location=test_dir, filename=dmap['cost_file'])
-			test_trip_file=get_full_filename(location=test_dir,  filename=dmap['trip_file'])
+			try:
+				test_cost_file=get_full_filename(location=test_dir, filename=dmap['cost_file'])
+				test_trip_file=get_full_filename(location=test_dir,  filename=dmap['trip_file'])
+			except:
+				msg='Scenario {}: could not open requisite files \n {} {} specified in line {} of {}'
+				logger.warning(msg.format(s['name'], exc_type, exc_value, line_ix, map_file))						
 			test_trips_raw = npa_from_file( test_trip_file)
 			test_cost_per_trip_raw = npa_from_file( test_cost_file)					
 			test_name=s['name']
@@ -293,6 +298,7 @@ def store_data(arr_dict=None, db = DB, create_new_tables=CREATE_NEW_TABLES, zone
 		arr_table=arr_dict[arr]['table']
 		arr_data=arr_dict[arr]['data']
 		arr_column=arr_dict[arr]['column']
+		logger.info("storing data for table {}  column {}".format(arr_table, arr_column))
 
 		#create a table if we need to; populate it with the zone data
 		try:
@@ -308,13 +314,14 @@ def store_data(arr_dict=None, db = DB, create_new_tables=CREATE_NEW_TABLES, zone
 
 		#create a data column if we need to; popluate it with array data
 		try:
-			curs.execute("INSERT INTO {} ({}) VALUES ({}) WHERE {}=1".format(arr_table, 'zone', '-666', 'zone'))
-		except: #col does not exist
+			curs.execute("SELECT {} FROM {} LIMIT 1".format(arr_column, arr_table))
+		except: 
+			#col does not exist
 			curs.execute('END')
 			curs.execute("ALTER TABLE {} ADD {} float  DEFAULT 0.0".format(arr_table, arr_column))
-			for row in arr_data:
-				curs.execute("UPDATE {} SET {}={} WHERE {}={}".format(arr_table, arr_column, row[1], 'zone', row[0]))
-			conn.commit()			
+		for row in arr_data:
+			curs.execute("UPDATE {} SET {}={} WHERE {}={}".format(arr_table, arr_column, row[1], 'zone', row[0]))
+		conn.commit()			
 		
 	
 def create_one_col_np_array(max_index_val=ZONES):

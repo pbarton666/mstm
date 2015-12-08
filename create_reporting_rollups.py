@@ -142,7 +142,8 @@ def main():
 			                                           'column': column_name,
 			                                           'table': table_name
 			                                           }
-			logger.debug('{} -versus- {} \n\t {}  \n\t {} \n\t base trips: {}  test trips: {}  sum dlta costs: {}  (summary stats - not used in benefit calcs)'.format(
+			logger.debug('{} -versus- {} line {}\n\t {}  \n\t {} \n\t base trips: {}  test trips: {}  sum dlta costs: {}  (summary stats - not used in benefit calcs)'.format(
+			    line_ix,
 			    base_name, test_name, 
 			    dmap['trip_file'],
 			    dmap['cost_file'].split()[0],
