@@ -104,23 +104,23 @@ Inc1,HBW,DRail,AutoTime,,,Return,1,1,100,Time,0,,MODE_HBW_Inc1_DRail.csv (^T),TR
 Inc1,HBW,DCRail,AutoTime,,,Return,1,1,100,Time,0,,MODE_HBW_Inc1_DCRail.csv (^T),TRANSIT_PK_DCRail_AutoTime.csv  (100%|0%),Inc1_NTDlta_Benefits,Inc1_AutoTime,Inc1_NTDlta_Costs,Inc1_AutoTime
 Inc1,HBW,DBus,AutoTime,,,Return,1,1,100,Time,0,,MODE_HBW_Inc1_DBus.csv (^T),TRANSIT_PK_DBus_AutoTime.csv  (100%|0%),Inc1_NTDlta_Benefits,Inc1_AutoTime,Inc1_NTDlta_Costs,Inc1_AutoTime
 Inc1,HBW,DA,DISTANCE,AM,SOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBW_Inc1_DA.csv,LOADED_HWY_DISTANCE_SOV_AM.csv (-%|100%),Inc1_NTDlta_Benefits,Inc1_Hwy_distance,Inc1_NTDlta_Costs,Inc1_Hwy_distance
-Inc1,HBW,SR2,DISTANCE,AM,HOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBW_Inc1_SR2.csv,LOADED_HWY_DISTANCE_HOV_AM.csv (-%|100%),Inc1_NTDlta_Benefits,Inc1_Hwy_distance,Inc1_NTDlta_Costs,Inc1_Hwy_distance
-Inc1,HBW,SR3,DISTANCE,AM,HOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBW_Inc1_SR3.csv,LOADED_HWY_DISTANCE_HOV_AM.csv (-%100%),Inc1_NTDlta_Benefits,Inc1_Hwy_distance,Inc1_NTDlta_Costs,Inc1_Hwy_distance
+Inc1,HBW,SR2,DISTANCE,AM,HOV,Outbound,0,,-,Hwy_distance,100,2,MODE_HBW_Inc1_SR2.csv,LOADED_HWY_DISTANCE_HOV_AM.csv (-%|100%),Inc1_NTDlta_Benefits,Inc1_Hwy_distance,Inc1_NTDlta_Costs,Inc1_Hwy_distance
+Inc1,HBW,SR3,DISTANCE,AM,HOV,Outbound,0,,-,Hwy_distance,100,3,MODE_HBW_Inc1_SR3.csv,LOADED_HWY_DISTANCE_HOV_AM.csv (-%100%),Inc1_NTDlta_Benefits,Inc1_Hwy_distance,Inc1_NTDlta_Costs,Inc1_Hwy_distance
 Inc1,HBW,DA,DISTANCE,PM,SOV,Return,1,,-,Hwy_distance,0,1,MODE_HBW_Inc1_DA.csv (^T),LOADED_HWY_DISTANCE_SOV_PM.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_distance,Inc1_NTDlta_Costs,Inc1_Hwy_distance
-Inc1,HBW,SR2,DISTANCE,PM,HOV,Return,1,,-,Hwy_distance,0,1,MODE_HBW_Inc1_SR2.csv (^T),LOADED_HWY_DISTANCE_HOV_PM.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_distance,Inc1_NTDlta_Costs,Inc1_Hwy_distance
-Inc1,HBW,SR3,DISTANCE,PM,HOV,Return,1,,-,Hwy_distance,0,1,MODE_HBW_Inc1_SR3.csv (^T),LOADED_HWY_DISTANCE_HOV_PM.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_distance,Inc1_NTDlta_Costs,Inc1_Hwy_distance
+Inc1,HBW,SR2,DISTANCE,PM,HOV,Return,1,,-,Hwy_distance,0,2,MODE_HBW_Inc1_SR2.csv (^T),LOADED_HWY_DISTANCE_HOV_PM.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_distance,Inc1_NTDlta_Costs,Inc1_Hwy_distance
+Inc1,HBW,SR3,DISTANCE,PM,HOV,Return,1,,-,Hwy_distance,0,3,MODE_HBW_Inc1_SR3.csv (^T),LOADED_HWY_DISTANCE_HOV_PM.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_distance,Inc1_NTDlta_Costs,Inc1_Hwy_distance
 Inc1,HBW,DA,TIME,AM,SOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBW_Inc1_DA.csv,LOADED_HWY_TIME_SOV_AM.csv (-%|100%),Inc1_NTDlta_Benefits,Inc1_Hwy_time,Inc1_NTDlta_Costs,Inc1_Hwy_time
-Inc1,HBW,SR2,TIME,AM,HOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBW_Inc1_SR2.csv,LOADED_HWY_TIME_HOV_AM.csv (-%|100%),Inc1_NTDlta_Benefits,Inc1_Hwy_time,Inc1_NTDlta_Costs,Inc1_Hwy_time
-Inc1,HBW,SR3,TIME,AM,HOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBW_Inc1_SR3.csv,LOADED_HWY_TIME_HOV_AM.csv (-%100%),Inc1_NTDlta_Benefits,Inc1_Hwy_time,Inc1_NTDlta_Costs,Inc1_Hwy_time
+Inc1,HBW,SR2,TIME,AM,HOV,Outbound,0,,-,Hwy_time,100,2,MODE_HBW_Inc1_SR2.csv,LOADED_HWY_TIME_HOV_AM.csv (-%|100%),Inc1_NTDlta_Benefits,Inc1_Hwy_time,Inc1_NTDlta_Costs,Inc1_Hwy_time
+Inc1,HBW,SR3,TIME,AM,HOV,Outbound,0,,-,Hwy_time,100,3,MODE_HBW_Inc1_SR3.csv,LOADED_HWY_TIME_HOV_AM.csv (-%100%),Inc1_NTDlta_Benefits,Inc1_Hwy_time,Inc1_NTDlta_Costs,Inc1_Hwy_time
 Inc1,HBW,DA,TIME,PM,SOV,Return,1,,-,Hwy_time,0,1,MODE_HBW_Inc1_DA.csv (^T),LOADED_HWY_TIME_SOV_PM.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_time,Inc1_NTDlta_Costs,Inc1_Hwy_time
-Inc1,HBW,SR2,TIME,PM,HOV,Return,1,,-,Hwy_time,0,1,MODE_HBW_Inc1_SR2.csv (^T),LOADED_HWY_TIME_HOV_PM.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_time,Inc1_NTDlta_Costs,Inc1_Hwy_time
-Inc1,HBW,SR3,TIME,PM,HOV,Return,1,,-,Hwy_time,0,1,MODE_HBW_Inc1_SR3.csv (^T),LOADED_HWY_TIME_HOV_PM.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_time,Inc1_NTDlta_Costs,Inc1_Hwy_time
+Inc1,HBW,SR2,TIME,PM,HOV,Return,1,,-,Hwy_time,0,2,MODE_HBW_Inc1_SR2.csv (^T),LOADED_HWY_TIME_HOV_PM.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_time,Inc1_NTDlta_Costs,Inc1_Hwy_time
+Inc1,HBW,SR3,TIME,PM,HOV,Return,1,,-,Hwy_time,0,3,MODE_HBW_Inc1_SR3.csv (^T),LOADED_HWY_TIME_HOV_PM.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_time,Inc1_NTDlta_Costs,Inc1_Hwy_time
 Inc1,HBW,DA,TOLL,AM,SOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBW_Inc1_DA.csv,LOADED_HWY_TOLL_SOV_AM.csv (-%|100%),Inc1_NTDlta_Benefits,Inc1_Hwy_toll,Inc1_NTDlta_Costs,Inc1_Hwy_toll
-Inc1,HBW,SR2,TOLL,AM,HOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBW_Inc1_SR2.csv,LOADED_HWY_TOLL_HOV_AM.csv (-%|100%),Inc1_NTDlta_Benefits,Inc1_Hwy_toll,Inc1_NTDlta_Costs,Inc1_Hwy_toll
-Inc1,HBW,SR3,TOLL,AM,HOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBW_Inc1_SR3.csv,LOADED_HWY_TOLL_HOV_AM.csv (-%100%),Inc1_NTDlta_Benefits,Inc1_Hwy_toll,Inc1_NTDlta_Costs,Inc1_Hwy_toll
+Inc1,HBW,SR2,TOLL,AM,HOV,Outbound,0,,-,Hwy_toll,100,2,MODE_HBW_Inc1_SR2.csv,LOADED_HWY_TOLL_HOV_AM.csv (-%|100%),Inc1_NTDlta_Benefits,Inc1_Hwy_toll,Inc1_NTDlta_Costs,Inc1_Hwy_toll
+Inc1,HBW,SR3,TOLL,AM,HOV,Outbound,0,,-,Hwy_toll,100,3,MODE_HBW_Inc1_SR3.csv,LOADED_HWY_TOLL_HOV_AM.csv (-%100%),Inc1_NTDlta_Benefits,Inc1_Hwy_toll,Inc1_NTDlta_Costs,Inc1_Hwy_toll
 Inc1,HBW,DA,TOLL,PM,SOV,Return,1,,-,Hwy_toll,0,1,MODE_HBW_Inc1_DA.csv (^T),LOADED_HWY_TOLL_SOV_PM.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_toll,Inc1_NTDlta_Costs,Inc1_Hwy_toll
-Inc1,HBW,SR2,TOLL,PM,HOV,Return,1,,-,Hwy_toll,0,1,MODE_HBW_Inc1_SR2.csv (^T),LOADED_HWY_TOLL_HOV_PM.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_toll,Inc1_NTDlta_Costs,Inc1_Hwy_toll
-Inc1,HBW,SR3,TOLL,PM,HOV,Return,1,,-,Hwy_toll,0,1,MODE_HBW_Inc1_SR3.csv (^T),LOADED_HWY_TOLL_HOV_PM.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_toll,Inc1_NTDlta_Costs,Inc1_Hwy_toll
+Inc1,HBW,SR2,TOLL,PM,HOV,Return,1,,-,Hwy_toll,0,2,MODE_HBW_Inc1_SR2.csv (^T),LOADED_HWY_TOLL_HOV_PM.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_toll,Inc1_NTDlta_Costs,Inc1_Hwy_toll
+Inc1,HBW,SR3,TOLL,PM,HOV,Return,1,,-,Hwy_toll,0,3,MODE_HBW_Inc1_SR3.csv (^T),LOADED_HWY_TOLL_HOV_PM.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_toll,Inc1_NTDlta_Costs,Inc1_Hwy_toll
 Inc2,HBW,WexpBus,XferWaitTime,,,Outbound,0,1,100,Time,100,,MODE_HBW_Inc2_WexpBus.csv,TRANSIT_PK_WexpBus_XferWaitTime.csv  (100%|100%),Inc2_NTDlta_Benefits,Inc2_XferWaitTime,Inc2_NTDlta_Costs,Inc2_XferWaitTime
 Inc2,HBW,WRail,XferWaitTime,,,Outbound,0,1,100,Time,100,,MODE_HBW_Inc2_WRail.csv,TRANSIT_PK_WRail_XferWaitTime.csv  (100%|100%),Inc2_NTDlta_Benefits,Inc2_XferWaitTime,Inc2_NTDlta_Costs,Inc2_XferWaitTime
 Inc2,HBW,WCRail,XferWaitTime,,,Outbound,0,1,100,Time,100,,MODE_HBW_Inc2_WCRail.csv,TRANSIT_PK_WCRail_XferWaitTime.csv  (100%|100%),Inc2_NTDlta_Benefits,Inc2_XferWaitTime,Inc2_NTDlta_Costs,Inc2_XferWaitTime
@@ -226,23 +226,23 @@ Inc2,HBW,DRail,AutoTime,,,Return,1,1,100,Time,0,,MODE_HBW_Inc2_DRail.csv (^T),TR
 Inc2,HBW,DCRail,AutoTime,,,Return,1,1,100,Time,0,,MODE_HBW_Inc2_DCRail.csv (^T),TRANSIT_PK_DCRail_AutoTime.csv  (100%|0%),Inc2_NTDlta_Benefits,Inc2_AutoTime,Inc2_NTDlta_Costs,Inc2_AutoTime
 Inc2,HBW,DBus,AutoTime,,,Return,1,1,100,Time,0,,MODE_HBW_Inc2_DBus.csv (^T),TRANSIT_PK_DBus_AutoTime.csv  (100%|0%),Inc2_NTDlta_Benefits,Inc2_AutoTime,Inc2_NTDlta_Costs,Inc2_AutoTime
 Inc2,HBW,DA,DISTANCE,AM,SOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBW_Inc2_DA.csv,LOADED_HWY_DISTANCE_SOV_AM.csv (-%|100%),Inc2_NTDlta_Benefits,Inc2_Hwy_distance,Inc2_NTDlta_Costs,Inc2_Hwy_distance
-Inc2,HBW,SR2,DISTANCE,AM,HOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBW_Inc2_SR2.csv,LOADED_HWY_DISTANCE_HOV_AM.csv (-%|100%),Inc2_NTDlta_Benefits,Inc2_Hwy_distance,Inc2_NTDlta_Costs,Inc2_Hwy_distance
-Inc2,HBW,SR3,DISTANCE,AM,HOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBW_Inc2_SR3.csv,LOADED_HWY_DISTANCE_HOV_AM.csv (-%100%),Inc2_NTDlta_Benefits,Inc2_Hwy_distance,Inc2_NTDlta_Costs,Inc2_Hwy_distance
+Inc2,HBW,SR2,DISTANCE,AM,HOV,Outbound,0,,-,Hwy_distance,100,2,MODE_HBW_Inc2_SR2.csv,LOADED_HWY_DISTANCE_HOV_AM.csv (-%|100%),Inc2_NTDlta_Benefits,Inc2_Hwy_distance,Inc2_NTDlta_Costs,Inc2_Hwy_distance
+Inc2,HBW,SR3,DISTANCE,AM,HOV,Outbound,0,,-,Hwy_distance,100,3,MODE_HBW_Inc2_SR3.csv,LOADED_HWY_DISTANCE_HOV_AM.csv (-%100%),Inc2_NTDlta_Benefits,Inc2_Hwy_distance,Inc2_NTDlta_Costs,Inc2_Hwy_distance
 Inc2,HBW,DA,DISTANCE,PM,SOV,Return,1,,-,Hwy_distance,0,1,MODE_HBW_Inc2_DA.csv (^T),LOADED_HWY_DISTANCE_SOV_PM.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_distance,Inc2_NTDlta_Costs,Inc2_Hwy_distance
-Inc2,HBW,SR2,DISTANCE,PM,HOV,Return,1,,-,Hwy_distance,0,1,MODE_HBW_Inc2_SR2.csv (^T),LOADED_HWY_DISTANCE_HOV_PM.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_distance,Inc2_NTDlta_Costs,Inc2_Hwy_distance
-Inc2,HBW,SR3,DISTANCE,PM,HOV,Return,1,,-,Hwy_distance,0,1,MODE_HBW_Inc2_SR3.csv (^T),LOADED_HWY_DISTANCE_HOV_PM.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_distance,Inc2_NTDlta_Costs,Inc2_Hwy_distance
+Inc2,HBW,SR2,DISTANCE,PM,HOV,Return,1,,-,Hwy_distance,0,2,MODE_HBW_Inc2_SR2.csv (^T),LOADED_HWY_DISTANCE_HOV_PM.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_distance,Inc2_NTDlta_Costs,Inc2_Hwy_distance
+Inc2,HBW,SR3,DISTANCE,PM,HOV,Return,1,,-,Hwy_distance,0,3,MODE_HBW_Inc2_SR3.csv (^T),LOADED_HWY_DISTANCE_HOV_PM.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_distance,Inc2_NTDlta_Costs,Inc2_Hwy_distance
 Inc2,HBW,DA,TIME,AM,SOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBW_Inc2_DA.csv,LOADED_HWY_TIME_SOV_AM.csv (-%|100%),Inc2_NTDlta_Benefits,Inc2_Hwy_time,Inc2_NTDlta_Costs,Inc2_Hwy_time
-Inc2,HBW,SR2,TIME,AM,HOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBW_Inc2_SR2.csv,LOADED_HWY_TIME_HOV_AM.csv (-%|100%),Inc2_NTDlta_Benefits,Inc2_Hwy_time,Inc2_NTDlta_Costs,Inc2_Hwy_time
-Inc2,HBW,SR3,TIME,AM,HOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBW_Inc2_SR3.csv,LOADED_HWY_TIME_HOV_AM.csv (-%100%),Inc2_NTDlta_Benefits,Inc2_Hwy_time,Inc2_NTDlta_Costs,Inc2_Hwy_time
+Inc2,HBW,SR2,TIME,AM,HOV,Outbound,0,,-,Hwy_time,100,2,MODE_HBW_Inc2_SR2.csv,LOADED_HWY_TIME_HOV_AM.csv (-%|100%),Inc2_NTDlta_Benefits,Inc2_Hwy_time,Inc2_NTDlta_Costs,Inc2_Hwy_time
+Inc2,HBW,SR3,TIME,AM,HOV,Outbound,0,,-,Hwy_time,100,3,MODE_HBW_Inc2_SR3.csv,LOADED_HWY_TIME_HOV_AM.csv (-%100%),Inc2_NTDlta_Benefits,Inc2_Hwy_time,Inc2_NTDlta_Costs,Inc2_Hwy_time
 Inc2,HBW,DA,TIME,PM,SOV,Return,1,,-,Hwy_time,0,1,MODE_HBW_Inc2_DA.csv (^T),LOADED_HWY_TIME_SOV_PM.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_time,Inc2_NTDlta_Costs,Inc2_Hwy_time
-Inc2,HBW,SR2,TIME,PM,HOV,Return,1,,-,Hwy_time,0,1,MODE_HBW_Inc2_SR2.csv (^T),LOADED_HWY_TIME_HOV_PM.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_time,Inc2_NTDlta_Costs,Inc2_Hwy_time
-Inc2,HBW,SR3,TIME,PM,HOV,Return,1,,-,Hwy_time,0,1,MODE_HBW_Inc2_SR3.csv (^T),LOADED_HWY_TIME_HOV_PM.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_time,Inc2_NTDlta_Costs,Inc2_Hwy_time
+Inc2,HBW,SR2,TIME,PM,HOV,Return,1,,-,Hwy_time,0,2,MODE_HBW_Inc2_SR2.csv (^T),LOADED_HWY_TIME_HOV_PM.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_time,Inc2_NTDlta_Costs,Inc2_Hwy_time
+Inc2,HBW,SR3,TIME,PM,HOV,Return,1,,-,Hwy_time,0,3,MODE_HBW_Inc2_SR3.csv (^T),LOADED_HWY_TIME_HOV_PM.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_time,Inc2_NTDlta_Costs,Inc2_Hwy_time
 Inc2,HBW,DA,TOLL,AM,SOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBW_Inc2_DA.csv,LOADED_HWY_TOLL_SOV_AM.csv (-%|100%),Inc2_NTDlta_Benefits,Inc2_Hwy_toll,Inc2_NTDlta_Costs,Inc2_Hwy_toll
-Inc2,HBW,SR2,TOLL,AM,HOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBW_Inc2_SR2.csv,LOADED_HWY_TOLL_HOV_AM.csv (-%|100%),Inc2_NTDlta_Benefits,Inc2_Hwy_toll,Inc2_NTDlta_Costs,Inc2_Hwy_toll
-Inc2,HBW,SR3,TOLL,AM,HOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBW_Inc2_SR3.csv,LOADED_HWY_TOLL_HOV_AM.csv (-%100%),Inc2_NTDlta_Benefits,Inc2_Hwy_toll,Inc2_NTDlta_Costs,Inc2_Hwy_toll
+Inc2,HBW,SR2,TOLL,AM,HOV,Outbound,0,,-,Hwy_toll,100,2,MODE_HBW_Inc2_SR2.csv,LOADED_HWY_TOLL_HOV_AM.csv (-%|100%),Inc2_NTDlta_Benefits,Inc2_Hwy_toll,Inc2_NTDlta_Costs,Inc2_Hwy_toll
+Inc2,HBW,SR3,TOLL,AM,HOV,Outbound,0,,-,Hwy_toll,100,3,MODE_HBW_Inc2_SR3.csv,LOADED_HWY_TOLL_HOV_AM.csv (-%100%),Inc2_NTDlta_Benefits,Inc2_Hwy_toll,Inc2_NTDlta_Costs,Inc2_Hwy_toll
 Inc2,HBW,DA,TOLL,PM,SOV,Return,1,,-,Hwy_toll,0,1,MODE_HBW_Inc2_DA.csv (^T),LOADED_HWY_TOLL_SOV_PM.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_toll,Inc2_NTDlta_Costs,Inc2_Hwy_toll
-Inc2,HBW,SR2,TOLL,PM,HOV,Return,1,,-,Hwy_toll,0,1,MODE_HBW_Inc2_SR2.csv (^T),LOADED_HWY_TOLL_HOV_PM.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_toll,Inc2_NTDlta_Costs,Inc2_Hwy_toll
-Inc2,HBW,SR3,TOLL,PM,HOV,Return,1,,-,Hwy_toll,0,1,MODE_HBW_Inc2_SR3.csv (^T),LOADED_HWY_TOLL_HOV_PM.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_toll,Inc2_NTDlta_Costs,Inc2_Hwy_toll
+Inc2,HBW,SR2,TOLL,PM,HOV,Return,1,,-,Hwy_toll,0,2,MODE_HBW_Inc2_SR2.csv (^T),LOADED_HWY_TOLL_HOV_PM.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_toll,Inc2_NTDlta_Costs,Inc2_Hwy_toll
+Inc2,HBW,SR3,TOLL,PM,HOV,Return,1,,-,Hwy_toll,0,3,MODE_HBW_Inc2_SR3.csv (^T),LOADED_HWY_TOLL_HOV_PM.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_toll,Inc2_NTDlta_Costs,Inc2_Hwy_toll
 Inc3,HBW,WexpBus,XferWaitTime,,,Outbound,0,1,100,Time,100,,MODE_HBW_Inc3_WexpBus.csv,TRANSIT_PK_WexpBus_XferWaitTime.csv  (100%|100%),Inc3_NTDlta_Benefits,Inc3_XferWaitTime,Inc3_NTDlta_Costs,Inc3_XferWaitTime
 Inc3,HBW,WRail,XferWaitTime,,,Outbound,0,1,100,Time,100,,MODE_HBW_Inc3_WRail.csv,TRANSIT_PK_WRail_XferWaitTime.csv  (100%|100%),Inc3_NTDlta_Benefits,Inc3_XferWaitTime,Inc3_NTDlta_Costs,Inc3_XferWaitTime
 Inc3,HBW,WCRail,XferWaitTime,,,Outbound,0,1,100,Time,100,,MODE_HBW_Inc3_WCRail.csv,TRANSIT_PK_WCRail_XferWaitTime.csv  (100%|100%),Inc3_NTDlta_Benefits,Inc3_XferWaitTime,Inc3_NTDlta_Costs,Inc3_XferWaitTime
@@ -348,23 +348,23 @@ Inc3,HBW,DRail,AutoTime,,,Return,1,1,100,Time,0,,MODE_HBW_Inc3_DRail.csv (^T),TR
 Inc3,HBW,DCRail,AutoTime,,,Return,1,1,100,Time,0,,MODE_HBW_Inc3_DCRail.csv (^T),TRANSIT_PK_DCRail_AutoTime.csv  (100%|0%),Inc3_NTDlta_Benefits,Inc3_AutoTime,Inc3_NTDlta_Costs,Inc3_AutoTime
 Inc3,HBW,DBus,AutoTime,,,Return,1,1,100,Time,0,,MODE_HBW_Inc3_DBus.csv (^T),TRANSIT_PK_DBus_AutoTime.csv  (100%|0%),Inc3_NTDlta_Benefits,Inc3_AutoTime,Inc3_NTDlta_Costs,Inc3_AutoTime
 Inc3,HBW,DA,DISTANCE,AM,SOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBW_Inc3_DA.csv,LOADED_HWY_DISTANCE_SOV_AM.csv (-%|100%),Inc3_NTDlta_Benefits,Inc3_Hwy_distance,Inc3_NTDlta_Costs,Inc3_Hwy_distance
-Inc3,HBW,SR2,DISTANCE,AM,HOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBW_Inc3_SR2.csv,LOADED_HWY_DISTANCE_HOV_AM.csv (-%|100%),Inc3_NTDlta_Benefits,Inc3_Hwy_distance,Inc3_NTDlta_Costs,Inc3_Hwy_distance
-Inc3,HBW,SR3,DISTANCE,AM,HOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBW_Inc3_SR3.csv,LOADED_HWY_DISTANCE_HOV_AM.csv (-%100%),Inc3_NTDlta_Benefits,Inc3_Hwy_distance,Inc3_NTDlta_Costs,Inc3_Hwy_distance
+Inc3,HBW,SR2,DISTANCE,AM,HOV,Outbound,0,,-,Hwy_distance,100,2,MODE_HBW_Inc3_SR2.csv,LOADED_HWY_DISTANCE_HOV_AM.csv (-%|100%),Inc3_NTDlta_Benefits,Inc3_Hwy_distance,Inc3_NTDlta_Costs,Inc3_Hwy_distance
+Inc3,HBW,SR3,DISTANCE,AM,HOV,Outbound,0,,-,Hwy_distance,100,3,MODE_HBW_Inc3_SR3.csv,LOADED_HWY_DISTANCE_HOV_AM.csv (-%100%),Inc3_NTDlta_Benefits,Inc3_Hwy_distance,Inc3_NTDlta_Costs,Inc3_Hwy_distance
 Inc3,HBW,DA,DISTANCE,PM,SOV,Return,1,,-,Hwy_distance,0,1,MODE_HBW_Inc3_DA.csv (^T),LOADED_HWY_DISTANCE_SOV_PM.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_distance,Inc3_NTDlta_Costs,Inc3_Hwy_distance
-Inc3,HBW,SR2,DISTANCE,PM,HOV,Return,1,,-,Hwy_distance,0,1,MODE_HBW_Inc3_SR2.csv (^T),LOADED_HWY_DISTANCE_HOV_PM.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_distance,Inc3_NTDlta_Costs,Inc3_Hwy_distance
-Inc3,HBW,SR3,DISTANCE,PM,HOV,Return,1,,-,Hwy_distance,0,1,MODE_HBW_Inc3_SR3.csv (^T),LOADED_HWY_DISTANCE_HOV_PM.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_distance,Inc3_NTDlta_Costs,Inc3_Hwy_distance
+Inc3,HBW,SR2,DISTANCE,PM,HOV,Return,1,,-,Hwy_distance,0,2,MODE_HBW_Inc3_SR2.csv (^T),LOADED_HWY_DISTANCE_HOV_PM.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_distance,Inc3_NTDlta_Costs,Inc3_Hwy_distance
+Inc3,HBW,SR3,DISTANCE,PM,HOV,Return,1,,-,Hwy_distance,0,3,MODE_HBW_Inc3_SR3.csv (^T),LOADED_HWY_DISTANCE_HOV_PM.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_distance,Inc3_NTDlta_Costs,Inc3_Hwy_distance
 Inc3,HBW,DA,TIME,AM,SOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBW_Inc3_DA.csv,LOADED_HWY_TIME_SOV_AM.csv (-%|100%),Inc3_NTDlta_Benefits,Inc3_Hwy_time,Inc3_NTDlta_Costs,Inc3_Hwy_time
-Inc3,HBW,SR2,TIME,AM,HOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBW_Inc3_SR2.csv,LOADED_HWY_TIME_HOV_AM.csv (-%|100%),Inc3_NTDlta_Benefits,Inc3_Hwy_time,Inc3_NTDlta_Costs,Inc3_Hwy_time
-Inc3,HBW,SR3,TIME,AM,HOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBW_Inc3_SR3.csv,LOADED_HWY_TIME_HOV_AM.csv (-%100%),Inc3_NTDlta_Benefits,Inc3_Hwy_time,Inc3_NTDlta_Costs,Inc3_Hwy_time
+Inc3,HBW,SR2,TIME,AM,HOV,Outbound,0,,-,Hwy_time,100,2,MODE_HBW_Inc3_SR2.csv,LOADED_HWY_TIME_HOV_AM.csv (-%|100%),Inc3_NTDlta_Benefits,Inc3_Hwy_time,Inc3_NTDlta_Costs,Inc3_Hwy_time
+Inc3,HBW,SR3,TIME,AM,HOV,Outbound,0,,-,Hwy_time,100,3,MODE_HBW_Inc3_SR3.csv,LOADED_HWY_TIME_HOV_AM.csv (-%100%),Inc3_NTDlta_Benefits,Inc3_Hwy_time,Inc3_NTDlta_Costs,Inc3_Hwy_time
 Inc3,HBW,DA,TIME,PM,SOV,Return,1,,-,Hwy_time,0,1,MODE_HBW_Inc3_DA.csv (^T),LOADED_HWY_TIME_SOV_PM.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_time,Inc3_NTDlta_Costs,Inc3_Hwy_time
-Inc3,HBW,SR2,TIME,PM,HOV,Return,1,,-,Hwy_time,0,1,MODE_HBW_Inc3_SR2.csv (^T),LOADED_HWY_TIME_HOV_PM.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_time,Inc3_NTDlta_Costs,Inc3_Hwy_time
-Inc3,HBW,SR3,TIME,PM,HOV,Return,1,,-,Hwy_time,0,1,MODE_HBW_Inc3_SR3.csv (^T),LOADED_HWY_TIME_HOV_PM.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_time,Inc3_NTDlta_Costs,Inc3_Hwy_time
+Inc3,HBW,SR2,TIME,PM,HOV,Return,1,,-,Hwy_time,0,2,MODE_HBW_Inc3_SR2.csv (^T),LOADED_HWY_TIME_HOV_PM.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_time,Inc3_NTDlta_Costs,Inc3_Hwy_time
+Inc3,HBW,SR3,TIME,PM,HOV,Return,1,,-,Hwy_time,0,3,MODE_HBW_Inc3_SR3.csv (^T),LOADED_HWY_TIME_HOV_PM.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_time,Inc3_NTDlta_Costs,Inc3_Hwy_time
 Inc3,HBW,DA,TOLL,AM,SOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBW_Inc3_DA.csv,LOADED_HWY_TOLL_SOV_AM.csv (-%|100%),Inc3_NTDlta_Benefits,Inc3_Hwy_toll,Inc3_NTDlta_Costs,Inc3_Hwy_toll
-Inc3,HBW,SR2,TOLL,AM,HOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBW_Inc3_SR2.csv,LOADED_HWY_TOLL_HOV_AM.csv (-%|100%),Inc3_NTDlta_Benefits,Inc3_Hwy_toll,Inc3_NTDlta_Costs,Inc3_Hwy_toll
-Inc3,HBW,SR3,TOLL,AM,HOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBW_Inc3_SR3.csv,LOADED_HWY_TOLL_HOV_AM.csv (-%100%),Inc3_NTDlta_Benefits,Inc3_Hwy_toll,Inc3_NTDlta_Costs,Inc3_Hwy_toll
+Inc3,HBW,SR2,TOLL,AM,HOV,Outbound,0,,-,Hwy_toll,100,2,MODE_HBW_Inc3_SR2.csv,LOADED_HWY_TOLL_HOV_AM.csv (-%|100%),Inc3_NTDlta_Benefits,Inc3_Hwy_toll,Inc3_NTDlta_Costs,Inc3_Hwy_toll
+Inc3,HBW,SR3,TOLL,AM,HOV,Outbound,0,,-,Hwy_toll,100,3,MODE_HBW_Inc3_SR3.csv,LOADED_HWY_TOLL_HOV_AM.csv (-%100%),Inc3_NTDlta_Benefits,Inc3_Hwy_toll,Inc3_NTDlta_Costs,Inc3_Hwy_toll
 Inc3,HBW,DA,TOLL,PM,SOV,Return,1,,-,Hwy_toll,0,1,MODE_HBW_Inc3_DA.csv (^T),LOADED_HWY_TOLL_SOV_PM.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_toll,Inc3_NTDlta_Costs,Inc3_Hwy_toll
-Inc3,HBW,SR2,TOLL,PM,HOV,Return,1,,-,Hwy_toll,0,1,MODE_HBW_Inc3_SR2.csv (^T),LOADED_HWY_TOLL_HOV_PM.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_toll,Inc3_NTDlta_Costs,Inc3_Hwy_toll
-Inc3,HBW,SR3,TOLL,PM,HOV,Return,1,,-,Hwy_toll,0,1,MODE_HBW_Inc3_SR3.csv (^T),LOADED_HWY_TOLL_HOV_PM.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_toll,Inc3_NTDlta_Costs,Inc3_Hwy_toll
+Inc3,HBW,SR2,TOLL,PM,HOV,Return,1,,-,Hwy_toll,0,2,MODE_HBW_Inc3_SR2.csv (^T),LOADED_HWY_TOLL_HOV_PM.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_toll,Inc3_NTDlta_Costs,Inc3_Hwy_toll
+Inc3,HBW,SR3,TOLL,PM,HOV,Return,1,,-,Hwy_toll,0,3,MODE_HBW_Inc3_SR3.csv (^T),LOADED_HWY_TOLL_HOV_PM.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_toll,Inc3_NTDlta_Costs,Inc3_Hwy_toll
 Inc4,HBW,WexpBus,XferWaitTime,,,Outbound,0,1,100,Time,100,,MODE_HBW_Inc4_WexpBus.csv,TRANSIT_PK_WexpBus_XferWaitTime.csv  (100%|100%),Inc4_NTDlta_Benefits,Inc4_XferWaitTime,Inc4_NTDlta_Costs,Inc4_XferWaitTime
 Inc4,HBW,WRail,XferWaitTime,,,Outbound,0,1,100,Time,100,,MODE_HBW_Inc4_WRail.csv,TRANSIT_PK_WRail_XferWaitTime.csv  (100%|100%),Inc4_NTDlta_Benefits,Inc4_XferWaitTime,Inc4_NTDlta_Costs,Inc4_XferWaitTime
 Inc4,HBW,WCRail,XferWaitTime,,,Outbound,0,1,100,Time,100,,MODE_HBW_Inc4_WCRail.csv,TRANSIT_PK_WCRail_XferWaitTime.csv  (100%|100%),Inc4_NTDlta_Benefits,Inc4_XferWaitTime,Inc4_NTDlta_Costs,Inc4_XferWaitTime
@@ -470,23 +470,23 @@ Inc4,HBW,DRail,AutoTime,,,Return,1,1,100,Time,0,,MODE_HBW_Inc4_DRail.csv (^T),TR
 Inc4,HBW,DCRail,AutoTime,,,Return,1,1,100,Time,0,,MODE_HBW_Inc4_DCRail.csv (^T),TRANSIT_PK_DCRail_AutoTime.csv  (100%|0%),Inc4_NTDlta_Benefits,Inc4_AutoTime,Inc4_NTDlta_Costs,Inc4_AutoTime
 Inc4,HBW,DBus,AutoTime,,,Return,1,1,100,Time,0,,MODE_HBW_Inc4_DBus.csv (^T),TRANSIT_PK_DBus_AutoTime.csv  (100%|0%),Inc4_NTDlta_Benefits,Inc4_AutoTime,Inc4_NTDlta_Costs,Inc4_AutoTime
 Inc4,HBW,DA,DISTANCE,AM,SOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBW_Inc4_DA.csv,LOADED_HWY_DISTANCE_SOV_AM.csv (-%|100%),Inc4_NTDlta_Benefits,Inc4_Hwy_distance,Inc4_NTDlta_Costs,Inc4_Hwy_distance
-Inc4,HBW,SR2,DISTANCE,AM,HOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBW_Inc4_SR2.csv,LOADED_HWY_DISTANCE_HOV_AM.csv (-%|100%),Inc4_NTDlta_Benefits,Inc4_Hwy_distance,Inc4_NTDlta_Costs,Inc4_Hwy_distance
-Inc4,HBW,SR3,DISTANCE,AM,HOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBW_Inc4_SR3.csv,LOADED_HWY_DISTANCE_HOV_AM.csv (-%100%),Inc4_NTDlta_Benefits,Inc4_Hwy_distance,Inc4_NTDlta_Costs,Inc4_Hwy_distance
+Inc4,HBW,SR2,DISTANCE,AM,HOV,Outbound,0,,-,Hwy_distance,100,2,MODE_HBW_Inc4_SR2.csv,LOADED_HWY_DISTANCE_HOV_AM.csv (-%|100%),Inc4_NTDlta_Benefits,Inc4_Hwy_distance,Inc4_NTDlta_Costs,Inc4_Hwy_distance
+Inc4,HBW,SR3,DISTANCE,AM,HOV,Outbound,0,,-,Hwy_distance,100,3,MODE_HBW_Inc4_SR3.csv,LOADED_HWY_DISTANCE_HOV_AM.csv (-%100%),Inc4_NTDlta_Benefits,Inc4_Hwy_distance,Inc4_NTDlta_Costs,Inc4_Hwy_distance
 Inc4,HBW,DA,DISTANCE,PM,SOV,Return,1,,-,Hwy_distance,0,1,MODE_HBW_Inc4_DA.csv (^T),LOADED_HWY_DISTANCE_SOV_PM.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_distance,Inc4_NTDlta_Costs,Inc4_Hwy_distance
-Inc4,HBW,SR2,DISTANCE,PM,HOV,Return,1,,-,Hwy_distance,0,1,MODE_HBW_Inc4_SR2.csv (^T),LOADED_HWY_DISTANCE_HOV_PM.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_distance,Inc4_NTDlta_Costs,Inc4_Hwy_distance
-Inc4,HBW,SR3,DISTANCE,PM,HOV,Return,1,,-,Hwy_distance,0,1,MODE_HBW_Inc4_SR3.csv (^T),LOADED_HWY_DISTANCE_HOV_PM.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_distance,Inc4_NTDlta_Costs,Inc4_Hwy_distance
+Inc4,HBW,SR2,DISTANCE,PM,HOV,Return,1,,-,Hwy_distance,0,2,MODE_HBW_Inc4_SR2.csv (^T),LOADED_HWY_DISTANCE_HOV_PM.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_distance,Inc4_NTDlta_Costs,Inc4_Hwy_distance
+Inc4,HBW,SR3,DISTANCE,PM,HOV,Return,1,,-,Hwy_distance,0,3,MODE_HBW_Inc4_SR3.csv (^T),LOADED_HWY_DISTANCE_HOV_PM.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_distance,Inc4_NTDlta_Costs,Inc4_Hwy_distance
 Inc4,HBW,DA,TIME,AM,SOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBW_Inc4_DA.csv,LOADED_HWY_TIME_SOV_AM.csv (-%|100%),Inc4_NTDlta_Benefits,Inc4_Hwy_time,Inc4_NTDlta_Costs,Inc4_Hwy_time
-Inc4,HBW,SR2,TIME,AM,HOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBW_Inc4_SR2.csv,LOADED_HWY_TIME_HOV_AM.csv (-%|100%),Inc4_NTDlta_Benefits,Inc4_Hwy_time,Inc4_NTDlta_Costs,Inc4_Hwy_time
-Inc4,HBW,SR3,TIME,AM,HOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBW_Inc4_SR3.csv,LOADED_HWY_TIME_HOV_AM.csv (-%100%),Inc4_NTDlta_Benefits,Inc4_Hwy_time,Inc4_NTDlta_Costs,Inc4_Hwy_time
+Inc4,HBW,SR2,TIME,AM,HOV,Outbound,0,,-,Hwy_time,100,2,MODE_HBW_Inc4_SR2.csv,LOADED_HWY_TIME_HOV_AM.csv (-%|100%),Inc4_NTDlta_Benefits,Inc4_Hwy_time,Inc4_NTDlta_Costs,Inc4_Hwy_time
+Inc4,HBW,SR3,TIME,AM,HOV,Outbound,0,,-,Hwy_time,100,3,MODE_HBW_Inc4_SR3.csv,LOADED_HWY_TIME_HOV_AM.csv (-%100%),Inc4_NTDlta_Benefits,Inc4_Hwy_time,Inc4_NTDlta_Costs,Inc4_Hwy_time
 Inc4,HBW,DA,TIME,PM,SOV,Return,1,,-,Hwy_time,0,1,MODE_HBW_Inc4_DA.csv (^T),LOADED_HWY_TIME_SOV_PM.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_time,Inc4_NTDlta_Costs,Inc4_Hwy_time
-Inc4,HBW,SR2,TIME,PM,HOV,Return,1,,-,Hwy_time,0,1,MODE_HBW_Inc4_SR2.csv (^T),LOADED_HWY_TIME_HOV_PM.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_time,Inc4_NTDlta_Costs,Inc4_Hwy_time
-Inc4,HBW,SR3,TIME,PM,HOV,Return,1,,-,Hwy_time,0,1,MODE_HBW_Inc4_SR3.csv (^T),LOADED_HWY_TIME_HOV_PM.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_time,Inc4_NTDlta_Costs,Inc4_Hwy_time
+Inc4,HBW,SR2,TIME,PM,HOV,Return,1,,-,Hwy_time,0,2,MODE_HBW_Inc4_SR2.csv (^T),LOADED_HWY_TIME_HOV_PM.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_time,Inc4_NTDlta_Costs,Inc4_Hwy_time
+Inc4,HBW,SR3,TIME,PM,HOV,Return,1,,-,Hwy_time,0,3,MODE_HBW_Inc4_SR3.csv (^T),LOADED_HWY_TIME_HOV_PM.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_time,Inc4_NTDlta_Costs,Inc4_Hwy_time
 Inc4,HBW,DA,TOLL,AM,SOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBW_Inc4_DA.csv,LOADED_HWY_TOLL_SOV_AM.csv (-%|100%),Inc4_NTDlta_Benefits,Inc4_Hwy_toll,Inc4_NTDlta_Costs,Inc4_Hwy_toll
-Inc4,HBW,SR2,TOLL,AM,HOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBW_Inc4_SR2.csv,LOADED_HWY_TOLL_HOV_AM.csv (-%|100%),Inc4_NTDlta_Benefits,Inc4_Hwy_toll,Inc4_NTDlta_Costs,Inc4_Hwy_toll
-Inc4,HBW,SR3,TOLL,AM,HOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBW_Inc4_SR3.csv,LOADED_HWY_TOLL_HOV_AM.csv (-%100%),Inc4_NTDlta_Benefits,Inc4_Hwy_toll,Inc4_NTDlta_Costs,Inc4_Hwy_toll
+Inc4,HBW,SR2,TOLL,AM,HOV,Outbound,0,,-,Hwy_toll,100,2,MODE_HBW_Inc4_SR2.csv,LOADED_HWY_TOLL_HOV_AM.csv (-%|100%),Inc4_NTDlta_Benefits,Inc4_Hwy_toll,Inc4_NTDlta_Costs,Inc4_Hwy_toll
+Inc4,HBW,SR3,TOLL,AM,HOV,Outbound,0,,-,Hwy_toll,100,3,MODE_HBW_Inc4_SR3.csv,LOADED_HWY_TOLL_HOV_AM.csv (-%100%),Inc4_NTDlta_Benefits,Inc4_Hwy_toll,Inc4_NTDlta_Costs,Inc4_Hwy_toll
 Inc4,HBW,DA,TOLL,PM,SOV,Return,1,,-,Hwy_toll,0,1,MODE_HBW_Inc4_DA.csv (^T),LOADED_HWY_TOLL_SOV_PM.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_toll,Inc4_NTDlta_Costs,Inc4_Hwy_toll
-Inc4,HBW,SR2,TOLL,PM,HOV,Return,1,,-,Hwy_toll,0,1,MODE_HBW_Inc4_SR2.csv (^T),LOADED_HWY_TOLL_HOV_PM.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_toll,Inc4_NTDlta_Costs,Inc4_Hwy_toll
-Inc4,HBW,SR3,TOLL,PM,HOV,Return,1,,-,Hwy_toll,0,1,MODE_HBW_Inc4_SR3.csv (^T),LOADED_HWY_TOLL_HOV_PM.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_toll,Inc4_NTDlta_Costs,Inc4_Hwy_toll
+Inc4,HBW,SR2,TOLL,PM,HOV,Return,1,,-,Hwy_toll,0,2,MODE_HBW_Inc4_SR2.csv (^T),LOADED_HWY_TOLL_HOV_PM.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_toll,Inc4_NTDlta_Costs,Inc4_Hwy_toll
+Inc4,HBW,SR3,TOLL,PM,HOV,Return,1,,-,Hwy_toll,0,3,MODE_HBW_Inc4_SR3.csv (^T),LOADED_HWY_TOLL_HOV_PM.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_toll,Inc4_NTDlta_Costs,Inc4_Hwy_toll
 Inc5,HBW,WexpBus,XferWaitTime,,,Outbound,0,1,100,Time,100,,MODE_HBW_Inc5_WexpBus.csv,TRANSIT_PK_WexpBus_XferWaitTime.csv  (100%|100%),Inc5_NTDlta_Benefits,Inc5_XferWaitTime,Inc5_NTDlta_Costs,Inc5_XferWaitTime
 Inc5,HBW,WRail,XferWaitTime,,,Outbound,0,1,100,Time,100,,MODE_HBW_Inc5_WRail.csv,TRANSIT_PK_WRail_XferWaitTime.csv  (100%|100%),Inc5_NTDlta_Benefits,Inc5_XferWaitTime,Inc5_NTDlta_Costs,Inc5_XferWaitTime
 Inc5,HBW,WCRail,XferWaitTime,,,Outbound,0,1,100,Time,100,,MODE_HBW_Inc5_WCRail.csv,TRANSIT_PK_WCRail_XferWaitTime.csv  (100%|100%),Inc5_NTDlta_Benefits,Inc5_XferWaitTime,Inc5_NTDlta_Costs,Inc5_XferWaitTime
@@ -592,23 +592,23 @@ Inc5,HBW,DRail,AutoTime,,,Return,1,1,100,Time,0,,MODE_HBW_Inc5_DRail.csv (^T),TR
 Inc5,HBW,DCRail,AutoTime,,,Return,1,1,100,Time,0,,MODE_HBW_Inc5_DCRail.csv (^T),TRANSIT_PK_DCRail_AutoTime.csv  (100%|0%),Inc5_NTDlta_Benefits,Inc5_AutoTime,Inc5_NTDlta_Costs,Inc5_AutoTime
 Inc5,HBW,DBus,AutoTime,,,Return,1,1,100,Time,0,,MODE_HBW_Inc5_DBus.csv (^T),TRANSIT_PK_DBus_AutoTime.csv  (100%|0%),Inc5_NTDlta_Benefits,Inc5_AutoTime,Inc5_NTDlta_Costs,Inc5_AutoTime
 Inc5,HBW,DA,DISTANCE,AM,SOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBW_Inc5_DA.csv,LOADED_HWY_DISTANCE_SOV_AM.csv (-%|100%),Inc5_NTDlta_Benefits,Inc5_Hwy_distance,Inc5_NTDlta_Costs,Inc5_Hwy_distance
-Inc5,HBW,SR2,DISTANCE,AM,HOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBW_Inc5_SR2.csv,LOADED_HWY_DISTANCE_HOV_AM.csv (-%|100%),Inc5_NTDlta_Benefits,Inc5_Hwy_distance,Inc5_NTDlta_Costs,Inc5_Hwy_distance
-Inc5,HBW,SR3,DISTANCE,AM,HOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBW_Inc5_SR3.csv,LOADED_HWY_DISTANCE_HOV_AM.csv (-%100%),Inc5_NTDlta_Benefits,Inc5_Hwy_distance,Inc5_NTDlta_Costs,Inc5_Hwy_distance
+Inc5,HBW,SR2,DISTANCE,AM,HOV,Outbound,0,,-,Hwy_distance,100,2,MODE_HBW_Inc5_SR2.csv,LOADED_HWY_DISTANCE_HOV_AM.csv (-%|100%),Inc5_NTDlta_Benefits,Inc5_Hwy_distance,Inc5_NTDlta_Costs,Inc5_Hwy_distance
+Inc5,HBW,SR3,DISTANCE,AM,HOV,Outbound,0,,-,Hwy_distance,100,3,MODE_HBW_Inc5_SR3.csv,LOADED_HWY_DISTANCE_HOV_AM.csv (-%100%),Inc5_NTDlta_Benefits,Inc5_Hwy_distance,Inc5_NTDlta_Costs,Inc5_Hwy_distance
 Inc5,HBW,DA,DISTANCE,PM,SOV,Return,1,,-,Hwy_distance,0,1,MODE_HBW_Inc5_DA.csv (^T),LOADED_HWY_DISTANCE_SOV_PM.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_distance,Inc5_NTDlta_Costs,Inc5_Hwy_distance
-Inc5,HBW,SR2,DISTANCE,PM,HOV,Return,1,,-,Hwy_distance,0,1,MODE_HBW_Inc5_SR2.csv (^T),LOADED_HWY_DISTANCE_HOV_PM.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_distance,Inc5_NTDlta_Costs,Inc5_Hwy_distance
-Inc5,HBW,SR3,DISTANCE,PM,HOV,Return,1,,-,Hwy_distance,0,1,MODE_HBW_Inc5_SR3.csv (^T),LOADED_HWY_DISTANCE_HOV_PM.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_distance,Inc5_NTDlta_Costs,Inc5_Hwy_distance
+Inc5,HBW,SR2,DISTANCE,PM,HOV,Return,1,,-,Hwy_distance,0,2,MODE_HBW_Inc5_SR2.csv (^T),LOADED_HWY_DISTANCE_HOV_PM.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_distance,Inc5_NTDlta_Costs,Inc5_Hwy_distance
+Inc5,HBW,SR3,DISTANCE,PM,HOV,Return,1,,-,Hwy_distance,0,3,MODE_HBW_Inc5_SR3.csv (^T),LOADED_HWY_DISTANCE_HOV_PM.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_distance,Inc5_NTDlta_Costs,Inc5_Hwy_distance
 Inc5,HBW,DA,TIME,AM,SOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBW_Inc5_DA.csv,LOADED_HWY_TIME_SOV_AM.csv (-%|100%),Inc5_NTDlta_Benefits,Inc5_Hwy_time,Inc5_NTDlta_Costs,Inc5_Hwy_time
-Inc5,HBW,SR2,TIME,AM,HOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBW_Inc5_SR2.csv,LOADED_HWY_TIME_HOV_AM.csv (-%|100%),Inc5_NTDlta_Benefits,Inc5_Hwy_time,Inc5_NTDlta_Costs,Inc5_Hwy_time
-Inc5,HBW,SR3,TIME,AM,HOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBW_Inc5_SR3.csv,LOADED_HWY_TIME_HOV_AM.csv (-%100%),Inc5_NTDlta_Benefits,Inc5_Hwy_time,Inc5_NTDlta_Costs,Inc5_Hwy_time
+Inc5,HBW,SR2,TIME,AM,HOV,Outbound,0,,-,Hwy_time,100,2,MODE_HBW_Inc5_SR2.csv,LOADED_HWY_TIME_HOV_AM.csv (-%|100%),Inc5_NTDlta_Benefits,Inc5_Hwy_time,Inc5_NTDlta_Costs,Inc5_Hwy_time
+Inc5,HBW,SR3,TIME,AM,HOV,Outbound,0,,-,Hwy_time,100,3,MODE_HBW_Inc5_SR3.csv,LOADED_HWY_TIME_HOV_AM.csv (-%100%),Inc5_NTDlta_Benefits,Inc5_Hwy_time,Inc5_NTDlta_Costs,Inc5_Hwy_time
 Inc5,HBW,DA,TIME,PM,SOV,Return,1,,-,Hwy_time,0,1,MODE_HBW_Inc5_DA.csv (^T),LOADED_HWY_TIME_SOV_PM.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_time,Inc5_NTDlta_Costs,Inc5_Hwy_time
-Inc5,HBW,SR2,TIME,PM,HOV,Return,1,,-,Hwy_time,0,1,MODE_HBW_Inc5_SR2.csv (^T),LOADED_HWY_TIME_HOV_PM.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_time,Inc5_NTDlta_Costs,Inc5_Hwy_time
-Inc5,HBW,SR3,TIME,PM,HOV,Return,1,,-,Hwy_time,0,1,MODE_HBW_Inc5_SR3.csv (^T),LOADED_HWY_TIME_HOV_PM.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_time,Inc5_NTDlta_Costs,Inc5_Hwy_time
+Inc5,HBW,SR2,TIME,PM,HOV,Return,1,,-,Hwy_time,0,2,MODE_HBW_Inc5_SR2.csv (^T),LOADED_HWY_TIME_HOV_PM.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_time,Inc5_NTDlta_Costs,Inc5_Hwy_time
+Inc5,HBW,SR3,TIME,PM,HOV,Return,1,,-,Hwy_time,0,3,MODE_HBW_Inc5_SR3.csv (^T),LOADED_HWY_TIME_HOV_PM.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_time,Inc5_NTDlta_Costs,Inc5_Hwy_time
 Inc5,HBW,DA,TOLL,AM,SOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBW_Inc5_DA.csv,LOADED_HWY_TOLL_SOV_AM.csv (-%|100%),Inc5_NTDlta_Benefits,Inc5_Hwy_toll,Inc5_NTDlta_Costs,Inc5_Hwy_toll
-Inc5,HBW,SR2,TOLL,AM,HOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBW_Inc5_SR2.csv,LOADED_HWY_TOLL_HOV_AM.csv (-%|100%),Inc5_NTDlta_Benefits,Inc5_Hwy_toll,Inc5_NTDlta_Costs,Inc5_Hwy_toll
-Inc5,HBW,SR3,TOLL,AM,HOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBW_Inc5_SR3.csv,LOADED_HWY_TOLL_HOV_AM.csv (-%100%),Inc5_NTDlta_Benefits,Inc5_Hwy_toll,Inc5_NTDlta_Costs,Inc5_Hwy_toll
+Inc5,HBW,SR2,TOLL,AM,HOV,Outbound,0,,-,Hwy_toll,100,2,MODE_HBW_Inc5_SR2.csv,LOADED_HWY_TOLL_HOV_AM.csv (-%|100%),Inc5_NTDlta_Benefits,Inc5_Hwy_toll,Inc5_NTDlta_Costs,Inc5_Hwy_toll
+Inc5,HBW,SR3,TOLL,AM,HOV,Outbound,0,,-,Hwy_toll,100,3,MODE_HBW_Inc5_SR3.csv,LOADED_HWY_TOLL_HOV_AM.csv (-%100%),Inc5_NTDlta_Benefits,Inc5_Hwy_toll,Inc5_NTDlta_Costs,Inc5_Hwy_toll
 Inc5,HBW,DA,TOLL,PM,SOV,Return,1,,-,Hwy_toll,0,1,MODE_HBW_Inc5_DA.csv (^T),LOADED_HWY_TOLL_SOV_PM.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_toll,Inc5_NTDlta_Costs,Inc5_Hwy_toll
-Inc5,HBW,SR2,TOLL,PM,HOV,Return,1,,-,Hwy_toll,0,1,MODE_HBW_Inc5_SR2.csv (^T),LOADED_HWY_TOLL_HOV_PM.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_toll,Inc5_NTDlta_Costs,Inc5_Hwy_toll
-Inc5,HBW,SR3,TOLL,PM,HOV,Return,1,,-,Hwy_toll,0,1,MODE_HBW_Inc5_SR3.csv (^T),LOADED_HWY_TOLL_HOV_PM.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_toll,Inc5_NTDlta_Costs,Inc5_Hwy_toll
+Inc5,HBW,SR2,TOLL,PM,HOV,Return,1,,-,Hwy_toll,0,2,MODE_HBW_Inc5_SR2.csv (^T),LOADED_HWY_TOLL_HOV_PM.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_toll,Inc5_NTDlta_Costs,Inc5_Hwy_toll
+Inc5,HBW,SR3,TOLL,PM,HOV,Return,1,,-,Hwy_toll,0,3,MODE_HBW_Inc5_SR3.csv (^T),LOADED_HWY_TOLL_HOV_PM.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_toll,Inc5_NTDlta_Costs,Inc5_Hwy_toll
 Inc1,HBS,WexpBus,XferWaitTime,,,Outbound,0,0,100,Time,100,,MODE_HBS_Inc1_WexpBus.csv,TRANSIT_OP_WexpBus_XferWaitTime.csv  (100%|100%),Inc1_NTDlta_Benefits,Inc1_XferWaitTime,Inc1_NTDlta_Costs,Inc1_XferWaitTime
 Inc1,HBS,WRail,XferWaitTime,,,Outbound,0,0,100,Time,100,,MODE_HBS_Inc1_WRail.csv,TRANSIT_OP_WRail_XferWaitTime.csv  (100%|100%),Inc1_NTDlta_Benefits,Inc1_XferWaitTime,Inc1_NTDlta_Costs,Inc1_XferWaitTime
 Inc1,HBS,WCRail,XferWaitTime,,,Outbound,0,0,100,Time,100,,MODE_HBS_Inc1_WCRail.csv,TRANSIT_OP_WCRail_XferWaitTime.csv  (100%|100%),Inc1_NTDlta_Benefits,Inc1_XferWaitTime,Inc1_NTDlta_Costs,Inc1_XferWaitTime
@@ -714,23 +714,23 @@ Inc1,HBS,DRail,AutoTime,,,Return,1,0,100,Time,0,,MODE_HBS_Inc1_DRail.csv (^T),TR
 Inc1,HBS,DCRail,AutoTime,,,Return,1,0,100,Time,0,,MODE_HBS_Inc1_DCRail.csv (^T),TRANSIT_OP_DCRail_AutoTime.csv  (100%|0%),Inc1_NTDlta_Benefits,Inc1_AutoTime,Inc1_NTDlta_Costs,Inc1_AutoTime
 Inc1,HBS,DBus,AutoTime,,,Return,1,0,100,Time,0,,MODE_HBS_Inc1_DBus.csv (^T),TRANSIT_OP_DBus_AutoTime.csv  (100%|0%),Inc1_NTDlta_Benefits,Inc1_AutoTime,Inc1_NTDlta_Costs,Inc1_AutoTime
 Inc1,HBS,DA,DISTANCE,MD,SOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBS_Inc1_DA.csv,LOADED_HWY_DISTANCE_SOV_MD.csv (-%|100%),Inc1_NTDlta_Benefits,Inc1_Hwy_distance,Inc1_NTDlta_Costs,Inc1_Hwy_distance
-Inc1,HBS,SR2,DISTANCE,MD,HOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBS_Inc1_SR2.csv,LOADED_HWY_DISTANCE_HOV_MD.csv (-%|100%),Inc1_NTDlta_Benefits,Inc1_Hwy_distance,Inc1_NTDlta_Costs,Inc1_Hwy_distance
-Inc1,HBS,SR3,DISTANCE,MD,HOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBS_Inc1_SR3.csv,LOADED_HWY_DISTANCE_HOV_MD.csv (-%100%),Inc1_NTDlta_Benefits,Inc1_Hwy_distance,Inc1_NTDlta_Costs,Inc1_Hwy_distance
+Inc1,HBS,SR2,DISTANCE,MD,HOV,Outbound,0,,-,Hwy_distance,100,2,MODE_HBS_Inc1_SR2.csv,LOADED_HWY_DISTANCE_HOV_MD.csv (-%|100%),Inc1_NTDlta_Benefits,Inc1_Hwy_distance,Inc1_NTDlta_Costs,Inc1_Hwy_distance
+Inc1,HBS,SR3,DISTANCE,MD,HOV,Outbound,0,,-,Hwy_distance,100,3,MODE_HBS_Inc1_SR3.csv,LOADED_HWY_DISTANCE_HOV_MD.csv (-%100%),Inc1_NTDlta_Benefits,Inc1_Hwy_distance,Inc1_NTDlta_Costs,Inc1_Hwy_distance
 Inc1,HBS,DA,DISTANCE,MD,SOV,Return,1,,-,Hwy_distance,0,1,MODE_HBS_Inc1_DA.csv (^T),LOADED_HWY_DISTANCE_SOV_MD.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_distance,Inc1_NTDlta_Costs,Inc1_Hwy_distance
-Inc1,HBS,SR2,DISTANCE,MD,HOV,Return,1,,-,Hwy_distance,0,1,MODE_HBS_Inc1_SR2.csv (^T),LOADED_HWY_DISTANCE_HOV_MD.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_distance,Inc1_NTDlta_Costs,Inc1_Hwy_distance
-Inc1,HBS,SR3,DISTANCE,MD,HOV,Return,1,,-,Hwy_distance,0,1,MODE_HBS_Inc1_SR3.csv (^T),LOADED_HWY_DISTANCE_HOV_MD.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_distance,Inc1_NTDlta_Costs,Inc1_Hwy_distance
+Inc1,HBS,SR2,DISTANCE,MD,HOV,Return,1,,-,Hwy_distance,0,2,MODE_HBS_Inc1_SR2.csv (^T),LOADED_HWY_DISTANCE_HOV_MD.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_distance,Inc1_NTDlta_Costs,Inc1_Hwy_distance
+Inc1,HBS,SR3,DISTANCE,MD,HOV,Return,1,,-,Hwy_distance,0,3,MODE_HBS_Inc1_SR3.csv (^T),LOADED_HWY_DISTANCE_HOV_MD.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_distance,Inc1_NTDlta_Costs,Inc1_Hwy_distance
 Inc1,HBS,DA,TIME,MD,SOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBS_Inc1_DA.csv,LOADED_HWY_TIME_SOV_MD.csv (-%|100%),Inc1_NTDlta_Benefits,Inc1_Hwy_time,Inc1_NTDlta_Costs,Inc1_Hwy_time
-Inc1,HBS,SR2,TIME,MD,HOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBS_Inc1_SR2.csv,LOADED_HWY_TIME_HOV_MD.csv (-%|100%),Inc1_NTDlta_Benefits,Inc1_Hwy_time,Inc1_NTDlta_Costs,Inc1_Hwy_time
-Inc1,HBS,SR3,TIME,MD,HOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBS_Inc1_SR3.csv,LOADED_HWY_TIME_HOV_MD.csv (-%100%),Inc1_NTDlta_Benefits,Inc1_Hwy_time,Inc1_NTDlta_Costs,Inc1_Hwy_time
+Inc1,HBS,SR2,TIME,MD,HOV,Outbound,0,,-,Hwy_time,100,2,MODE_HBS_Inc1_SR2.csv,LOADED_HWY_TIME_HOV_MD.csv (-%|100%),Inc1_NTDlta_Benefits,Inc1_Hwy_time,Inc1_NTDlta_Costs,Inc1_Hwy_time
+Inc1,HBS,SR3,TIME,MD,HOV,Outbound,0,,-,Hwy_time,100,3,MODE_HBS_Inc1_SR3.csv,LOADED_HWY_TIME_HOV_MD.csv (-%100%),Inc1_NTDlta_Benefits,Inc1_Hwy_time,Inc1_NTDlta_Costs,Inc1_Hwy_time
 Inc1,HBS,DA,TIME,MD,SOV,Return,1,,-,Hwy_time,0,1,MODE_HBS_Inc1_DA.csv (^T),LOADED_HWY_TIME_SOV_MD.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_time,Inc1_NTDlta_Costs,Inc1_Hwy_time
-Inc1,HBS,SR2,TIME,MD,HOV,Return,1,,-,Hwy_time,0,1,MODE_HBS_Inc1_SR2.csv (^T),LOADED_HWY_TIME_HOV_MD.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_time,Inc1_NTDlta_Costs,Inc1_Hwy_time
-Inc1,HBS,SR3,TIME,MD,HOV,Return,1,,-,Hwy_time,0,1,MODE_HBS_Inc1_SR3.csv (^T),LOADED_HWY_TIME_HOV_MD.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_time,Inc1_NTDlta_Costs,Inc1_Hwy_time
+Inc1,HBS,SR2,TIME,MD,HOV,Return,1,,-,Hwy_time,0,2,MODE_HBS_Inc1_SR2.csv (^T),LOADED_HWY_TIME_HOV_MD.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_time,Inc1_NTDlta_Costs,Inc1_Hwy_time
+Inc1,HBS,SR3,TIME,MD,HOV,Return,1,,-,Hwy_time,0,3,MODE_HBS_Inc1_SR3.csv (^T),LOADED_HWY_TIME_HOV_MD.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_time,Inc1_NTDlta_Costs,Inc1_Hwy_time
 Inc1,HBS,DA,TOLL,MD,SOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBS_Inc1_DA.csv,LOADED_HWY_TOLL_SOV_MD.csv (-%|100%),Inc1_NTDlta_Benefits,Inc1_Hwy_toll,Inc1_NTDlta_Costs,Inc1_Hwy_toll
-Inc1,HBS,SR2,TOLL,MD,HOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBS_Inc1_SR2.csv,LOADED_HWY_TOLL_HOV_MD.csv (-%|100%),Inc1_NTDlta_Benefits,Inc1_Hwy_toll,Inc1_NTDlta_Costs,Inc1_Hwy_toll
-Inc1,HBS,SR3,TOLL,MD,HOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBS_Inc1_SR3.csv,LOADED_HWY_TOLL_HOV_MD.csv (-%100%),Inc1_NTDlta_Benefits,Inc1_Hwy_toll,Inc1_NTDlta_Costs,Inc1_Hwy_toll
+Inc1,HBS,SR2,TOLL,MD,HOV,Outbound,0,,-,Hwy_toll,100,2,MODE_HBS_Inc1_SR2.csv,LOADED_HWY_TOLL_HOV_MD.csv (-%|100%),Inc1_NTDlta_Benefits,Inc1_Hwy_toll,Inc1_NTDlta_Costs,Inc1_Hwy_toll
+Inc1,HBS,SR3,TOLL,MD,HOV,Outbound,0,,-,Hwy_toll,100,3,MODE_HBS_Inc1_SR3.csv,LOADED_HWY_TOLL_HOV_MD.csv (-%100%),Inc1_NTDlta_Benefits,Inc1_Hwy_toll,Inc1_NTDlta_Costs,Inc1_Hwy_toll
 Inc1,HBS,DA,TOLL,MD,SOV,Return,1,,-,Hwy_toll,0,1,MODE_HBS_Inc1_DA.csv (^T),LOADED_HWY_TOLL_SOV_MD.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_toll,Inc1_NTDlta_Costs,Inc1_Hwy_toll
-Inc1,HBS,SR2,TOLL,MD,HOV,Return,1,,-,Hwy_toll,0,1,MODE_HBS_Inc1_SR2.csv (^T),LOADED_HWY_TOLL_HOV_MD.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_toll,Inc1_NTDlta_Costs,Inc1_Hwy_toll
-Inc1,HBS,SR3,TOLL,MD,HOV,Return,1,,-,Hwy_toll,0,1,MODE_HBS_Inc1_SR3.csv (^T),LOADED_HWY_TOLL_HOV_MD.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_toll,Inc1_NTDlta_Costs,Inc1_Hwy_toll
+Inc1,HBS,SR2,TOLL,MD,HOV,Return,1,,-,Hwy_toll,0,2,MODE_HBS_Inc1_SR2.csv (^T),LOADED_HWY_TOLL_HOV_MD.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_toll,Inc1_NTDlta_Costs,Inc1_Hwy_toll
+Inc1,HBS,SR3,TOLL,MD,HOV,Return,1,,-,Hwy_toll,0,3,MODE_HBS_Inc1_SR3.csv (^T),LOADED_HWY_TOLL_HOV_MD.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_toll,Inc1_NTDlta_Costs,Inc1_Hwy_toll
 Inc2,HBS,WexpBus,XferWaitTime,,,Outbound,0,0,100,Time,100,,MODE_HBS_Inc2_WexpBus.csv,TRANSIT_OP_WexpBus_XferWaitTime.csv  (100%|100%),Inc2_NTDlta_Benefits,Inc2_XferWaitTime,Inc2_NTDlta_Costs,Inc2_XferWaitTime
 Inc2,HBS,WRail,XferWaitTime,,,Outbound,0,0,100,Time,100,,MODE_HBS_Inc2_WRail.csv,TRANSIT_OP_WRail_XferWaitTime.csv  (100%|100%),Inc2_NTDlta_Benefits,Inc2_XferWaitTime,Inc2_NTDlta_Costs,Inc2_XferWaitTime
 Inc2,HBS,WCRail,XferWaitTime,,,Outbound,0,0,100,Time,100,,MODE_HBS_Inc2_WCRail.csv,TRANSIT_OP_WCRail_XferWaitTime.csv  (100%|100%),Inc2_NTDlta_Benefits,Inc2_XferWaitTime,Inc2_NTDlta_Costs,Inc2_XferWaitTime
@@ -836,23 +836,23 @@ Inc2,HBS,DRail,AutoTime,,,Return,1,0,100,Time,0,,MODE_HBS_Inc2_DRail.csv (^T),TR
 Inc2,HBS,DCRail,AutoTime,,,Return,1,0,100,Time,0,,MODE_HBS_Inc2_DCRail.csv (^T),TRANSIT_OP_DCRail_AutoTime.csv  (100%|0%),Inc2_NTDlta_Benefits,Inc2_AutoTime,Inc2_NTDlta_Costs,Inc2_AutoTime
 Inc2,HBS,DBus,AutoTime,,,Return,1,0,100,Time,0,,MODE_HBS_Inc2_DBus.csv (^T),TRANSIT_OP_DBus_AutoTime.csv  (100%|0%),Inc2_NTDlta_Benefits,Inc2_AutoTime,Inc2_NTDlta_Costs,Inc2_AutoTime
 Inc2,HBS,DA,DISTANCE,MD,SOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBS_Inc2_DA.csv,LOADED_HWY_DISTANCE_SOV_MD.csv (-%|100%),Inc2_NTDlta_Benefits,Inc2_Hwy_distance,Inc2_NTDlta_Costs,Inc2_Hwy_distance
-Inc2,HBS,SR2,DISTANCE,MD,HOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBS_Inc2_SR2.csv,LOADED_HWY_DISTANCE_HOV_MD.csv (-%|100%),Inc2_NTDlta_Benefits,Inc2_Hwy_distance,Inc2_NTDlta_Costs,Inc2_Hwy_distance
-Inc2,HBS,SR3,DISTANCE,MD,HOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBS_Inc2_SR3.csv,LOADED_HWY_DISTANCE_HOV_MD.csv (-%100%),Inc2_NTDlta_Benefits,Inc2_Hwy_distance,Inc2_NTDlta_Costs,Inc2_Hwy_distance
+Inc2,HBS,SR2,DISTANCE,MD,HOV,Outbound,0,,-,Hwy_distance,100,2,MODE_HBS_Inc2_SR2.csv,LOADED_HWY_DISTANCE_HOV_MD.csv (-%|100%),Inc2_NTDlta_Benefits,Inc2_Hwy_distance,Inc2_NTDlta_Costs,Inc2_Hwy_distance
+Inc2,HBS,SR3,DISTANCE,MD,HOV,Outbound,0,,-,Hwy_distance,100,3,MODE_HBS_Inc2_SR3.csv,LOADED_HWY_DISTANCE_HOV_MD.csv (-%100%),Inc2_NTDlta_Benefits,Inc2_Hwy_distance,Inc2_NTDlta_Costs,Inc2_Hwy_distance
 Inc2,HBS,DA,DISTANCE,MD,SOV,Return,1,,-,Hwy_distance,0,1,MODE_HBS_Inc2_DA.csv (^T),LOADED_HWY_DISTANCE_SOV_MD.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_distance,Inc2_NTDlta_Costs,Inc2_Hwy_distance
-Inc2,HBS,SR2,DISTANCE,MD,HOV,Return,1,,-,Hwy_distance,0,1,MODE_HBS_Inc2_SR2.csv (^T),LOADED_HWY_DISTANCE_HOV_MD.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_distance,Inc2_NTDlta_Costs,Inc2_Hwy_distance
-Inc2,HBS,SR3,DISTANCE,MD,HOV,Return,1,,-,Hwy_distance,0,1,MODE_HBS_Inc2_SR3.csv (^T),LOADED_HWY_DISTANCE_HOV_MD.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_distance,Inc2_NTDlta_Costs,Inc2_Hwy_distance
+Inc2,HBS,SR2,DISTANCE,MD,HOV,Return,1,,-,Hwy_distance,0,2,MODE_HBS_Inc2_SR2.csv (^T),LOADED_HWY_DISTANCE_HOV_MD.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_distance,Inc2_NTDlta_Costs,Inc2_Hwy_distance
+Inc2,HBS,SR3,DISTANCE,MD,HOV,Return,1,,-,Hwy_distance,0,3,MODE_HBS_Inc2_SR3.csv (^T),LOADED_HWY_DISTANCE_HOV_MD.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_distance,Inc2_NTDlta_Costs,Inc2_Hwy_distance
 Inc2,HBS,DA,TIME,MD,SOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBS_Inc2_DA.csv,LOADED_HWY_TIME_SOV_MD.csv (-%|100%),Inc2_NTDlta_Benefits,Inc2_Hwy_time,Inc2_NTDlta_Costs,Inc2_Hwy_time
-Inc2,HBS,SR2,TIME,MD,HOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBS_Inc2_SR2.csv,LOADED_HWY_TIME_HOV_MD.csv (-%|100%),Inc2_NTDlta_Benefits,Inc2_Hwy_time,Inc2_NTDlta_Costs,Inc2_Hwy_time
-Inc2,HBS,SR3,TIME,MD,HOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBS_Inc2_SR3.csv,LOADED_HWY_TIME_HOV_MD.csv (-%100%),Inc2_NTDlta_Benefits,Inc2_Hwy_time,Inc2_NTDlta_Costs,Inc2_Hwy_time
+Inc2,HBS,SR2,TIME,MD,HOV,Outbound,0,,-,Hwy_time,100,2,MODE_HBS_Inc2_SR2.csv,LOADED_HWY_TIME_HOV_MD.csv (-%|100%),Inc2_NTDlta_Benefits,Inc2_Hwy_time,Inc2_NTDlta_Costs,Inc2_Hwy_time
+Inc2,HBS,SR3,TIME,MD,HOV,Outbound,0,,-,Hwy_time,100,3,MODE_HBS_Inc2_SR3.csv,LOADED_HWY_TIME_HOV_MD.csv (-%100%),Inc2_NTDlta_Benefits,Inc2_Hwy_time,Inc2_NTDlta_Costs,Inc2_Hwy_time
 Inc2,HBS,DA,TIME,MD,SOV,Return,1,,-,Hwy_time,0,1,MODE_HBS_Inc2_DA.csv (^T),LOADED_HWY_TIME_SOV_MD.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_time,Inc2_NTDlta_Costs,Inc2_Hwy_time
-Inc2,HBS,SR2,TIME,MD,HOV,Return,1,,-,Hwy_time,0,1,MODE_HBS_Inc2_SR2.csv (^T),LOADED_HWY_TIME_HOV_MD.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_time,Inc2_NTDlta_Costs,Inc2_Hwy_time
-Inc2,HBS,SR3,TIME,MD,HOV,Return,1,,-,Hwy_time,0,1,MODE_HBS_Inc2_SR3.csv (^T),LOADED_HWY_TIME_HOV_MD.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_time,Inc2_NTDlta_Costs,Inc2_Hwy_time
+Inc2,HBS,SR2,TIME,MD,HOV,Return,1,,-,Hwy_time,0,2,MODE_HBS_Inc2_SR2.csv (^T),LOADED_HWY_TIME_HOV_MD.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_time,Inc2_NTDlta_Costs,Inc2_Hwy_time
+Inc2,HBS,SR3,TIME,MD,HOV,Return,1,,-,Hwy_time,0,3,MODE_HBS_Inc2_SR3.csv (^T),LOADED_HWY_TIME_HOV_MD.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_time,Inc2_NTDlta_Costs,Inc2_Hwy_time
 Inc2,HBS,DA,TOLL,MD,SOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBS_Inc2_DA.csv,LOADED_HWY_TOLL_SOV_MD.csv (-%|100%),Inc2_NTDlta_Benefits,Inc2_Hwy_toll,Inc2_NTDlta_Costs,Inc2_Hwy_toll
-Inc2,HBS,SR2,TOLL,MD,HOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBS_Inc2_SR2.csv,LOADED_HWY_TOLL_HOV_MD.csv (-%|100%),Inc2_NTDlta_Benefits,Inc2_Hwy_toll,Inc2_NTDlta_Costs,Inc2_Hwy_toll
-Inc2,HBS,SR3,TOLL,MD,HOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBS_Inc2_SR3.csv,LOADED_HWY_TOLL_HOV_MD.csv (-%100%),Inc2_NTDlta_Benefits,Inc2_Hwy_toll,Inc2_NTDlta_Costs,Inc2_Hwy_toll
+Inc2,HBS,SR2,TOLL,MD,HOV,Outbound,0,,-,Hwy_toll,100,2,MODE_HBS_Inc2_SR2.csv,LOADED_HWY_TOLL_HOV_MD.csv (-%|100%),Inc2_NTDlta_Benefits,Inc2_Hwy_toll,Inc2_NTDlta_Costs,Inc2_Hwy_toll
+Inc2,HBS,SR3,TOLL,MD,HOV,Outbound,0,,-,Hwy_toll,100,3,MODE_HBS_Inc2_SR3.csv,LOADED_HWY_TOLL_HOV_MD.csv (-%100%),Inc2_NTDlta_Benefits,Inc2_Hwy_toll,Inc2_NTDlta_Costs,Inc2_Hwy_toll
 Inc2,HBS,DA,TOLL,MD,SOV,Return,1,,-,Hwy_toll,0,1,MODE_HBS_Inc2_DA.csv (^T),LOADED_HWY_TOLL_SOV_MD.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_toll,Inc2_NTDlta_Costs,Inc2_Hwy_toll
-Inc2,HBS,SR2,TOLL,MD,HOV,Return,1,,-,Hwy_toll,0,1,MODE_HBS_Inc2_SR2.csv (^T),LOADED_HWY_TOLL_HOV_MD.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_toll,Inc2_NTDlta_Costs,Inc2_Hwy_toll
-Inc2,HBS,SR3,TOLL,MD,HOV,Return,1,,-,Hwy_toll,0,1,MODE_HBS_Inc2_SR3.csv (^T),LOADED_HWY_TOLL_HOV_MD.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_toll,Inc2_NTDlta_Costs,Inc2_Hwy_toll
+Inc2,HBS,SR2,TOLL,MD,HOV,Return,1,,-,Hwy_toll,0,2,MODE_HBS_Inc2_SR2.csv (^T),LOADED_HWY_TOLL_HOV_MD.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_toll,Inc2_NTDlta_Costs,Inc2_Hwy_toll
+Inc2,HBS,SR3,TOLL,MD,HOV,Return,1,,-,Hwy_toll,0,3,MODE_HBS_Inc2_SR3.csv (^T),LOADED_HWY_TOLL_HOV_MD.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_toll,Inc2_NTDlta_Costs,Inc2_Hwy_toll
 Inc3,HBS,WexpBus,XferWaitTime,,,Outbound,0,0,100,Time,100,,MODE_HBS_Inc3_WexpBus.csv,TRANSIT_OP_WexpBus_XferWaitTime.csv  (100%|100%),Inc3_NTDlta_Benefits,Inc3_XferWaitTime,Inc3_NTDlta_Costs,Inc3_XferWaitTime
 Inc3,HBS,WRail,XferWaitTime,,,Outbound,0,0,100,Time,100,,MODE_HBS_Inc3_WRail.csv,TRANSIT_OP_WRail_XferWaitTime.csv  (100%|100%),Inc3_NTDlta_Benefits,Inc3_XferWaitTime,Inc3_NTDlta_Costs,Inc3_XferWaitTime
 Inc3,HBS,WCRail,XferWaitTime,,,Outbound,0,0,100,Time,100,,MODE_HBS_Inc3_WCRail.csv,TRANSIT_OP_WCRail_XferWaitTime.csv  (100%|100%),Inc3_NTDlta_Benefits,Inc3_XferWaitTime,Inc3_NTDlta_Costs,Inc3_XferWaitTime
@@ -958,23 +958,23 @@ Inc3,HBS,DRail,AutoTime,,,Return,1,0,100,Time,0,,MODE_HBS_Inc3_DRail.csv (^T),TR
 Inc3,HBS,DCRail,AutoTime,,,Return,1,0,100,Time,0,,MODE_HBS_Inc3_DCRail.csv (^T),TRANSIT_OP_DCRail_AutoTime.csv  (100%|0%),Inc3_NTDlta_Benefits,Inc3_AutoTime,Inc3_NTDlta_Costs,Inc3_AutoTime
 Inc3,HBS,DBus,AutoTime,,,Return,1,0,100,Time,0,,MODE_HBS_Inc3_DBus.csv (^T),TRANSIT_OP_DBus_AutoTime.csv  (100%|0%),Inc3_NTDlta_Benefits,Inc3_AutoTime,Inc3_NTDlta_Costs,Inc3_AutoTime
 Inc3,HBS,DA,DISTANCE,MD,SOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBS_Inc3_DA.csv,LOADED_HWY_DISTANCE_SOV_MD.csv (-%|100%),Inc3_NTDlta_Benefits,Inc3_Hwy_distance,Inc3_NTDlta_Costs,Inc3_Hwy_distance
-Inc3,HBS,SR2,DISTANCE,MD,HOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBS_Inc3_SR2.csv,LOADED_HWY_DISTANCE_HOV_MD.csv (-%|100%),Inc3_NTDlta_Benefits,Inc3_Hwy_distance,Inc3_NTDlta_Costs,Inc3_Hwy_distance
-Inc3,HBS,SR3,DISTANCE,MD,HOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBS_Inc3_SR3.csv,LOADED_HWY_DISTANCE_HOV_MD.csv (-%100%),Inc3_NTDlta_Benefits,Inc3_Hwy_distance,Inc3_NTDlta_Costs,Inc3_Hwy_distance
+Inc3,HBS,SR2,DISTANCE,MD,HOV,Outbound,0,,-,Hwy_distance,100,2,MODE_HBS_Inc3_SR2.csv,LOADED_HWY_DISTANCE_HOV_MD.csv (-%|100%),Inc3_NTDlta_Benefits,Inc3_Hwy_distance,Inc3_NTDlta_Costs,Inc3_Hwy_distance
+Inc3,HBS,SR3,DISTANCE,MD,HOV,Outbound,0,,-,Hwy_distance,100,3,MODE_HBS_Inc3_SR3.csv,LOADED_HWY_DISTANCE_HOV_MD.csv (-%100%),Inc3_NTDlta_Benefits,Inc3_Hwy_distance,Inc3_NTDlta_Costs,Inc3_Hwy_distance
 Inc3,HBS,DA,DISTANCE,MD,SOV,Return,1,,-,Hwy_distance,0,1,MODE_HBS_Inc3_DA.csv (^T),LOADED_HWY_DISTANCE_SOV_MD.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_distance,Inc3_NTDlta_Costs,Inc3_Hwy_distance
-Inc3,HBS,SR2,DISTANCE,MD,HOV,Return,1,,-,Hwy_distance,0,1,MODE_HBS_Inc3_SR2.csv (^T),LOADED_HWY_DISTANCE_HOV_MD.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_distance,Inc3_NTDlta_Costs,Inc3_Hwy_distance
-Inc3,HBS,SR3,DISTANCE,MD,HOV,Return,1,,-,Hwy_distance,0,1,MODE_HBS_Inc3_SR3.csv (^T),LOADED_HWY_DISTANCE_HOV_MD.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_distance,Inc3_NTDlta_Costs,Inc3_Hwy_distance
+Inc3,HBS,SR2,DISTANCE,MD,HOV,Return,1,,-,Hwy_distance,0,2,MODE_HBS_Inc3_SR2.csv (^T),LOADED_HWY_DISTANCE_HOV_MD.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_distance,Inc3_NTDlta_Costs,Inc3_Hwy_distance
+Inc3,HBS,SR3,DISTANCE,MD,HOV,Return,1,,-,Hwy_distance,0,3,MODE_HBS_Inc3_SR3.csv (^T),LOADED_HWY_DISTANCE_HOV_MD.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_distance,Inc3_NTDlta_Costs,Inc3_Hwy_distance
 Inc3,HBS,DA,TIME,MD,SOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBS_Inc3_DA.csv,LOADED_HWY_TIME_SOV_MD.csv (-%|100%),Inc3_NTDlta_Benefits,Inc3_Hwy_time,Inc3_NTDlta_Costs,Inc3_Hwy_time
-Inc3,HBS,SR2,TIME,MD,HOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBS_Inc3_SR2.csv,LOADED_HWY_TIME_HOV_MD.csv (-%|100%),Inc3_NTDlta_Benefits,Inc3_Hwy_time,Inc3_NTDlta_Costs,Inc3_Hwy_time
-Inc3,HBS,SR3,TIME,MD,HOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBS_Inc3_SR3.csv,LOADED_HWY_TIME_HOV_MD.csv (-%100%),Inc3_NTDlta_Benefits,Inc3_Hwy_time,Inc3_NTDlta_Costs,Inc3_Hwy_time
+Inc3,HBS,SR2,TIME,MD,HOV,Outbound,0,,-,Hwy_time,100,2,MODE_HBS_Inc3_SR2.csv,LOADED_HWY_TIME_HOV_MD.csv (-%|100%),Inc3_NTDlta_Benefits,Inc3_Hwy_time,Inc3_NTDlta_Costs,Inc3_Hwy_time
+Inc3,HBS,SR3,TIME,MD,HOV,Outbound,0,,-,Hwy_time,100,3,MODE_HBS_Inc3_SR3.csv,LOADED_HWY_TIME_HOV_MD.csv (-%100%),Inc3_NTDlta_Benefits,Inc3_Hwy_time,Inc3_NTDlta_Costs,Inc3_Hwy_time
 Inc3,HBS,DA,TIME,MD,SOV,Return,1,,-,Hwy_time,0,1,MODE_HBS_Inc3_DA.csv (^T),LOADED_HWY_TIME_SOV_MD.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_time,Inc3_NTDlta_Costs,Inc3_Hwy_time
-Inc3,HBS,SR2,TIME,MD,HOV,Return,1,,-,Hwy_time,0,1,MODE_HBS_Inc3_SR2.csv (^T),LOADED_HWY_TIME_HOV_MD.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_time,Inc3_NTDlta_Costs,Inc3_Hwy_time
-Inc3,HBS,SR3,TIME,MD,HOV,Return,1,,-,Hwy_time,0,1,MODE_HBS_Inc3_SR3.csv (^T),LOADED_HWY_TIME_HOV_MD.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_time,Inc3_NTDlta_Costs,Inc3_Hwy_time
+Inc3,HBS,SR2,TIME,MD,HOV,Return,1,,-,Hwy_time,0,2,MODE_HBS_Inc3_SR2.csv (^T),LOADED_HWY_TIME_HOV_MD.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_time,Inc3_NTDlta_Costs,Inc3_Hwy_time
+Inc3,HBS,SR3,TIME,MD,HOV,Return,1,,-,Hwy_time,0,3,MODE_HBS_Inc3_SR3.csv (^T),LOADED_HWY_TIME_HOV_MD.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_time,Inc3_NTDlta_Costs,Inc3_Hwy_time
 Inc3,HBS,DA,TOLL,MD,SOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBS_Inc3_DA.csv,LOADED_HWY_TOLL_SOV_MD.csv (-%|100%),Inc3_NTDlta_Benefits,Inc3_Hwy_toll,Inc3_NTDlta_Costs,Inc3_Hwy_toll
-Inc3,HBS,SR2,TOLL,MD,HOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBS_Inc3_SR2.csv,LOADED_HWY_TOLL_HOV_MD.csv (-%|100%),Inc3_NTDlta_Benefits,Inc3_Hwy_toll,Inc3_NTDlta_Costs,Inc3_Hwy_toll
-Inc3,HBS,SR3,TOLL,MD,HOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBS_Inc3_SR3.csv,LOADED_HWY_TOLL_HOV_MD.csv (-%100%),Inc3_NTDlta_Benefits,Inc3_Hwy_toll,Inc3_NTDlta_Costs,Inc3_Hwy_toll
+Inc3,HBS,SR2,TOLL,MD,HOV,Outbound,0,,-,Hwy_toll,100,2,MODE_HBS_Inc3_SR2.csv,LOADED_HWY_TOLL_HOV_MD.csv (-%|100%),Inc3_NTDlta_Benefits,Inc3_Hwy_toll,Inc3_NTDlta_Costs,Inc3_Hwy_toll
+Inc3,HBS,SR3,TOLL,MD,HOV,Outbound,0,,-,Hwy_toll,100,3,MODE_HBS_Inc3_SR3.csv,LOADED_HWY_TOLL_HOV_MD.csv (-%100%),Inc3_NTDlta_Benefits,Inc3_Hwy_toll,Inc3_NTDlta_Costs,Inc3_Hwy_toll
 Inc3,HBS,DA,TOLL,MD,SOV,Return,1,,-,Hwy_toll,0,1,MODE_HBS_Inc3_DA.csv (^T),LOADED_HWY_TOLL_SOV_MD.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_toll,Inc3_NTDlta_Costs,Inc3_Hwy_toll
-Inc3,HBS,SR2,TOLL,MD,HOV,Return,1,,-,Hwy_toll,0,1,MODE_HBS_Inc3_SR2.csv (^T),LOADED_HWY_TOLL_HOV_MD.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_toll,Inc3_NTDlta_Costs,Inc3_Hwy_toll
-Inc3,HBS,SR3,TOLL,MD,HOV,Return,1,,-,Hwy_toll,0,1,MODE_HBS_Inc3_SR3.csv (^T),LOADED_HWY_TOLL_HOV_MD.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_toll,Inc3_NTDlta_Costs,Inc3_Hwy_toll
+Inc3,HBS,SR2,TOLL,MD,HOV,Return,1,,-,Hwy_toll,0,2,MODE_HBS_Inc3_SR2.csv (^T),LOADED_HWY_TOLL_HOV_MD.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_toll,Inc3_NTDlta_Costs,Inc3_Hwy_toll
+Inc3,HBS,SR3,TOLL,MD,HOV,Return,1,,-,Hwy_toll,0,3,MODE_HBS_Inc3_SR3.csv (^T),LOADED_HWY_TOLL_HOV_MD.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_toll,Inc3_NTDlta_Costs,Inc3_Hwy_toll
 Inc4,HBS,WexpBus,XferWaitTime,,,Outbound,0,0,100,Time,100,,MODE_HBS_Inc4_WexpBus.csv,TRANSIT_OP_WexpBus_XferWaitTime.csv  (100%|100%),Inc4_NTDlta_Benefits,Inc4_XferWaitTime,Inc4_NTDlta_Costs,Inc4_XferWaitTime
 Inc4,HBS,WRail,XferWaitTime,,,Outbound,0,0,100,Time,100,,MODE_HBS_Inc4_WRail.csv,TRANSIT_OP_WRail_XferWaitTime.csv  (100%|100%),Inc4_NTDlta_Benefits,Inc4_XferWaitTime,Inc4_NTDlta_Costs,Inc4_XferWaitTime
 Inc4,HBS,WCRail,XferWaitTime,,,Outbound,0,0,100,Time,100,,MODE_HBS_Inc4_WCRail.csv,TRANSIT_OP_WCRail_XferWaitTime.csv  (100%|100%),Inc4_NTDlta_Benefits,Inc4_XferWaitTime,Inc4_NTDlta_Costs,Inc4_XferWaitTime
@@ -1080,23 +1080,23 @@ Inc4,HBS,DRail,AutoTime,,,Return,1,0,100,Time,0,,MODE_HBS_Inc4_DRail.csv (^T),TR
 Inc4,HBS,DCRail,AutoTime,,,Return,1,0,100,Time,0,,MODE_HBS_Inc4_DCRail.csv (^T),TRANSIT_OP_DCRail_AutoTime.csv  (100%|0%),Inc4_NTDlta_Benefits,Inc4_AutoTime,Inc4_NTDlta_Costs,Inc4_AutoTime
 Inc4,HBS,DBus,AutoTime,,,Return,1,0,100,Time,0,,MODE_HBS_Inc4_DBus.csv (^T),TRANSIT_OP_DBus_AutoTime.csv  (100%|0%),Inc4_NTDlta_Benefits,Inc4_AutoTime,Inc4_NTDlta_Costs,Inc4_AutoTime
 Inc4,HBS,DA,DISTANCE,MD,SOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBS_Inc4_DA.csv,LOADED_HWY_DISTANCE_SOV_MD.csv (-%|100%),Inc4_NTDlta_Benefits,Inc4_Hwy_distance,Inc4_NTDlta_Costs,Inc4_Hwy_distance
-Inc4,HBS,SR2,DISTANCE,MD,HOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBS_Inc4_SR2.csv,LOADED_HWY_DISTANCE_HOV_MD.csv (-%|100%),Inc4_NTDlta_Benefits,Inc4_Hwy_distance,Inc4_NTDlta_Costs,Inc4_Hwy_distance
-Inc4,HBS,SR3,DISTANCE,MD,HOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBS_Inc4_SR3.csv,LOADED_HWY_DISTANCE_HOV_MD.csv (-%100%),Inc4_NTDlta_Benefits,Inc4_Hwy_distance,Inc4_NTDlta_Costs,Inc4_Hwy_distance
+Inc4,HBS,SR2,DISTANCE,MD,HOV,Outbound,0,,-,Hwy_distance,100,2,MODE_HBS_Inc4_SR2.csv,LOADED_HWY_DISTANCE_HOV_MD.csv (-%|100%),Inc4_NTDlta_Benefits,Inc4_Hwy_distance,Inc4_NTDlta_Costs,Inc4_Hwy_distance
+Inc4,HBS,SR3,DISTANCE,MD,HOV,Outbound,0,,-,Hwy_distance,100,3,MODE_HBS_Inc4_SR3.csv,LOADED_HWY_DISTANCE_HOV_MD.csv (-%100%),Inc4_NTDlta_Benefits,Inc4_Hwy_distance,Inc4_NTDlta_Costs,Inc4_Hwy_distance
 Inc4,HBS,DA,DISTANCE,MD,SOV,Return,1,,-,Hwy_distance,0,1,MODE_HBS_Inc4_DA.csv (^T),LOADED_HWY_DISTANCE_SOV_MD.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_distance,Inc4_NTDlta_Costs,Inc4_Hwy_distance
-Inc4,HBS,SR2,DISTANCE,MD,HOV,Return,1,,-,Hwy_distance,0,1,MODE_HBS_Inc4_SR2.csv (^T),LOADED_HWY_DISTANCE_HOV_MD.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_distance,Inc4_NTDlta_Costs,Inc4_Hwy_distance
-Inc4,HBS,SR3,DISTANCE,MD,HOV,Return,1,,-,Hwy_distance,0,1,MODE_HBS_Inc4_SR3.csv (^T),LOADED_HWY_DISTANCE_HOV_MD.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_distance,Inc4_NTDlta_Costs,Inc4_Hwy_distance
+Inc4,HBS,SR2,DISTANCE,MD,HOV,Return,1,,-,Hwy_distance,0,2,MODE_HBS_Inc4_SR2.csv (^T),LOADED_HWY_DISTANCE_HOV_MD.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_distance,Inc4_NTDlta_Costs,Inc4_Hwy_distance
+Inc4,HBS,SR3,DISTANCE,MD,HOV,Return,1,,-,Hwy_distance,0,3,MODE_HBS_Inc4_SR3.csv (^T),LOADED_HWY_DISTANCE_HOV_MD.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_distance,Inc4_NTDlta_Costs,Inc4_Hwy_distance
 Inc4,HBS,DA,TIME,MD,SOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBS_Inc4_DA.csv,LOADED_HWY_TIME_SOV_MD.csv (-%|100%),Inc4_NTDlta_Benefits,Inc4_Hwy_time,Inc4_NTDlta_Costs,Inc4_Hwy_time
-Inc4,HBS,SR2,TIME,MD,HOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBS_Inc4_SR2.csv,LOADED_HWY_TIME_HOV_MD.csv (-%|100%),Inc4_NTDlta_Benefits,Inc4_Hwy_time,Inc4_NTDlta_Costs,Inc4_Hwy_time
-Inc4,HBS,SR3,TIME,MD,HOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBS_Inc4_SR3.csv,LOADED_HWY_TIME_HOV_MD.csv (-%100%),Inc4_NTDlta_Benefits,Inc4_Hwy_time,Inc4_NTDlta_Costs,Inc4_Hwy_time
+Inc4,HBS,SR2,TIME,MD,HOV,Outbound,0,,-,Hwy_time,100,2,MODE_HBS_Inc4_SR2.csv,LOADED_HWY_TIME_HOV_MD.csv (-%|100%),Inc4_NTDlta_Benefits,Inc4_Hwy_time,Inc4_NTDlta_Costs,Inc4_Hwy_time
+Inc4,HBS,SR3,TIME,MD,HOV,Outbound,0,,-,Hwy_time,100,3,MODE_HBS_Inc4_SR3.csv,LOADED_HWY_TIME_HOV_MD.csv (-%100%),Inc4_NTDlta_Benefits,Inc4_Hwy_time,Inc4_NTDlta_Costs,Inc4_Hwy_time
 Inc4,HBS,DA,TIME,MD,SOV,Return,1,,-,Hwy_time,0,1,MODE_HBS_Inc4_DA.csv (^T),LOADED_HWY_TIME_SOV_MD.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_time,Inc4_NTDlta_Costs,Inc4_Hwy_time
-Inc4,HBS,SR2,TIME,MD,HOV,Return,1,,-,Hwy_time,0,1,MODE_HBS_Inc4_SR2.csv (^T),LOADED_HWY_TIME_HOV_MD.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_time,Inc4_NTDlta_Costs,Inc4_Hwy_time
-Inc4,HBS,SR3,TIME,MD,HOV,Return,1,,-,Hwy_time,0,1,MODE_HBS_Inc4_SR3.csv (^T),LOADED_HWY_TIME_HOV_MD.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_time,Inc4_NTDlta_Costs,Inc4_Hwy_time
+Inc4,HBS,SR2,TIME,MD,HOV,Return,1,,-,Hwy_time,0,2,MODE_HBS_Inc4_SR2.csv (^T),LOADED_HWY_TIME_HOV_MD.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_time,Inc4_NTDlta_Costs,Inc4_Hwy_time
+Inc4,HBS,SR3,TIME,MD,HOV,Return,1,,-,Hwy_time,0,3,MODE_HBS_Inc4_SR3.csv (^T),LOADED_HWY_TIME_HOV_MD.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_time,Inc4_NTDlta_Costs,Inc4_Hwy_time
 Inc4,HBS,DA,TOLL,MD,SOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBS_Inc4_DA.csv,LOADED_HWY_TOLL_SOV_MD.csv (-%|100%),Inc4_NTDlta_Benefits,Inc4_Hwy_toll,Inc4_NTDlta_Costs,Inc4_Hwy_toll
-Inc4,HBS,SR2,TOLL,MD,HOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBS_Inc4_SR2.csv,LOADED_HWY_TOLL_HOV_MD.csv (-%|100%),Inc4_NTDlta_Benefits,Inc4_Hwy_toll,Inc4_NTDlta_Costs,Inc4_Hwy_toll
-Inc4,HBS,SR3,TOLL,MD,HOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBS_Inc4_SR3.csv,LOADED_HWY_TOLL_HOV_MD.csv (-%100%),Inc4_NTDlta_Benefits,Inc4_Hwy_toll,Inc4_NTDlta_Costs,Inc4_Hwy_toll
+Inc4,HBS,SR2,TOLL,MD,HOV,Outbound,0,,-,Hwy_toll,100,2,MODE_HBS_Inc4_SR2.csv,LOADED_HWY_TOLL_HOV_MD.csv (-%|100%),Inc4_NTDlta_Benefits,Inc4_Hwy_toll,Inc4_NTDlta_Costs,Inc4_Hwy_toll
+Inc4,HBS,SR3,TOLL,MD,HOV,Outbound,0,,-,Hwy_toll,100,3,MODE_HBS_Inc4_SR3.csv,LOADED_HWY_TOLL_HOV_MD.csv (-%100%),Inc4_NTDlta_Benefits,Inc4_Hwy_toll,Inc4_NTDlta_Costs,Inc4_Hwy_toll
 Inc4,HBS,DA,TOLL,MD,SOV,Return,1,,-,Hwy_toll,0,1,MODE_HBS_Inc4_DA.csv (^T),LOADED_HWY_TOLL_SOV_MD.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_toll,Inc4_NTDlta_Costs,Inc4_Hwy_toll
-Inc4,HBS,SR2,TOLL,MD,HOV,Return,1,,-,Hwy_toll,0,1,MODE_HBS_Inc4_SR2.csv (^T),LOADED_HWY_TOLL_HOV_MD.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_toll,Inc4_NTDlta_Costs,Inc4_Hwy_toll
-Inc4,HBS,SR3,TOLL,MD,HOV,Return,1,,-,Hwy_toll,0,1,MODE_HBS_Inc4_SR3.csv (^T),LOADED_HWY_TOLL_HOV_MD.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_toll,Inc4_NTDlta_Costs,Inc4_Hwy_toll
+Inc4,HBS,SR2,TOLL,MD,HOV,Return,1,,-,Hwy_toll,0,2,MODE_HBS_Inc4_SR2.csv (^T),LOADED_HWY_TOLL_HOV_MD.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_toll,Inc4_NTDlta_Costs,Inc4_Hwy_toll
+Inc4,HBS,SR3,TOLL,MD,HOV,Return,1,,-,Hwy_toll,0,3,MODE_HBS_Inc4_SR3.csv (^T),LOADED_HWY_TOLL_HOV_MD.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_toll,Inc4_NTDlta_Costs,Inc4_Hwy_toll
 Inc5,HBS,WexpBus,XferWaitTime,,,Outbound,0,0,100,Time,100,,MODE_HBS_Inc5_WexpBus.csv,TRANSIT_OP_WexpBus_XferWaitTime.csv  (100%|100%),Inc5_NTDlta_Benefits,Inc5_XferWaitTime,Inc5_NTDlta_Costs,Inc5_XferWaitTime
 Inc5,HBS,WRail,XferWaitTime,,,Outbound,0,0,100,Time,100,,MODE_HBS_Inc5_WRail.csv,TRANSIT_OP_WRail_XferWaitTime.csv  (100%|100%),Inc5_NTDlta_Benefits,Inc5_XferWaitTime,Inc5_NTDlta_Costs,Inc5_XferWaitTime
 Inc5,HBS,WCRail,XferWaitTime,,,Outbound,0,0,100,Time,100,,MODE_HBS_Inc5_WCRail.csv,TRANSIT_OP_WCRail_XferWaitTime.csv  (100%|100%),Inc5_NTDlta_Benefits,Inc5_XferWaitTime,Inc5_NTDlta_Costs,Inc5_XferWaitTime
@@ -1202,23 +1202,23 @@ Inc5,HBS,DRail,AutoTime,,,Return,1,0,100,Time,0,,MODE_HBS_Inc5_DRail.csv (^T),TR
 Inc5,HBS,DCRail,AutoTime,,,Return,1,0,100,Time,0,,MODE_HBS_Inc5_DCRail.csv (^T),TRANSIT_OP_DCRail_AutoTime.csv  (100%|0%),Inc5_NTDlta_Benefits,Inc5_AutoTime,Inc5_NTDlta_Costs,Inc5_AutoTime
 Inc5,HBS,DBus,AutoTime,,,Return,1,0,100,Time,0,,MODE_HBS_Inc5_DBus.csv (^T),TRANSIT_OP_DBus_AutoTime.csv  (100%|0%),Inc5_NTDlta_Benefits,Inc5_AutoTime,Inc5_NTDlta_Costs,Inc5_AutoTime
 Inc5,HBS,DA,DISTANCE,MD,SOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBS_Inc5_DA.csv,LOADED_HWY_DISTANCE_SOV_MD.csv (-%|100%),Inc5_NTDlta_Benefits,Inc5_Hwy_distance,Inc5_NTDlta_Costs,Inc5_Hwy_distance
-Inc5,HBS,SR2,DISTANCE,MD,HOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBS_Inc5_SR2.csv,LOADED_HWY_DISTANCE_HOV_MD.csv (-%|100%),Inc5_NTDlta_Benefits,Inc5_Hwy_distance,Inc5_NTDlta_Costs,Inc5_Hwy_distance
-Inc5,HBS,SR3,DISTANCE,MD,HOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBS_Inc5_SR3.csv,LOADED_HWY_DISTANCE_HOV_MD.csv (-%100%),Inc5_NTDlta_Benefits,Inc5_Hwy_distance,Inc5_NTDlta_Costs,Inc5_Hwy_distance
+Inc5,HBS,SR2,DISTANCE,MD,HOV,Outbound,0,,-,Hwy_distance,100,2,MODE_HBS_Inc5_SR2.csv,LOADED_HWY_DISTANCE_HOV_MD.csv (-%|100%),Inc5_NTDlta_Benefits,Inc5_Hwy_distance,Inc5_NTDlta_Costs,Inc5_Hwy_distance
+Inc5,HBS,SR3,DISTANCE,MD,HOV,Outbound,0,,-,Hwy_distance,100,3,MODE_HBS_Inc5_SR3.csv,LOADED_HWY_DISTANCE_HOV_MD.csv (-%100%),Inc5_NTDlta_Benefits,Inc5_Hwy_distance,Inc5_NTDlta_Costs,Inc5_Hwy_distance
 Inc5,HBS,DA,DISTANCE,MD,SOV,Return,1,,-,Hwy_distance,0,1,MODE_HBS_Inc5_DA.csv (^T),LOADED_HWY_DISTANCE_SOV_MD.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_distance,Inc5_NTDlta_Costs,Inc5_Hwy_distance
-Inc5,HBS,SR2,DISTANCE,MD,HOV,Return,1,,-,Hwy_distance,0,1,MODE_HBS_Inc5_SR2.csv (^T),LOADED_HWY_DISTANCE_HOV_MD.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_distance,Inc5_NTDlta_Costs,Inc5_Hwy_distance
-Inc5,HBS,SR3,DISTANCE,MD,HOV,Return,1,,-,Hwy_distance,0,1,MODE_HBS_Inc5_SR3.csv (^T),LOADED_HWY_DISTANCE_HOV_MD.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_distance,Inc5_NTDlta_Costs,Inc5_Hwy_distance
+Inc5,HBS,SR2,DISTANCE,MD,HOV,Return,1,,-,Hwy_distance,0,2,MODE_HBS_Inc5_SR2.csv (^T),LOADED_HWY_DISTANCE_HOV_MD.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_distance,Inc5_NTDlta_Costs,Inc5_Hwy_distance
+Inc5,HBS,SR3,DISTANCE,MD,HOV,Return,1,,-,Hwy_distance,0,3,MODE_HBS_Inc5_SR3.csv (^T),LOADED_HWY_DISTANCE_HOV_MD.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_distance,Inc5_NTDlta_Costs,Inc5_Hwy_distance
 Inc5,HBS,DA,TIME,MD,SOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBS_Inc5_DA.csv,LOADED_HWY_TIME_SOV_MD.csv (-%|100%),Inc5_NTDlta_Benefits,Inc5_Hwy_time,Inc5_NTDlta_Costs,Inc5_Hwy_time
-Inc5,HBS,SR2,TIME,MD,HOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBS_Inc5_SR2.csv,LOADED_HWY_TIME_HOV_MD.csv (-%|100%),Inc5_NTDlta_Benefits,Inc5_Hwy_time,Inc5_NTDlta_Costs,Inc5_Hwy_time
-Inc5,HBS,SR3,TIME,MD,HOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBS_Inc5_SR3.csv,LOADED_HWY_TIME_HOV_MD.csv (-%100%),Inc5_NTDlta_Benefits,Inc5_Hwy_time,Inc5_NTDlta_Costs,Inc5_Hwy_time
+Inc5,HBS,SR2,TIME,MD,HOV,Outbound,0,,-,Hwy_time,100,2,MODE_HBS_Inc5_SR2.csv,LOADED_HWY_TIME_HOV_MD.csv (-%|100%),Inc5_NTDlta_Benefits,Inc5_Hwy_time,Inc5_NTDlta_Costs,Inc5_Hwy_time
+Inc5,HBS,SR3,TIME,MD,HOV,Outbound,0,,-,Hwy_time,100,3,MODE_HBS_Inc5_SR3.csv,LOADED_HWY_TIME_HOV_MD.csv (-%100%),Inc5_NTDlta_Benefits,Inc5_Hwy_time,Inc5_NTDlta_Costs,Inc5_Hwy_time
 Inc5,HBS,DA,TIME,MD,SOV,Return,1,,-,Hwy_time,0,1,MODE_HBS_Inc5_DA.csv (^T),LOADED_HWY_TIME_SOV_MD.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_time,Inc5_NTDlta_Costs,Inc5_Hwy_time
-Inc5,HBS,SR2,TIME,MD,HOV,Return,1,,-,Hwy_time,0,1,MODE_HBS_Inc5_SR2.csv (^T),LOADED_HWY_TIME_HOV_MD.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_time,Inc5_NTDlta_Costs,Inc5_Hwy_time
-Inc5,HBS,SR3,TIME,MD,HOV,Return,1,,-,Hwy_time,0,1,MODE_HBS_Inc5_SR3.csv (^T),LOADED_HWY_TIME_HOV_MD.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_time,Inc5_NTDlta_Costs,Inc5_Hwy_time
+Inc5,HBS,SR2,TIME,MD,HOV,Return,1,,-,Hwy_time,0,2,MODE_HBS_Inc5_SR2.csv (^T),LOADED_HWY_TIME_HOV_MD.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_time,Inc5_NTDlta_Costs,Inc5_Hwy_time
+Inc5,HBS,SR3,TIME,MD,HOV,Return,1,,-,Hwy_time,0,3,MODE_HBS_Inc5_SR3.csv (^T),LOADED_HWY_TIME_HOV_MD.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_time,Inc5_NTDlta_Costs,Inc5_Hwy_time
 Inc5,HBS,DA,TOLL,MD,SOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBS_Inc5_DA.csv,LOADED_HWY_TOLL_SOV_MD.csv (-%|100%),Inc5_NTDlta_Benefits,Inc5_Hwy_toll,Inc5_NTDlta_Costs,Inc5_Hwy_toll
-Inc5,HBS,SR2,TOLL,MD,HOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBS_Inc5_SR2.csv,LOADED_HWY_TOLL_HOV_MD.csv (-%|100%),Inc5_NTDlta_Benefits,Inc5_Hwy_toll,Inc5_NTDlta_Costs,Inc5_Hwy_toll
-Inc5,HBS,SR3,TOLL,MD,HOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBS_Inc5_SR3.csv,LOADED_HWY_TOLL_HOV_MD.csv (-%100%),Inc5_NTDlta_Benefits,Inc5_Hwy_toll,Inc5_NTDlta_Costs,Inc5_Hwy_toll
+Inc5,HBS,SR2,TOLL,MD,HOV,Outbound,0,,-,Hwy_toll,100,2,MODE_HBS_Inc5_SR2.csv,LOADED_HWY_TOLL_HOV_MD.csv (-%|100%),Inc5_NTDlta_Benefits,Inc5_Hwy_toll,Inc5_NTDlta_Costs,Inc5_Hwy_toll
+Inc5,HBS,SR3,TOLL,MD,HOV,Outbound,0,,-,Hwy_toll,100,3,MODE_HBS_Inc5_SR3.csv,LOADED_HWY_TOLL_HOV_MD.csv (-%100%),Inc5_NTDlta_Benefits,Inc5_Hwy_toll,Inc5_NTDlta_Costs,Inc5_Hwy_toll
 Inc5,HBS,DA,TOLL,MD,SOV,Return,1,,-,Hwy_toll,0,1,MODE_HBS_Inc5_DA.csv (^T),LOADED_HWY_TOLL_SOV_MD.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_toll,Inc5_NTDlta_Costs,Inc5_Hwy_toll
-Inc5,HBS,SR2,TOLL,MD,HOV,Return,1,,-,Hwy_toll,0,1,MODE_HBS_Inc5_SR2.csv (^T),LOADED_HWY_TOLL_HOV_MD.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_toll,Inc5_NTDlta_Costs,Inc5_Hwy_toll
-Inc5,HBS,SR3,TOLL,MD,HOV,Return,1,,-,Hwy_toll,0,1,MODE_HBS_Inc5_SR3.csv (^T),LOADED_HWY_TOLL_HOV_MD.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_toll,Inc5_NTDlta_Costs,Inc5_Hwy_toll
+Inc5,HBS,SR2,TOLL,MD,HOV,Return,1,,-,Hwy_toll,0,2,MODE_HBS_Inc5_SR2.csv (^T),LOADED_HWY_TOLL_HOV_MD.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_toll,Inc5_NTDlta_Costs,Inc5_Hwy_toll
+Inc5,HBS,SR3,TOLL,MD,HOV,Return,1,,-,Hwy_toll,0,3,MODE_HBS_Inc5_SR3.csv (^T),LOADED_HWY_TOLL_HOV_MD.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_toll,Inc5_NTDlta_Costs,Inc5_Hwy_toll
 Inc1,HBO,WexpBus,XferWaitTime,,,Outbound,0,0,100,Time,100,,MODE_HBO_Inc1_WexpBus.csv,TRANSIT_OP_WexpBus_XferWaitTime.csv  (100%|100%),Inc1_NTDlta_Benefits,Inc1_XferWaitTime,Inc1_NTDlta_Costs,Inc1_XferWaitTime
 Inc1,HBO,WRail,XferWaitTime,,,Outbound,0,0,100,Time,100,,MODE_HBO_Inc1_WRail.csv,TRANSIT_OP_WRail_XferWaitTime.csv  (100%|100%),Inc1_NTDlta_Benefits,Inc1_XferWaitTime,Inc1_NTDlta_Costs,Inc1_XferWaitTime
 Inc1,HBO,WCRail,XferWaitTime,,,Outbound,0,0,100,Time,100,,MODE_HBO_Inc1_WCRail.csv,TRANSIT_OP_WCRail_XferWaitTime.csv  (100%|100%),Inc1_NTDlta_Benefits,Inc1_XferWaitTime,Inc1_NTDlta_Costs,Inc1_XferWaitTime
@@ -1324,23 +1324,23 @@ Inc1,HBO,DRail,AutoTime,,,Return,1,0,100,Time,0,,MODE_HBO_Inc1_DRail.csv (^T),TR
 Inc1,HBO,DCRail,AutoTime,,,Return,1,0,100,Time,0,,MODE_HBO_Inc1_DCRail.csv (^T),TRANSIT_OP_DCRail_AutoTime.csv  (100%|0%),Inc1_NTDlta_Benefits,Inc1_AutoTime,Inc1_NTDlta_Costs,Inc1_AutoTime
 Inc1,HBO,DBus,AutoTime,,,Return,1,0,100,Time,0,,MODE_HBO_Inc1_DBus.csv (^T),TRANSIT_OP_DBus_AutoTime.csv  (100%|0%),Inc1_NTDlta_Benefits,Inc1_AutoTime,Inc1_NTDlta_Costs,Inc1_AutoTime
 Inc1,HBO,DA,DISTANCE,MD,SOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBO_Inc1_DA.csv,LOADED_HWY_DISTANCE_SOV_MD.csv (-%|100%),Inc1_NTDlta_Benefits,Inc1_Hwy_distance,Inc1_NTDlta_Costs,Inc1_Hwy_distance
-Inc1,HBO,SR2,DISTANCE,MD,HOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBO_Inc1_SR2.csv,LOADED_HWY_DISTANCE_HOV_MD.csv (-%|100%),Inc1_NTDlta_Benefits,Inc1_Hwy_distance,Inc1_NTDlta_Costs,Inc1_Hwy_distance
-Inc1,HBO,SR3,DISTANCE,MD,HOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBO_Inc1_SR3.csv,LOADED_HWY_DISTANCE_HOV_MD.csv (-%100%),Inc1_NTDlta_Benefits,Inc1_Hwy_distance,Inc1_NTDlta_Costs,Inc1_Hwy_distance
+Inc1,HBO,SR2,DISTANCE,MD,HOV,Outbound,0,,-,Hwy_distance,100,2,MODE_HBO_Inc1_SR2.csv,LOADED_HWY_DISTANCE_HOV_MD.csv (-%|100%),Inc1_NTDlta_Benefits,Inc1_Hwy_distance,Inc1_NTDlta_Costs,Inc1_Hwy_distance
+Inc1,HBO,SR3,DISTANCE,MD,HOV,Outbound,0,,-,Hwy_distance,100,3,MODE_HBO_Inc1_SR3.csv,LOADED_HWY_DISTANCE_HOV_MD.csv (-%100%),Inc1_NTDlta_Benefits,Inc1_Hwy_distance,Inc1_NTDlta_Costs,Inc1_Hwy_distance
 Inc1,HBO,DA,DISTANCE,MD,SOV,Return,1,,-,Hwy_distance,0,1,MODE_HBO_Inc1_DA.csv (^T),LOADED_HWY_DISTANCE_SOV_MD.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_distance,Inc1_NTDlta_Costs,Inc1_Hwy_distance
-Inc1,HBO,SR2,DISTANCE,MD,HOV,Return,1,,-,Hwy_distance,0,1,MODE_HBO_Inc1_SR2.csv (^T),LOADED_HWY_DISTANCE_HOV_MD.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_distance,Inc1_NTDlta_Costs,Inc1_Hwy_distance
-Inc1,HBO,SR3,DISTANCE,MD,HOV,Return,1,,-,Hwy_distance,0,1,MODE_HBO_Inc1_SR3.csv (^T),LOADED_HWY_DISTANCE_HOV_MD.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_distance,Inc1_NTDlta_Costs,Inc1_Hwy_distance
+Inc1,HBO,SR2,DISTANCE,MD,HOV,Return,1,,-,Hwy_distance,0,2,MODE_HBO_Inc1_SR2.csv (^T),LOADED_HWY_DISTANCE_HOV_MD.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_distance,Inc1_NTDlta_Costs,Inc1_Hwy_distance
+Inc1,HBO,SR3,DISTANCE,MD,HOV,Return,1,,-,Hwy_distance,0,3,MODE_HBO_Inc1_SR3.csv (^T),LOADED_HWY_DISTANCE_HOV_MD.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_distance,Inc1_NTDlta_Costs,Inc1_Hwy_distance
 Inc1,HBO,DA,TIME,MD,SOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBO_Inc1_DA.csv,LOADED_HWY_TIME_SOV_MD.csv (-%|100%),Inc1_NTDlta_Benefits,Inc1_Hwy_time,Inc1_NTDlta_Costs,Inc1_Hwy_time
-Inc1,HBO,SR2,TIME,MD,HOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBO_Inc1_SR2.csv,LOADED_HWY_TIME_HOV_MD.csv (-%|100%),Inc1_NTDlta_Benefits,Inc1_Hwy_time,Inc1_NTDlta_Costs,Inc1_Hwy_time
-Inc1,HBO,SR3,TIME,MD,HOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBO_Inc1_SR3.csv,LOADED_HWY_TIME_HOV_MD.csv (-%100%),Inc1_NTDlta_Benefits,Inc1_Hwy_time,Inc1_NTDlta_Costs,Inc1_Hwy_time
+Inc1,HBO,SR2,TIME,MD,HOV,Outbound,0,,-,Hwy_time,100,2,MODE_HBO_Inc1_SR2.csv,LOADED_HWY_TIME_HOV_MD.csv (-%|100%),Inc1_NTDlta_Benefits,Inc1_Hwy_time,Inc1_NTDlta_Costs,Inc1_Hwy_time
+Inc1,HBO,SR3,TIME,MD,HOV,Outbound,0,,-,Hwy_time,100,3,MODE_HBO_Inc1_SR3.csv,LOADED_HWY_TIME_HOV_MD.csv (-%100%),Inc1_NTDlta_Benefits,Inc1_Hwy_time,Inc1_NTDlta_Costs,Inc1_Hwy_time
 Inc1,HBO,DA,TIME,MD,SOV,Return,1,,-,Hwy_time,0,1,MODE_HBO_Inc1_DA.csv (^T),LOADED_HWY_TIME_SOV_MD.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_time,Inc1_NTDlta_Costs,Inc1_Hwy_time
-Inc1,HBO,SR2,TIME,MD,HOV,Return,1,,-,Hwy_time,0,1,MODE_HBO_Inc1_SR2.csv (^T),LOADED_HWY_TIME_HOV_MD.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_time,Inc1_NTDlta_Costs,Inc1_Hwy_time
-Inc1,HBO,SR3,TIME,MD,HOV,Return,1,,-,Hwy_time,0,1,MODE_HBO_Inc1_SR3.csv (^T),LOADED_HWY_TIME_HOV_MD.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_time,Inc1_NTDlta_Costs,Inc1_Hwy_time
+Inc1,HBO,SR2,TIME,MD,HOV,Return,1,,-,Hwy_time,0,2,MODE_HBO_Inc1_SR2.csv (^T),LOADED_HWY_TIME_HOV_MD.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_time,Inc1_NTDlta_Costs,Inc1_Hwy_time
+Inc1,HBO,SR3,TIME,MD,HOV,Return,1,,-,Hwy_time,0,3,MODE_HBO_Inc1_SR3.csv (^T),LOADED_HWY_TIME_HOV_MD.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_time,Inc1_NTDlta_Costs,Inc1_Hwy_time
 Inc1,HBO,DA,TOLL,MD,SOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBO_Inc1_DA.csv,LOADED_HWY_TOLL_SOV_MD.csv (-%|100%),Inc1_NTDlta_Benefits,Inc1_Hwy_toll,Inc1_NTDlta_Costs,Inc1_Hwy_toll
-Inc1,HBO,SR2,TOLL,MD,HOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBO_Inc1_SR2.csv,LOADED_HWY_TOLL_HOV_MD.csv (-%|100%),Inc1_NTDlta_Benefits,Inc1_Hwy_toll,Inc1_NTDlta_Costs,Inc1_Hwy_toll
-Inc1,HBO,SR3,TOLL,MD,HOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBO_Inc1_SR3.csv,LOADED_HWY_TOLL_HOV_MD.csv (-%100%),Inc1_NTDlta_Benefits,Inc1_Hwy_toll,Inc1_NTDlta_Costs,Inc1_Hwy_toll
+Inc1,HBO,SR2,TOLL,MD,HOV,Outbound,0,,-,Hwy_toll,100,2,MODE_HBO_Inc1_SR2.csv,LOADED_HWY_TOLL_HOV_MD.csv (-%|100%),Inc1_NTDlta_Benefits,Inc1_Hwy_toll,Inc1_NTDlta_Costs,Inc1_Hwy_toll
+Inc1,HBO,SR3,TOLL,MD,HOV,Outbound,0,,-,Hwy_toll,100,3,MODE_HBO_Inc1_SR3.csv,LOADED_HWY_TOLL_HOV_MD.csv (-%100%),Inc1_NTDlta_Benefits,Inc1_Hwy_toll,Inc1_NTDlta_Costs,Inc1_Hwy_toll
 Inc1,HBO,DA,TOLL,MD,SOV,Return,1,,-,Hwy_toll,0,1,MODE_HBO_Inc1_DA.csv (^T),LOADED_HWY_TOLL_SOV_MD.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_toll,Inc1_NTDlta_Costs,Inc1_Hwy_toll
-Inc1,HBO,SR2,TOLL,MD,HOV,Return,1,,-,Hwy_toll,0,1,MODE_HBO_Inc1_SR2.csv (^T),LOADED_HWY_TOLL_HOV_MD.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_toll,Inc1_NTDlta_Costs,Inc1_Hwy_toll
-Inc1,HBO,SR3,TOLL,MD,HOV,Return,1,,-,Hwy_toll,0,1,MODE_HBO_Inc1_SR3.csv (^T),LOADED_HWY_TOLL_HOV_MD.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_toll,Inc1_NTDlta_Costs,Inc1_Hwy_toll
+Inc1,HBO,SR2,TOLL,MD,HOV,Return,1,,-,Hwy_toll,0,2,MODE_HBO_Inc1_SR2.csv (^T),LOADED_HWY_TOLL_HOV_MD.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_toll,Inc1_NTDlta_Costs,Inc1_Hwy_toll
+Inc1,HBO,SR3,TOLL,MD,HOV,Return,1,,-,Hwy_toll,0,3,MODE_HBO_Inc1_SR3.csv (^T),LOADED_HWY_TOLL_HOV_MD.csv (-%|0%),Inc1_NTDlta_Benefits,Inc1_Hwy_toll,Inc1_NTDlta_Costs,Inc1_Hwy_toll
 Inc2,HBO,WexpBus,XferWaitTime,,,Outbound,0,0,100,Time,100,,MODE_HBO_Inc2_WexpBus.csv,TRANSIT_OP_WexpBus_XferWaitTime.csv  (100%|100%),Inc2_NTDlta_Benefits,Inc2_XferWaitTime,Inc2_NTDlta_Costs,Inc2_XferWaitTime
 Inc2,HBO,WRail,XferWaitTime,,,Outbound,0,0,100,Time,100,,MODE_HBO_Inc2_WRail.csv,TRANSIT_OP_WRail_XferWaitTime.csv  (100%|100%),Inc2_NTDlta_Benefits,Inc2_XferWaitTime,Inc2_NTDlta_Costs,Inc2_XferWaitTime
 Inc2,HBO,WCRail,XferWaitTime,,,Outbound,0,0,100,Time,100,,MODE_HBO_Inc2_WCRail.csv,TRANSIT_OP_WCRail_XferWaitTime.csv  (100%|100%),Inc2_NTDlta_Benefits,Inc2_XferWaitTime,Inc2_NTDlta_Costs,Inc2_XferWaitTime
@@ -1446,23 +1446,23 @@ Inc2,HBO,DRail,AutoTime,,,Return,1,0,100,Time,0,,MODE_HBO_Inc2_DRail.csv (^T),TR
 Inc2,HBO,DCRail,AutoTime,,,Return,1,0,100,Time,0,,MODE_HBO_Inc2_DCRail.csv (^T),TRANSIT_OP_DCRail_AutoTime.csv  (100%|0%),Inc2_NTDlta_Benefits,Inc2_AutoTime,Inc2_NTDlta_Costs,Inc2_AutoTime
 Inc2,HBO,DBus,AutoTime,,,Return,1,0,100,Time,0,,MODE_HBO_Inc2_DBus.csv (^T),TRANSIT_OP_DBus_AutoTime.csv  (100%|0%),Inc2_NTDlta_Benefits,Inc2_AutoTime,Inc2_NTDlta_Costs,Inc2_AutoTime
 Inc2,HBO,DA,DISTANCE,MD,SOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBO_Inc2_DA.csv,LOADED_HWY_DISTANCE_SOV_MD.csv (-%|100%),Inc2_NTDlta_Benefits,Inc2_Hwy_distance,Inc2_NTDlta_Costs,Inc2_Hwy_distance
-Inc2,HBO,SR2,DISTANCE,MD,HOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBO_Inc2_SR2.csv,LOADED_HWY_DISTANCE_HOV_MD.csv (-%|100%),Inc2_NTDlta_Benefits,Inc2_Hwy_distance,Inc2_NTDlta_Costs,Inc2_Hwy_distance
-Inc2,HBO,SR3,DISTANCE,MD,HOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBO_Inc2_SR3.csv,LOADED_HWY_DISTANCE_HOV_MD.csv (-%100%),Inc2_NTDlta_Benefits,Inc2_Hwy_distance,Inc2_NTDlta_Costs,Inc2_Hwy_distance
+Inc2,HBO,SR2,DISTANCE,MD,HOV,Outbound,0,,-,Hwy_distance,100,2,MODE_HBO_Inc2_SR2.csv,LOADED_HWY_DISTANCE_HOV_MD.csv (-%|100%),Inc2_NTDlta_Benefits,Inc2_Hwy_distance,Inc2_NTDlta_Costs,Inc2_Hwy_distance
+Inc2,HBO,SR3,DISTANCE,MD,HOV,Outbound,0,,-,Hwy_distance,100,3,MODE_HBO_Inc2_SR3.csv,LOADED_HWY_DISTANCE_HOV_MD.csv (-%100%),Inc2_NTDlta_Benefits,Inc2_Hwy_distance,Inc2_NTDlta_Costs,Inc2_Hwy_distance
 Inc2,HBO,DA,DISTANCE,MD,SOV,Return,1,,-,Hwy_distance,0,1,MODE_HBO_Inc2_DA.csv (^T),LOADED_HWY_DISTANCE_SOV_MD.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_distance,Inc2_NTDlta_Costs,Inc2_Hwy_distance
-Inc2,HBO,SR2,DISTANCE,MD,HOV,Return,1,,-,Hwy_distance,0,1,MODE_HBO_Inc2_SR2.csv (^T),LOADED_HWY_DISTANCE_HOV_MD.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_distance,Inc2_NTDlta_Costs,Inc2_Hwy_distance
-Inc2,HBO,SR3,DISTANCE,MD,HOV,Return,1,,-,Hwy_distance,0,1,MODE_HBO_Inc2_SR3.csv (^T),LOADED_HWY_DISTANCE_HOV_MD.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_distance,Inc2_NTDlta_Costs,Inc2_Hwy_distance
+Inc2,HBO,SR2,DISTANCE,MD,HOV,Return,1,,-,Hwy_distance,0,2,MODE_HBO_Inc2_SR2.csv (^T),LOADED_HWY_DISTANCE_HOV_MD.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_distance,Inc2_NTDlta_Costs,Inc2_Hwy_distance
+Inc2,HBO,SR3,DISTANCE,MD,HOV,Return,1,,-,Hwy_distance,0,3,MODE_HBO_Inc2_SR3.csv (^T),LOADED_HWY_DISTANCE_HOV_MD.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_distance,Inc2_NTDlta_Costs,Inc2_Hwy_distance
 Inc2,HBO,DA,TIME,MD,SOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBO_Inc2_DA.csv,LOADED_HWY_TIME_SOV_MD.csv (-%|100%),Inc2_NTDlta_Benefits,Inc2_Hwy_time,Inc2_NTDlta_Costs,Inc2_Hwy_time
-Inc2,HBO,SR2,TIME,MD,HOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBO_Inc2_SR2.csv,LOADED_HWY_TIME_HOV_MD.csv (-%|100%),Inc2_NTDlta_Benefits,Inc2_Hwy_time,Inc2_NTDlta_Costs,Inc2_Hwy_time
-Inc2,HBO,SR3,TIME,MD,HOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBO_Inc2_SR3.csv,LOADED_HWY_TIME_HOV_MD.csv (-%100%),Inc2_NTDlta_Benefits,Inc2_Hwy_time,Inc2_NTDlta_Costs,Inc2_Hwy_time
+Inc2,HBO,SR2,TIME,MD,HOV,Outbound,0,,-,Hwy_time,100,2,MODE_HBO_Inc2_SR2.csv,LOADED_HWY_TIME_HOV_MD.csv (-%|100%),Inc2_NTDlta_Benefits,Inc2_Hwy_time,Inc2_NTDlta_Costs,Inc2_Hwy_time
+Inc2,HBO,SR3,TIME,MD,HOV,Outbound,0,,-,Hwy_time,100,3,MODE_HBO_Inc2_SR3.csv,LOADED_HWY_TIME_HOV_MD.csv (-%100%),Inc2_NTDlta_Benefits,Inc2_Hwy_time,Inc2_NTDlta_Costs,Inc2_Hwy_time
 Inc2,HBO,DA,TIME,MD,SOV,Return,1,,-,Hwy_time,0,1,MODE_HBO_Inc2_DA.csv (^T),LOADED_HWY_TIME_SOV_MD.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_time,Inc2_NTDlta_Costs,Inc2_Hwy_time
-Inc2,HBO,SR2,TIME,MD,HOV,Return,1,,-,Hwy_time,0,1,MODE_HBO_Inc2_SR2.csv (^T),LOADED_HWY_TIME_HOV_MD.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_time,Inc2_NTDlta_Costs,Inc2_Hwy_time
-Inc2,HBO,SR3,TIME,MD,HOV,Return,1,,-,Hwy_time,0,1,MODE_HBO_Inc2_SR3.csv (^T),LOADED_HWY_TIME_HOV_MD.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_time,Inc2_NTDlta_Costs,Inc2_Hwy_time
+Inc2,HBO,SR2,TIME,MD,HOV,Return,1,,-,Hwy_time,0,2,MODE_HBO_Inc2_SR2.csv (^T),LOADED_HWY_TIME_HOV_MD.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_time,Inc2_NTDlta_Costs,Inc2_Hwy_time
+Inc2,HBO,SR3,TIME,MD,HOV,Return,1,,-,Hwy_time,0,3,MODE_HBO_Inc2_SR3.csv (^T),LOADED_HWY_TIME_HOV_MD.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_time,Inc2_NTDlta_Costs,Inc2_Hwy_time
 Inc2,HBO,DA,TOLL,MD,SOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBO_Inc2_DA.csv,LOADED_HWY_TOLL_SOV_MD.csv (-%|100%),Inc2_NTDlta_Benefits,Inc2_Hwy_toll,Inc2_NTDlta_Costs,Inc2_Hwy_toll
-Inc2,HBO,SR2,TOLL,MD,HOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBO_Inc2_SR2.csv,LOADED_HWY_TOLL_HOV_MD.csv (-%|100%),Inc2_NTDlta_Benefits,Inc2_Hwy_toll,Inc2_NTDlta_Costs,Inc2_Hwy_toll
-Inc2,HBO,SR3,TOLL,MD,HOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBO_Inc2_SR3.csv,LOADED_HWY_TOLL_HOV_MD.csv (-%100%),Inc2_NTDlta_Benefits,Inc2_Hwy_toll,Inc2_NTDlta_Costs,Inc2_Hwy_toll
+Inc2,HBO,SR2,TOLL,MD,HOV,Outbound,0,,-,Hwy_toll,100,2,MODE_HBO_Inc2_SR2.csv,LOADED_HWY_TOLL_HOV_MD.csv (-%|100%),Inc2_NTDlta_Benefits,Inc2_Hwy_toll,Inc2_NTDlta_Costs,Inc2_Hwy_toll
+Inc2,HBO,SR3,TOLL,MD,HOV,Outbound,0,,-,Hwy_toll,100,3,MODE_HBO_Inc2_SR3.csv,LOADED_HWY_TOLL_HOV_MD.csv (-%100%),Inc2_NTDlta_Benefits,Inc2_Hwy_toll,Inc2_NTDlta_Costs,Inc2_Hwy_toll
 Inc2,HBO,DA,TOLL,MD,SOV,Return,1,,-,Hwy_toll,0,1,MODE_HBO_Inc2_DA.csv (^T),LOADED_HWY_TOLL_SOV_MD.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_toll,Inc2_NTDlta_Costs,Inc2_Hwy_toll
-Inc2,HBO,SR2,TOLL,MD,HOV,Return,1,,-,Hwy_toll,0,1,MODE_HBO_Inc2_SR2.csv (^T),LOADED_HWY_TOLL_HOV_MD.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_toll,Inc2_NTDlta_Costs,Inc2_Hwy_toll
-Inc2,HBO,SR3,TOLL,MD,HOV,Return,1,,-,Hwy_toll,0,1,MODE_HBO_Inc2_SR3.csv (^T),LOADED_HWY_TOLL_HOV_MD.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_toll,Inc2_NTDlta_Costs,Inc2_Hwy_toll
+Inc2,HBO,SR2,TOLL,MD,HOV,Return,1,,-,Hwy_toll,0,2,MODE_HBO_Inc2_SR2.csv (^T),LOADED_HWY_TOLL_HOV_MD.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_toll,Inc2_NTDlta_Costs,Inc2_Hwy_toll
+Inc2,HBO,SR3,TOLL,MD,HOV,Return,1,,-,Hwy_toll,0,3,MODE_HBO_Inc2_SR3.csv (^T),LOADED_HWY_TOLL_HOV_MD.csv (-%|0%),Inc2_NTDlta_Benefits,Inc2_Hwy_toll,Inc2_NTDlta_Costs,Inc2_Hwy_toll
 Inc3,HBO,WexpBus,XferWaitTime,,,Outbound,0,0,100,Time,100,,MODE_HBO_Inc3_WexpBus.csv,TRANSIT_OP_WexpBus_XferWaitTime.csv  (100%|100%),Inc3_NTDlta_Benefits,Inc3_XferWaitTime,Inc3_NTDlta_Costs,Inc3_XferWaitTime
 Inc3,HBO,WRail,XferWaitTime,,,Outbound,0,0,100,Time,100,,MODE_HBO_Inc3_WRail.csv,TRANSIT_OP_WRail_XferWaitTime.csv  (100%|100%),Inc3_NTDlta_Benefits,Inc3_XferWaitTime,Inc3_NTDlta_Costs,Inc3_XferWaitTime
 Inc3,HBO,WCRail,XferWaitTime,,,Outbound,0,0,100,Time,100,,MODE_HBO_Inc3_WCRail.csv,TRANSIT_OP_WCRail_XferWaitTime.csv  (100%|100%),Inc3_NTDlta_Benefits,Inc3_XferWaitTime,Inc3_NTDlta_Costs,Inc3_XferWaitTime
@@ -1568,23 +1568,23 @@ Inc3,HBO,DRail,AutoTime,,,Return,1,0,100,Time,0,,MODE_HBO_Inc3_DRail.csv (^T),TR
 Inc3,HBO,DCRail,AutoTime,,,Return,1,0,100,Time,0,,MODE_HBO_Inc3_DCRail.csv (^T),TRANSIT_OP_DCRail_AutoTime.csv  (100%|0%),Inc3_NTDlta_Benefits,Inc3_AutoTime,Inc3_NTDlta_Costs,Inc3_AutoTime
 Inc3,HBO,DBus,AutoTime,,,Return,1,0,100,Time,0,,MODE_HBO_Inc3_DBus.csv (^T),TRANSIT_OP_DBus_AutoTime.csv  (100%|0%),Inc3_NTDlta_Benefits,Inc3_AutoTime,Inc3_NTDlta_Costs,Inc3_AutoTime
 Inc3,HBO,DA,DISTANCE,MD,SOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBO_Inc3_DA.csv,LOADED_HWY_DISTANCE_SOV_MD.csv (-%|100%),Inc3_NTDlta_Benefits,Inc3_Hwy_distance,Inc3_NTDlta_Costs,Inc3_Hwy_distance
-Inc3,HBO,SR2,DISTANCE,MD,HOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBO_Inc3_SR2.csv,LOADED_HWY_DISTANCE_HOV_MD.csv (-%|100%),Inc3_NTDlta_Benefits,Inc3_Hwy_distance,Inc3_NTDlta_Costs,Inc3_Hwy_distance
-Inc3,HBO,SR3,DISTANCE,MD,HOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBO_Inc3_SR3.csv,LOADED_HWY_DISTANCE_HOV_MD.csv (-%100%),Inc3_NTDlta_Benefits,Inc3_Hwy_distance,Inc3_NTDlta_Costs,Inc3_Hwy_distance
+Inc3,HBO,SR2,DISTANCE,MD,HOV,Outbound,0,,-,Hwy_distance,100,2,MODE_HBO_Inc3_SR2.csv,LOADED_HWY_DISTANCE_HOV_MD.csv (-%|100%),Inc3_NTDlta_Benefits,Inc3_Hwy_distance,Inc3_NTDlta_Costs,Inc3_Hwy_distance
+Inc3,HBO,SR3,DISTANCE,MD,HOV,Outbound,0,,-,Hwy_distance,100,3,MODE_HBO_Inc3_SR3.csv,LOADED_HWY_DISTANCE_HOV_MD.csv (-%100%),Inc3_NTDlta_Benefits,Inc3_Hwy_distance,Inc3_NTDlta_Costs,Inc3_Hwy_distance
 Inc3,HBO,DA,DISTANCE,MD,SOV,Return,1,,-,Hwy_distance,0,1,MODE_HBO_Inc3_DA.csv (^T),LOADED_HWY_DISTANCE_SOV_MD.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_distance,Inc3_NTDlta_Costs,Inc3_Hwy_distance
-Inc3,HBO,SR2,DISTANCE,MD,HOV,Return,1,,-,Hwy_distance,0,1,MODE_HBO_Inc3_SR2.csv (^T),LOADED_HWY_DISTANCE_HOV_MD.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_distance,Inc3_NTDlta_Costs,Inc3_Hwy_distance
-Inc3,HBO,SR3,DISTANCE,MD,HOV,Return,1,,-,Hwy_distance,0,1,MODE_HBO_Inc3_SR3.csv (^T),LOADED_HWY_DISTANCE_HOV_MD.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_distance,Inc3_NTDlta_Costs,Inc3_Hwy_distance
+Inc3,HBO,SR2,DISTANCE,MD,HOV,Return,1,,-,Hwy_distance,0,2,MODE_HBO_Inc3_SR2.csv (^T),LOADED_HWY_DISTANCE_HOV_MD.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_distance,Inc3_NTDlta_Costs,Inc3_Hwy_distance
+Inc3,HBO,SR3,DISTANCE,MD,HOV,Return,1,,-,Hwy_distance,0,3,MODE_HBO_Inc3_SR3.csv (^T),LOADED_HWY_DISTANCE_HOV_MD.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_distance,Inc3_NTDlta_Costs,Inc3_Hwy_distance
 Inc3,HBO,DA,TIME,MD,SOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBO_Inc3_DA.csv,LOADED_HWY_TIME_SOV_MD.csv (-%|100%),Inc3_NTDlta_Benefits,Inc3_Hwy_time,Inc3_NTDlta_Costs,Inc3_Hwy_time
-Inc3,HBO,SR2,TIME,MD,HOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBO_Inc3_SR2.csv,LOADED_HWY_TIME_HOV_MD.csv (-%|100%),Inc3_NTDlta_Benefits,Inc3_Hwy_time,Inc3_NTDlta_Costs,Inc3_Hwy_time
-Inc3,HBO,SR3,TIME,MD,HOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBO_Inc3_SR3.csv,LOADED_HWY_TIME_HOV_MD.csv (-%100%),Inc3_NTDlta_Benefits,Inc3_Hwy_time,Inc3_NTDlta_Costs,Inc3_Hwy_time
+Inc3,HBO,SR2,TIME,MD,HOV,Outbound,0,,-,Hwy_time,100,2,MODE_HBO_Inc3_SR2.csv,LOADED_HWY_TIME_HOV_MD.csv (-%|100%),Inc3_NTDlta_Benefits,Inc3_Hwy_time,Inc3_NTDlta_Costs,Inc3_Hwy_time
+Inc3,HBO,SR3,TIME,MD,HOV,Outbound,0,,-,Hwy_time,100,3,MODE_HBO_Inc3_SR3.csv,LOADED_HWY_TIME_HOV_MD.csv (-%100%),Inc3_NTDlta_Benefits,Inc3_Hwy_time,Inc3_NTDlta_Costs,Inc3_Hwy_time
 Inc3,HBO,DA,TIME,MD,SOV,Return,1,,-,Hwy_time,0,1,MODE_HBO_Inc3_DA.csv (^T),LOADED_HWY_TIME_SOV_MD.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_time,Inc3_NTDlta_Costs,Inc3_Hwy_time
-Inc3,HBO,SR2,TIME,MD,HOV,Return,1,,-,Hwy_time,0,1,MODE_HBO_Inc3_SR2.csv (^T),LOADED_HWY_TIME_HOV_MD.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_time,Inc3_NTDlta_Costs,Inc3_Hwy_time
-Inc3,HBO,SR3,TIME,MD,HOV,Return,1,,-,Hwy_time,0,1,MODE_HBO_Inc3_SR3.csv (^T),LOADED_HWY_TIME_HOV_MD.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_time,Inc3_NTDlta_Costs,Inc3_Hwy_time
+Inc3,HBO,SR2,TIME,MD,HOV,Return,1,,-,Hwy_time,0,2,MODE_HBO_Inc3_SR2.csv (^T),LOADED_HWY_TIME_HOV_MD.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_time,Inc3_NTDlta_Costs,Inc3_Hwy_time
+Inc3,HBO,SR3,TIME,MD,HOV,Return,1,,-,Hwy_time,0,3,MODE_HBO_Inc3_SR3.csv (^T),LOADED_HWY_TIME_HOV_MD.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_time,Inc3_NTDlta_Costs,Inc3_Hwy_time
 Inc3,HBO,DA,TOLL,MD,SOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBO_Inc3_DA.csv,LOADED_HWY_TOLL_SOV_MD.csv (-%|100%),Inc3_NTDlta_Benefits,Inc3_Hwy_toll,Inc3_NTDlta_Costs,Inc3_Hwy_toll
-Inc3,HBO,SR2,TOLL,MD,HOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBO_Inc3_SR2.csv,LOADED_HWY_TOLL_HOV_MD.csv (-%|100%),Inc3_NTDlta_Benefits,Inc3_Hwy_toll,Inc3_NTDlta_Costs,Inc3_Hwy_toll
-Inc3,HBO,SR3,TOLL,MD,HOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBO_Inc3_SR3.csv,LOADED_HWY_TOLL_HOV_MD.csv (-%100%),Inc3_NTDlta_Benefits,Inc3_Hwy_toll,Inc3_NTDlta_Costs,Inc3_Hwy_toll
+Inc3,HBO,SR2,TOLL,MD,HOV,Outbound,0,,-,Hwy_toll,100,2,MODE_HBO_Inc3_SR2.csv,LOADED_HWY_TOLL_HOV_MD.csv (-%|100%),Inc3_NTDlta_Benefits,Inc3_Hwy_toll,Inc3_NTDlta_Costs,Inc3_Hwy_toll
+Inc3,HBO,SR3,TOLL,MD,HOV,Outbound,0,,-,Hwy_toll,100,3,MODE_HBO_Inc3_SR3.csv,LOADED_HWY_TOLL_HOV_MD.csv (-%100%),Inc3_NTDlta_Benefits,Inc3_Hwy_toll,Inc3_NTDlta_Costs,Inc3_Hwy_toll
 Inc3,HBO,DA,TOLL,MD,SOV,Return,1,,-,Hwy_toll,0,1,MODE_HBO_Inc3_DA.csv (^T),LOADED_HWY_TOLL_SOV_MD.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_toll,Inc3_NTDlta_Costs,Inc3_Hwy_toll
-Inc3,HBO,SR2,TOLL,MD,HOV,Return,1,,-,Hwy_toll,0,1,MODE_HBO_Inc3_SR2.csv (^T),LOADED_HWY_TOLL_HOV_MD.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_toll,Inc3_NTDlta_Costs,Inc3_Hwy_toll
-Inc3,HBO,SR3,TOLL,MD,HOV,Return,1,,-,Hwy_toll,0,1,MODE_HBO_Inc3_SR3.csv (^T),LOADED_HWY_TOLL_HOV_MD.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_toll,Inc3_NTDlta_Costs,Inc3_Hwy_toll
+Inc3,HBO,SR2,TOLL,MD,HOV,Return,1,,-,Hwy_toll,0,2,MODE_HBO_Inc3_SR2.csv (^T),LOADED_HWY_TOLL_HOV_MD.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_toll,Inc3_NTDlta_Costs,Inc3_Hwy_toll
+Inc3,HBO,SR3,TOLL,MD,HOV,Return,1,,-,Hwy_toll,0,3,MODE_HBO_Inc3_SR3.csv (^T),LOADED_HWY_TOLL_HOV_MD.csv (-%|0%),Inc3_NTDlta_Benefits,Inc3_Hwy_toll,Inc3_NTDlta_Costs,Inc3_Hwy_toll
 Inc4,HBO,WexpBus,XferWaitTime,,,Outbound,0,0,100,Time,100,,MODE_HBO_Inc4_WexpBus.csv,TRANSIT_OP_WexpBus_XferWaitTime.csv  (100%|100%),Inc4_NTDlta_Benefits,Inc4_XferWaitTime,Inc4_NTDlta_Costs,Inc4_XferWaitTime
 Inc4,HBO,WRail,XferWaitTime,,,Outbound,0,0,100,Time,100,,MODE_HBO_Inc4_WRail.csv,TRANSIT_OP_WRail_XferWaitTime.csv  (100%|100%),Inc4_NTDlta_Benefits,Inc4_XferWaitTime,Inc4_NTDlta_Costs,Inc4_XferWaitTime
 Inc4,HBO,WCRail,XferWaitTime,,,Outbound,0,0,100,Time,100,,MODE_HBO_Inc4_WCRail.csv,TRANSIT_OP_WCRail_XferWaitTime.csv  (100%|100%),Inc4_NTDlta_Benefits,Inc4_XferWaitTime,Inc4_NTDlta_Costs,Inc4_XferWaitTime
@@ -1690,23 +1690,23 @@ Inc4,HBO,DRail,AutoTime,,,Return,1,0,100,Time,0,,MODE_HBO_Inc4_DRail.csv (^T),TR
 Inc4,HBO,DCRail,AutoTime,,,Return,1,0,100,Time,0,,MODE_HBO_Inc4_DCRail.csv (^T),TRANSIT_OP_DCRail_AutoTime.csv  (100%|0%),Inc4_NTDlta_Benefits,Inc4_AutoTime,Inc4_NTDlta_Costs,Inc4_AutoTime
 Inc4,HBO,DBus,AutoTime,,,Return,1,0,100,Time,0,,MODE_HBO_Inc4_DBus.csv (^T),TRANSIT_OP_DBus_AutoTime.csv  (100%|0%),Inc4_NTDlta_Benefits,Inc4_AutoTime,Inc4_NTDlta_Costs,Inc4_AutoTime
 Inc4,HBO,DA,DISTANCE,MD,SOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBO_Inc4_DA.csv,LOADED_HWY_DISTANCE_SOV_MD.csv (-%|100%),Inc4_NTDlta_Benefits,Inc4_Hwy_distance,Inc4_NTDlta_Costs,Inc4_Hwy_distance
-Inc4,HBO,SR2,DISTANCE,MD,HOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBO_Inc4_SR2.csv,LOADED_HWY_DISTANCE_HOV_MD.csv (-%|100%),Inc4_NTDlta_Benefits,Inc4_Hwy_distance,Inc4_NTDlta_Costs,Inc4_Hwy_distance
-Inc4,HBO,SR3,DISTANCE,MD,HOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBO_Inc4_SR3.csv,LOADED_HWY_DISTANCE_HOV_MD.csv (-%100%),Inc4_NTDlta_Benefits,Inc4_Hwy_distance,Inc4_NTDlta_Costs,Inc4_Hwy_distance
+Inc4,HBO,SR2,DISTANCE,MD,HOV,Outbound,0,,-,Hwy_distance,100,2,MODE_HBO_Inc4_SR2.csv,LOADED_HWY_DISTANCE_HOV_MD.csv (-%|100%),Inc4_NTDlta_Benefits,Inc4_Hwy_distance,Inc4_NTDlta_Costs,Inc4_Hwy_distance
+Inc4,HBO,SR3,DISTANCE,MD,HOV,Outbound,0,,-,Hwy_distance,100,3,MODE_HBO_Inc4_SR3.csv,LOADED_HWY_DISTANCE_HOV_MD.csv (-%100%),Inc4_NTDlta_Benefits,Inc4_Hwy_distance,Inc4_NTDlta_Costs,Inc4_Hwy_distance
 Inc4,HBO,DA,DISTANCE,MD,SOV,Return,1,,-,Hwy_distance,0,1,MODE_HBO_Inc4_DA.csv (^T),LOADED_HWY_DISTANCE_SOV_MD.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_distance,Inc4_NTDlta_Costs,Inc4_Hwy_distance
-Inc4,HBO,SR2,DISTANCE,MD,HOV,Return,1,,-,Hwy_distance,0,1,MODE_HBO_Inc4_SR2.csv (^T),LOADED_HWY_DISTANCE_HOV_MD.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_distance,Inc4_NTDlta_Costs,Inc4_Hwy_distance
-Inc4,HBO,SR3,DISTANCE,MD,HOV,Return,1,,-,Hwy_distance,0,1,MODE_HBO_Inc4_SR3.csv (^T),LOADED_HWY_DISTANCE_HOV_MD.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_distance,Inc4_NTDlta_Costs,Inc4_Hwy_distance
+Inc4,HBO,SR2,DISTANCE,MD,HOV,Return,1,,-,Hwy_distance,0,2,MODE_HBO_Inc4_SR2.csv (^T),LOADED_HWY_DISTANCE_HOV_MD.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_distance,Inc4_NTDlta_Costs,Inc4_Hwy_distance
+Inc4,HBO,SR3,DISTANCE,MD,HOV,Return,1,,-,Hwy_distance,0,3,MODE_HBO_Inc4_SR3.csv (^T),LOADED_HWY_DISTANCE_HOV_MD.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_distance,Inc4_NTDlta_Costs,Inc4_Hwy_distance
 Inc4,HBO,DA,TIME,MD,SOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBO_Inc4_DA.csv,LOADED_HWY_TIME_SOV_MD.csv (-%|100%),Inc4_NTDlta_Benefits,Inc4_Hwy_time,Inc4_NTDlta_Costs,Inc4_Hwy_time
-Inc4,HBO,SR2,TIME,MD,HOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBO_Inc4_SR2.csv,LOADED_HWY_TIME_HOV_MD.csv (-%|100%),Inc4_NTDlta_Benefits,Inc4_Hwy_time,Inc4_NTDlta_Costs,Inc4_Hwy_time
-Inc4,HBO,SR3,TIME,MD,HOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBO_Inc4_SR3.csv,LOADED_HWY_TIME_HOV_MD.csv (-%100%),Inc4_NTDlta_Benefits,Inc4_Hwy_time,Inc4_NTDlta_Costs,Inc4_Hwy_time
+Inc4,HBO,SR2,TIME,MD,HOV,Outbound,0,,-,Hwy_time,100,2,MODE_HBO_Inc4_SR2.csv,LOADED_HWY_TIME_HOV_MD.csv (-%|100%),Inc4_NTDlta_Benefits,Inc4_Hwy_time,Inc4_NTDlta_Costs,Inc4_Hwy_time
+Inc4,HBO,SR3,TIME,MD,HOV,Outbound,0,,-,Hwy_time,100,3,MODE_HBO_Inc4_SR3.csv,LOADED_HWY_TIME_HOV_MD.csv (-%100%),Inc4_NTDlta_Benefits,Inc4_Hwy_time,Inc4_NTDlta_Costs,Inc4_Hwy_time
 Inc4,HBO,DA,TIME,MD,SOV,Return,1,,-,Hwy_time,0,1,MODE_HBO_Inc4_DA.csv (^T),LOADED_HWY_TIME_SOV_MD.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_time,Inc4_NTDlta_Costs,Inc4_Hwy_time
-Inc4,HBO,SR2,TIME,MD,HOV,Return,1,,-,Hwy_time,0,1,MODE_HBO_Inc4_SR2.csv (^T),LOADED_HWY_TIME_HOV_MD.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_time,Inc4_NTDlta_Costs,Inc4_Hwy_time
-Inc4,HBO,SR3,TIME,MD,HOV,Return,1,,-,Hwy_time,0,1,MODE_HBO_Inc4_SR3.csv (^T),LOADED_HWY_TIME_HOV_MD.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_time,Inc4_NTDlta_Costs,Inc4_Hwy_time
+Inc4,HBO,SR2,TIME,MD,HOV,Return,1,,-,Hwy_time,0,2,MODE_HBO_Inc4_SR2.csv (^T),LOADED_HWY_TIME_HOV_MD.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_time,Inc4_NTDlta_Costs,Inc4_Hwy_time
+Inc4,HBO,SR3,TIME,MD,HOV,Return,1,,-,Hwy_time,0,3,MODE_HBO_Inc4_SR3.csv (^T),LOADED_HWY_TIME_HOV_MD.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_time,Inc4_NTDlta_Costs,Inc4_Hwy_time
 Inc4,HBO,DA,TOLL,MD,SOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBO_Inc4_DA.csv,LOADED_HWY_TOLL_SOV_MD.csv (-%|100%),Inc4_NTDlta_Benefits,Inc4_Hwy_toll,Inc4_NTDlta_Costs,Inc4_Hwy_toll
-Inc4,HBO,SR2,TOLL,MD,HOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBO_Inc4_SR2.csv,LOADED_HWY_TOLL_HOV_MD.csv (-%|100%),Inc4_NTDlta_Benefits,Inc4_Hwy_toll,Inc4_NTDlta_Costs,Inc4_Hwy_toll
-Inc4,HBO,SR3,TOLL,MD,HOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBO_Inc4_SR3.csv,LOADED_HWY_TOLL_HOV_MD.csv (-%100%),Inc4_NTDlta_Benefits,Inc4_Hwy_toll,Inc4_NTDlta_Costs,Inc4_Hwy_toll
+Inc4,HBO,SR2,TOLL,MD,HOV,Outbound,0,,-,Hwy_toll,100,2,MODE_HBO_Inc4_SR2.csv,LOADED_HWY_TOLL_HOV_MD.csv (-%|100%),Inc4_NTDlta_Benefits,Inc4_Hwy_toll,Inc4_NTDlta_Costs,Inc4_Hwy_toll
+Inc4,HBO,SR3,TOLL,MD,HOV,Outbound,0,,-,Hwy_toll,100,3,MODE_HBO_Inc4_SR3.csv,LOADED_HWY_TOLL_HOV_MD.csv (-%100%),Inc4_NTDlta_Benefits,Inc4_Hwy_toll,Inc4_NTDlta_Costs,Inc4_Hwy_toll
 Inc4,HBO,DA,TOLL,MD,SOV,Return,1,,-,Hwy_toll,0,1,MODE_HBO_Inc4_DA.csv (^T),LOADED_HWY_TOLL_SOV_MD.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_toll,Inc4_NTDlta_Costs,Inc4_Hwy_toll
-Inc4,HBO,SR2,TOLL,MD,HOV,Return,1,,-,Hwy_toll,0,1,MODE_HBO_Inc4_SR2.csv (^T),LOADED_HWY_TOLL_HOV_MD.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_toll,Inc4_NTDlta_Costs,Inc4_Hwy_toll
-Inc4,HBO,SR3,TOLL,MD,HOV,Return,1,,-,Hwy_toll,0,1,MODE_HBO_Inc4_SR3.csv (^T),LOADED_HWY_TOLL_HOV_MD.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_toll,Inc4_NTDlta_Costs,Inc4_Hwy_toll
+Inc4,HBO,SR2,TOLL,MD,HOV,Return,1,,-,Hwy_toll,0,2,MODE_HBO_Inc4_SR2.csv (^T),LOADED_HWY_TOLL_HOV_MD.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_toll,Inc4_NTDlta_Costs,Inc4_Hwy_toll
+Inc4,HBO,SR3,TOLL,MD,HOV,Return,1,,-,Hwy_toll,0,3,MODE_HBO_Inc4_SR3.csv (^T),LOADED_HWY_TOLL_HOV_MD.csv (-%|0%),Inc4_NTDlta_Benefits,Inc4_Hwy_toll,Inc4_NTDlta_Costs,Inc4_Hwy_toll
 Inc5,HBO,WexpBus,XferWaitTime,,,Outbound,0,0,100,Time,100,,MODE_HBO_Inc5_WexpBus.csv,TRANSIT_OP_WexpBus_XferWaitTime.csv  (100%|100%),Inc5_NTDlta_Benefits,Inc5_XferWaitTime,Inc5_NTDlta_Costs,Inc5_XferWaitTime
 Inc5,HBO,WRail,XferWaitTime,,,Outbound,0,0,100,Time,100,,MODE_HBO_Inc5_WRail.csv,TRANSIT_OP_WRail_XferWaitTime.csv  (100%|100%),Inc5_NTDlta_Benefits,Inc5_XferWaitTime,Inc5_NTDlta_Costs,Inc5_XferWaitTime
 Inc5,HBO,WCRail,XferWaitTime,,,Outbound,0,0,100,Time,100,,MODE_HBO_Inc5_WCRail.csv,TRANSIT_OP_WCRail_XferWaitTime.csv  (100%|100%),Inc5_NTDlta_Benefits,Inc5_XferWaitTime,Inc5_NTDlta_Costs,Inc5_XferWaitTime
@@ -1812,20 +1812,20 @@ Inc5,HBO,DRail,AutoTime,,,Return,1,0,100,Time,0,,MODE_HBO_Inc5_DRail.csv (^T),TR
 Inc5,HBO,DCRail,AutoTime,,,Return,1,0,100,Time,0,,MODE_HBO_Inc5_DCRail.csv (^T),TRANSIT_OP_DCRail_AutoTime.csv  (100%|0%),Inc5_NTDlta_Benefits,Inc5_AutoTime,Inc5_NTDlta_Costs,Inc5_AutoTime
 Inc5,HBO,DBus,AutoTime,,,Return,1,0,100,Time,0,,MODE_HBO_Inc5_DBus.csv (^T),TRANSIT_OP_DBus_AutoTime.csv  (100%|0%),Inc5_NTDlta_Benefits,Inc5_AutoTime,Inc5_NTDlta_Costs,Inc5_AutoTime
 Inc5,HBO,DA,DISTANCE,MD,SOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBO_Inc5_DA.csv,LOADED_HWY_DISTANCE_SOV_MD.csv (-%|100%),Inc5_NTDlta_Benefits,Inc5_Hwy_distance,Inc5_NTDlta_Costs,Inc5_Hwy_distance
-Inc5,HBO,SR2,DISTANCE,MD,HOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBO_Inc5_SR2.csv,LOADED_HWY_DISTANCE_HOV_MD.csv (-%|100%),Inc5_NTDlta_Benefits,Inc5_Hwy_distance,Inc5_NTDlta_Costs,Inc5_Hwy_distance
-Inc5,HBO,SR3,DISTANCE,MD,HOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBO_Inc5_SR3.csv,LOADED_HWY_DISTANCE_HOV_MD.csv (-%100%),Inc5_NTDlta_Benefits,Inc5_Hwy_distance,Inc5_NTDlta_Costs,Inc5_Hwy_distance
+Inc5,HBO,SR2,DISTANCE,MD,HOV,Outbound,0,,-,Hwy_distance,100,2,MODE_HBO_Inc5_SR2.csv,LOADED_HWY_DISTANCE_HOV_MD.csv (-%|100%),Inc5_NTDlta_Benefits,Inc5_Hwy_distance,Inc5_NTDlta_Costs,Inc5_Hwy_distance
+Inc5,HBO,SR3,DISTANCE,MD,HOV,Outbound,0,,-,Hwy_distance,100,3,MODE_HBO_Inc5_SR3.csv,LOADED_HWY_DISTANCE_HOV_MD.csv (-%100%),Inc5_NTDlta_Benefits,Inc5_Hwy_distance,Inc5_NTDlta_Costs,Inc5_Hwy_distance
 Inc5,HBO,DA,DISTANCE,MD,SOV,Return,1,,-,Hwy_distance,0,1,MODE_HBO_Inc5_DA.csv (^T),LOADED_HWY_DISTANCE_SOV_MD.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_distance,Inc5_NTDlta_Costs,Inc5_Hwy_distance
-Inc5,HBO,SR2,DISTANCE,MD,HOV,Return,1,,-,Hwy_distance,0,1,MODE_HBO_Inc5_SR2.csv (^T),LOADED_HWY_DISTANCE_HOV_MD.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_distance,Inc5_NTDlta_Costs,Inc5_Hwy_distance
-Inc5,HBO,SR3,DISTANCE,MD,HOV,Return,1,,-,Hwy_distance,0,1,MODE_HBO_Inc5_SR3.csv (^T),LOADED_HWY_DISTANCE_HOV_MD.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_distance,Inc5_NTDlta_Costs,Inc5_Hwy_distance
+Inc5,HBO,SR2,DISTANCE,MD,HOV,Return,1,,-,Hwy_distance,0,2,MODE_HBO_Inc5_SR2.csv (^T),LOADED_HWY_DISTANCE_HOV_MD.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_distance,Inc5_NTDlta_Costs,Inc5_Hwy_distance
+Inc5,HBO,SR3,DISTANCE,MD,HOV,Return,1,,-,Hwy_distance,0,3,MODE_HBO_Inc5_SR3.csv (^T),LOADED_HWY_DISTANCE_HOV_MD.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_distance,Inc5_NTDlta_Costs,Inc5_Hwy_distance
 Inc5,HBO,DA,TIME,MD,SOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBO_Inc5_DA.csv,LOADED_HWY_TIME_SOV_MD.csv (-%|100%),Inc5_NTDlta_Benefits,Inc5_Hwy_time,Inc5_NTDlta_Costs,Inc5_Hwy_time
-Inc5,HBO,SR2,TIME,MD,HOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBO_Inc5_SR2.csv,LOADED_HWY_TIME_HOV_MD.csv (-%|100%),Inc5_NTDlta_Benefits,Inc5_Hwy_time,Inc5_NTDlta_Costs,Inc5_Hwy_time
-Inc5,HBO,SR3,TIME,MD,HOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBO_Inc5_SR3.csv,LOADED_HWY_TIME_HOV_MD.csv (-%100%),Inc5_NTDlta_Benefits,Inc5_Hwy_time,Inc5_NTDlta_Costs,Inc5_Hwy_time
+Inc5,HBO,SR2,TIME,MD,HOV,Outbound,0,,-,Hwy_time,100,2,MODE_HBO_Inc5_SR2.csv,LOADED_HWY_TIME_HOV_MD.csv (-%|100%),Inc5_NTDlta_Benefits,Inc5_Hwy_time,Inc5_NTDlta_Costs,Inc5_Hwy_time
+Inc5,HBO,SR3,TIME,MD,HOV,Outbound,0,,-,Hwy_time,100,3,MODE_HBO_Inc5_SR3.csv,LOADED_HWY_TIME_HOV_MD.csv (-%100%),Inc5_NTDlta_Benefits,Inc5_Hwy_time,Inc5_NTDlta_Costs,Inc5_Hwy_time
 Inc5,HBO,DA,TIME,MD,SOV,Return,1,,-,Hwy_time,0,1,MODE_HBO_Inc5_DA.csv (^T),LOADED_HWY_TIME_SOV_MD.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_time,Inc5_NTDlta_Costs,Inc5_Hwy_time
-Inc5,HBO,SR2,TIME,MD,HOV,Return,1,,-,Hwy_time,0,1,MODE_HBO_Inc5_SR2.csv (^T),LOADED_HWY_TIME_HOV_MD.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_time,Inc5_NTDlta_Costs,Inc5_Hwy_time
-Inc5,HBO,SR3,TIME,MD,HOV,Return,1,,-,Hwy_time,0,1,MODE_HBO_Inc5_SR3.csv (^T),LOADED_HWY_TIME_HOV_MD.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_time,Inc5_NTDlta_Costs,Inc5_Hwy_time
+Inc5,HBO,SR2,TIME,MD,HOV,Return,1,,-,Hwy_time,0,2,MODE_HBO_Inc5_SR2.csv (^T),LOADED_HWY_TIME_HOV_MD.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_time,Inc5_NTDlta_Costs,Inc5_Hwy_time
+Inc5,HBO,SR3,TIME,MD,HOV,Return,1,,-,Hwy_time,0,3,MODE_HBO_Inc5_SR3.csv (^T),LOADED_HWY_TIME_HOV_MD.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_time,Inc5_NTDlta_Costs,Inc5_Hwy_time
 Inc5,HBO,DA,TOLL,MD,SOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBO_Inc5_DA.csv,LOADED_HWY_TOLL_SOV_MD.csv (-%|100%),Inc5_NTDlta_Benefits,Inc5_Hwy_toll,Inc5_NTDlta_Costs,Inc5_Hwy_toll
-Inc5,HBO,SR2,TOLL,MD,HOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBO_Inc5_SR2.csv,LOADED_HWY_TOLL_HOV_MD.csv (-%|100%),Inc5_NTDlta_Benefits,Inc5_Hwy_toll,Inc5_NTDlta_Costs,Inc5_Hwy_toll
-Inc5,HBO,SR3,TOLL,MD,HOV,Outbound,0,,-,Hwy_toll,100,1,MODE_HBO_Inc5_SR3.csv,LOADED_HWY_TOLL_HOV_MD.csv (-%100%),Inc5_NTDlta_Benefits,Inc5_Hwy_toll,Inc5_NTDlta_Costs,Inc5_Hwy_toll
+Inc5,HBO,SR2,TOLL,MD,HOV,Outbound,0,,-,Hwy_toll,100,2,MODE_HBO_Inc5_SR2.csv,LOADED_HWY_TOLL_HOV_MD.csv (-%|100%),Inc5_NTDlta_Benefits,Inc5_Hwy_toll,Inc5_NTDlta_Costs,Inc5_Hwy_toll
+Inc5,HBO,SR3,TOLL,MD,HOV,Outbound,0,,-,Hwy_toll,100,3,MODE_HBO_Inc5_SR3.csv,LOADED_HWY_TOLL_HOV_MD.csv (-%100%),Inc5_NTDlta_Benefits,Inc5_Hwy_toll,Inc5_NTDlta_Costs,Inc5_Hwy_toll
 Inc5,HBO,DA,TOLL,MD,SOV,Return,1,,-,Hwy_toll,0,1,MODE_HBO_Inc5_DA.csv (^T),LOADED_HWY_TOLL_SOV_MD.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_toll,Inc5_NTDlta_Costs,Inc5_Hwy_toll
-Inc5,HBO,SR2,TOLL,MD,HOV,Return,1,,-,Hwy_toll,0,1,MODE_HBO_Inc5_SR2.csv (^T),LOADED_HWY_TOLL_HOV_MD.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_toll,Inc5_NTDlta_Costs,Inc5_Hwy_toll
-Inc5,HBO,SR3,TOLL,MD,HOV,Return,1,,-,Hwy_toll,0,1,MODE_HBO_Inc5_SR3.csv (^T),LOADED_HWY_TOLL_HOV_MD.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_toll,Inc5_NTDlta_Costs,Inc5_Hwy_toll
+Inc5,HBO,SR2,TOLL,MD,HOV,Return,1,,-,Hwy_toll,0,2,MODE_HBO_Inc5_SR2.csv (^T),LOADED_HWY_TOLL_HOV_MD.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_toll,Inc5_NTDlta_Costs,Inc5_Hwy_toll
+Inc5,HBO,SR3,TOLL,MD,HOV,Return,1,,-,Hwy_toll,0,3,MODE_HBO_Inc5_SR3.csv (^T),LOADED_HWY_TOLL_HOV_MD.csv (-%|0%),Inc5_NTDlta_Benefits,Inc5_Hwy_toll,Inc5_NTDlta_Costs,Inc5_Hwy_toll

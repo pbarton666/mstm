@@ -18,7 +18,7 @@ import csv
 import os
 import sys
 from datetime import datetime
-
+from pprint import pprint as pp
 import numpy as np
 import psycopg2
 
@@ -27,13 +27,16 @@ from mappings import *  #constants for file locations, run-time settings, databa
 import logger_setup
 from logger_setup import logger
 
+
 logger.setLevel(LOG_LEVEL)
 start=datetime.now()
 
 def get_total_cost_delta(base_trips=None, test_trips=None, base_costs=None, test_costs=None):
+	#print(test_trips*test_costs)
+	#print(base_trips*base_costs)
 	return  test_trips*test_costs - base_trips*base_costs
 
-def main():
+def main(scenarios=scenarios, DB=DB, ROOT_DIR=ROOT_DIR, ZONES=ZONES, map_file=map_file):
 	"main entry point - loops over scenarios"
 
 	msg='{} Starting total cost calculations using input file {}'
@@ -43,10 +46,12 @@ def main():
 	#This isn't the most efficient way to do it, but it's the most transparent:  we'll loop through each base:scenario pair.  For each, we'll read
 	#  the input file a line at a time and draw our consumer surplus benefits
 
-	arr_dict={}
+	
 	base_scenario = scenarios[0]
 
 	for s in scenarios[1:]:
+		
+		arr_dict={}
 		#grab a reader for the input file
 		reader=csv.DictReader(open(map_file))
 
@@ -98,16 +103,29 @@ def main():
 			#grab the files and put them in np arrays
 			test_cost_file=get_full_filename(location=test_dir, filename=dmap['cost_file'])
 			test_trip_file=get_full_filename(location=test_dir,  filename=dmap['trip_file'])
-			test_trips_raw = npa_from_file( test_trip_file)
-			test_cost_per_trip_raw = npa_from_file( test_cost_file)					
+			try:
+				test_trips_raw = npa_from_file( test_trip_file)
+				test_cost_per_trip_raw = npa_from_file( test_cost_file)			
+			except:
+				exc_type, exc_value, exc_traceback = sys.exc_info()
+				msg='Scenario {}: could not open requisite files \n {} {} specified in line {} of {}'
+				logger.warn(msg.format(s['name'], exc_type, exc_value, line_ix, map_file))
+				continue				
 			test_name=s['name']
+			test_costs, test_trips=prep_data( cost_per_trip=test_cost_per_trip_raw , trips=test_trips_raw,  transpose=transpose,   hov_adj=hov_adj  )	
 			#Scenario case trips*cost/trip and trips used 
-			test_costs, test_trips=prep_data( cost_per_trip=test_cost_per_trip_raw , trips=test_trips_raw,  transpose=transpose,   hov_adj=hov_adj  )			
+			if np.equal(test_costs, base_costs).all() and np.isclose(test_trips, base_trips).all():
+				if not "FARE" in test_cost_file and not "FARE" in base_cost_file:
+					msg="\nWARN:  Same file: {} ::: {}"
+					logger.critical(msg.format(base_trips_file, test_trip_file))
+					logger.critical(msg.format( base_cost_file, test_cost_file))	
+					logger.critical('\n')
 
-			#With all costs gathered, calculate the change in consumer surplus in square np array; produces a square np array
+			#With all costs gathered, calculate the change in costsin square np array; produces a square np array
 			##cs_delta = get_cs_delta(base_trips, test_trips, base_costs, test_costs)
 			## updated for total costs
 			total_cost_delta=get_total_cost_delta(base_trips, test_trips, base_costs, test_costs)
+			logger.debug('total_cost_delta  {}'.format(total_cost_delta.sum()))
 
 			#From the cs_delta matrix, assign benefits to the origin and destination node; produces a vector of nodes w/o OD headers
 			#  For home-based transit trips, both outbound and return accrue to home node, as do am and pm highway trips.
@@ -143,15 +161,16 @@ def main():
 			                                           'table': table_name
 			                                           }
 			logger.debug('{} -versus- {} line {}\n\t {}  \n\t {} \n\t base trips: {}  test trips: {}  sum dlta costs: {}  (summary stats - not used in benefit calcs)'.format(
-			    line_ix,
+			   
 			    base_name, test_name, 
+			    line_ix,
 			    dmap['trip_file'],
 			    dmap['cost_file'].split()[0],
 			    np.sum(base_trips), np.sum(test_trips),
 			    np.sum(total_cost_delta)))
 
 		#store the arrays in db tables	
-		store_data(arr_dict=arr_dict, db=DB)
+		store_data(arr_dict=arr_dict, db=DB, zones=ZONES)
 
 	finish = datetime.now()
 	msg='Finished at {}.  Processed {} files in {}.'
@@ -160,4 +179,4 @@ def main():
 	logger.info(msg.format(datetime.now().strftime("%b %d %Y %H:%M:%S"), line_ix, elapsed))
 	
 if __name__=='__main__':
-	main()
+	main(scenarios=scenarios)

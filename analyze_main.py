@@ -19,6 +19,7 @@ import csv
 import os
 import sys
 from datetime import datetime
+from pprint import pprint as pp
 
 import numpy as np
 import psycopg2
@@ -111,18 +112,19 @@ def column_sum(npa=None):
 
 def get_full_filename(location=None, filename=None):
 	"location identifies the main scenario directory; the first bit of the file name determines its subdirectory"
+	#print(location, filename)
 	first_bit=filename.split('_')[0]
 	subdir=subdir_map[first_bit]
 	##NB:  this is one-off for the MSTM directory layout
 	if  'rootdir' in subdir:
-		return os.path.join(ROOT_DIR, subdir.split('|')[1], filename)
+		return os.path.join(os.path.sep.join(location.split(os.path.sep)[:-1]), subdir.split('|')[1], filename)
 	else:
 		return(os.path.join(location, subdir, filename))
 
 def get_cs_delta(base_trips=None, test_trips=None, base_costs=None, test_costs=None):
 	return .5 * (base_trips + test_trips)*(base_costs - test_costs)
 
-def main():
+def main(scenarios=scenarios, DB=DB, ROOT_DIR=ROOT_DIR, ZONES=ZONES, map_file=map_file):
 	"main entry point - loops over scenarios"
 	
 	msg='{} Starting benefits calculations using input file {}'
@@ -132,10 +134,12 @@ def main():
 	#This isn't the most efficient way to do it, but it's the most transparent:  we'll loop through each base:scenario pair.  For each, we'll read
 	#  the input file a line at a time and draw our consumer surplus benefits
 	
-	arr_dict={}
+	
 	base_scenario = scenarios[0]
 	
 	for s in scenarios[1:]:
+		
+		arr_dict={}
 		#grab a reader for the input file
 		reader=csv.DictReader(open(map_file))
 		
@@ -191,10 +195,7 @@ def main():
 			test_cost_per_trip_raw = npa_from_file( test_cost_file)					
 			test_name=s['name']
 			#Scenario case trips*cost/trip and trips used 
-			
-			if base_trips_file=='/home/pat/Dropbox/Maryland_TDM_RedLine_ProjectShare/MSTM_Output_2030_NoRedLine - NoHwyImprovements/TOD_OD_byPurposeIncomeTODOccupancy/TOD_HBW_Inc1_AM_SOV.csv':
-				if '/home/pat/Dropbox/Maryland_TDM_RedLine_ProjectShare/MSTM_Output_2030_NoRedLine - NoHwyImprovements/Loaded_HWY_OD_TimeCost/LOADED_HWY_DISTANCE_SOV_AM.csv':
-					a=1			
+				
 			test_costs, test_trips=prep_data( cost_per_trip=test_cost_per_trip_raw , trips=test_trips_raw,  transpose=transpose,   hov_adj=hov_adj  )			
 			
 			#With all costs gathered, calculate the change in consumer surplus in square np array; produces a square np array
@@ -308,7 +309,9 @@ def store_data(arr_dict=None, db = DB, create_new_tables=CREATE_NEW_TABLES, zone
 		except: #table does not exist
 			curs.execute('CREATE TABLE {} ({} float  PRIMARY KEY )'.format(arr_table, 'zone', 'zone'))
 			for row in range(1, zones + 1):
-				curs.execute("INSERT INTO {} ({}) VALUES ({})".format(arr_table, 'zone', row))
+				sql="INSERT INTO {} ({}) VALUES ({})".format(arr_table, 'zone', row)
+				#print(sql)
+				curs.execute(sql)
 			conn.commit()
 			curs.execute("END")
 
@@ -318,10 +321,17 @@ def store_data(arr_dict=None, db = DB, create_new_tables=CREATE_NEW_TABLES, zone
 		except: 
 			#col does not exist
 			curs.execute('END')
-			curs.execute("ALTER TABLE {} ADD {} float  DEFAULT 0.0".format(arr_table, arr_column))
+			sql="ALTER TABLE {} ADD {} float  DEFAULT 0.0".format(arr_table, arr_column)
+			curs.execute(sql)
+			#print(sql)
 		for row in arr_data:
-			curs.execute("UPDATE {} SET {}={} WHERE {}={}".format(arr_table, arr_column, row[1], 'zone', row[0]))
-		conn.commit()			
+			
+			sql="UPDATE {} SET {}={} WHERE {}={}".format(arr_table, arr_column, row[1], 'zone', row[0])
+			curs.execute(sql)
+			#print(sql)
+			z=1
+		conn.commit()	
+		a=1
 		
 	
 def create_one_col_np_array(max_index_val=ZONES):
@@ -362,5 +372,5 @@ def calculate_benefits(cs_delta=None, pct_hb=None):
 
 
 if __name__=='__main__':
-	main()
+	main(scenarios=scenarios)
 	

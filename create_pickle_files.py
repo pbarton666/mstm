@@ -16,16 +16,29 @@ def check_same():
 	npa_p=np.load(my_pickle)
 	
 	
-for s in mappings.scenarios:	
-	this_root_dir=s['location']
-	for root, dirs, files in os.walk(this_root_dir):
-		for d in dirs:
-			for f in os.listdir(os.path.join(root, d)):
-				fn=os.path.join(root, d, f)
-				if os.path.isfile(fn) and fn.endswith('.csv'):
-					print('processing {}'.format(fn), end=" ")
-					pfn=fn + ".pkl"
-					npa=np.genfromtxt( fn, delimiter=',', dtype='float')
-					npa.dump(pfn)
-					print(".....DONE")
-					a=1
+#for s in mappings.scenarios:	
+	#this_root_dir=s['location']
+	#for root, dirs, files in os.walk(this_root_dir):
+		#for d in dirs:
+			#for f in os.listdir(os.path.join(root, d)):
+				#fn=os.path.join(root, d, f)
+				#if os.path.isfile(fn) and fn.endswith('.csv'):
+					#print('processing {}'.format(fn), end=" ")
+					#pfn=fn + ".pkl"
+					#npa=np.genfromtxt( fn, delimiter=',', dtype='float')
+					#npa.dump(pfn)
+					#print(".....DONE")
+					#a=1
+
+
+##Horrible, one off.  Fix later.					
+this_root_dir='/home/pat/workspace/mary/fares/fares'			
+for f in os.listdir(this_root_dir):
+	fn=os.path.join(this_root_dir, f)
+	if os.path.isfile(fn) and fn.endswith('.csv'):
+		print('processing {}'.format(fn), end=" ")
+		pfn=fn + ".pkl"
+		npa=np.genfromtxt( fn, delimiter=',', dtype='float')
+		npa.dump(pfn)
+		print(".....DONE")
+		a=1
