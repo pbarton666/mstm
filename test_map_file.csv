@@ -1,0 +1,8 @@
+inc,purpose,mode,cost,tod,hov,leg,transpose,peak,pct_wage,category,pct_hb,hov_adj,trip_file,cost_file,dbtable,aggregate_to,rollup_dbtable,rollup_to
+Inc1,HBW,WexpBus,XferWaitTime,,,Outbound,0,1,100,Time,100,,MODE_HBW_Inc1_WexpBus.csv,TRANSIT_PK_WexpBus_XferWaitTime.csv  (100%|100%),Inc1_NTDlta_Benefits,Inc1_XferWaitTime,Inc1_NTDlta_Costs,Inc1_XferWaitTime
+Inc1,HBW,WexpBus,WalkTime,,,Outbound,0,1,100,Time,100,,MODE_HBW_Inc1_WexpBus.csv,TRANSIT_PK_WexpBus_WalkTime.csv  (100%|100%),Inc1_NTDlta_Benefits,Inc1_WalkTime,Inc1_NTDlta_Costs,Inc1_WalkTime
+Inc1,HBW,WexpBus,Fare,,,Outbound,0,1,100,Money,100,,MODE_HBW_Inc1_WexpBus.csv,FARE_WexpBus_PK.csv  (100%|100%),Inc1_NTDlta_Benefits,Inc1_Fare,Inc1_NTDlta_Costs,Inc1_Fare
+Inc1,HBW,WexpBus,Fare,,,Return,1,1,100,Money,0,,MODE_HBW_Inc1_WexpBus.csv (^T),FARE_WexpBus_PK.csv  (100%|0%),Inc1_NTDlta_Benefits,Inc1_Fare,Inc1_NTDlta_Costs,Inc1_Fare
+Inc1,HBW,DA,DISTANCE,AM,SOV,Outbound,0,,-,Hwy_distance,100,1,MODE_HBW_Inc1_DA.csv,LOADED_HWY_DISTANCE_SOV_AM.csv (-%|100%),Inc1_NTDlta_Benefits,Inc1_DISTANCE,Inc1_NTDlta_Costs,Inc1_DISTANCE
+Inc1,HBW,DA,TIME,AM,SOV,Outbound,0,,-,Hwy_time,100,1,MODE_HBW_Inc1_DA.csv,LOADED_HWY_TIME_SOV_AM.csv (-%|100%),Inc1_NTDlta_Benefits,Inc1_TIME,Inc1_NTDlta_Costs,Inc1_TIME
+Inc1,HBW,SR2,TIME,AM,HOV,Outbound,0,,-,Hwy_time,100,2,MODE_HBW_Inc1_SR2.csv,LOADED_HWY_TIME_HOV_AM.csv (-%|100%),Inc1_NTDlta_Benefits,Inc1_TIME,Inc1_NTDlta_Costs,Inc1_TIME
