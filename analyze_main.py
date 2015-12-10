@@ -82,6 +82,7 @@ def prep_data(cost_per_trip=None,  trips=None, transpose=None,   hov_adj=None):
 	      is provided in the input file to increase time costs by 2 for hov2 and 3 for hov3).   Transposes trip
 		  array to account for return journy (also provided in input file).  """
 	
+	transpose=int(transpose)
 	cost_per_trip_used=cost_per_trip[1:,1:]
 	trips=trips[1:,1:]
 	

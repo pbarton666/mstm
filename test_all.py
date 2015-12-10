@@ -18,7 +18,7 @@ scenarios = [
          'location': os.path.join(ROOT_DIR, 'MSTM_Output_2030_NoRedLine - NoHwyImprovements')
          },
 
-        {'name': 'yesred_no_hwy',
+        {'name': 'yesred_nohwy',
          'location': os.path.join(ROOT_DIR, 'MSTM_Output_2030_RedLine - NoHwyImprovement')
          },
 
@@ -58,6 +58,22 @@ costs=[ [0,    1,    2,    3],
             [1, .10, .20, .30],   
             [2, .40, .50, .60],  
             [3, .70, .80, .90]    ]
+costs0=[ [0,    1,    2,    3], 
+         [1, .10, .20, .30],   
+         [2, .40, .50, .60],  
+         [3, .70, .80, .90]    ]
+
+costs1=[ [0,    1,    2,    3], 
+         [1, .05, .10, .15],   
+         [2, .20, .25, .30],  
+         [3, .35, .40, .45]    ]
+
+costs2=[ [0,    1,    2,    3], 
+         [1, .03, .05, .10],   
+         [2, .15, .20, .25],  
+         [3, .33, .35, .40]    ]
+
+
 
 def write_files():
 
@@ -92,13 +108,19 @@ def write_files():
 			if not os.path.exists(subdir):
 				os.mkdir(subdir)
 			if atype=='costs':
-				arr=costs
+				if index==0: arr=costs0
+				if index==1: arr=costs1
+				if index==2: arr=costs2				
+
 			else:
 				if index==0: arr=trips0
 				if index==1: arr=trips1
 				if index==2: arr=trips2
 			with open(os.path.join(subdir, fn), 'w') as file:
 				#print('writing file {}'.format(os.path.join(subdir, fn)))
+				if atype=='costs':
+					#print('scenario {}  writing {} {}. to:\n{}'.format(name, atype, arr,os.path.join(subdir, fn) ))
+					z=1
 				writer=csv.writer(file, delimiter=',')
 				for row in arr:
 					writer.writerow(row)
@@ -132,17 +154,15 @@ trips1=[  [ 0,   1,    2,   3],  		costs=[ [0,    1,    2,    3], 		trips0=[  [ 
               [3,   11, 132, 133]   ]		            [3, .70, .80, .90]    ]		              [3,   31, 32, 33]   ]		            [3, .70, .80, .90]    ]
 						
 =450						
-						
-nored_yeshwy						
-trips2=[  [ 0,   1,    2,   3],  		costs=[ [0,    1,    2,    3], 		trips0=[  [ 0,   1,    2,   3],  		costs=[ [0,    1,    2,    3], 
-              [1,   211, 212, 213],      		            [1, .10, .20, .30],   		              [1,   11, 12, 13],      		            [1, .10, .20, .30],   
-              [2,   221, 222, 223],       		            [2, .40, .50, .60],  		              [2,   21, 22, 23],       	x	            [2, .40, .50, .60],  
-              [3,   231, 232, 233]   ]		            [3, .70, .80, .90]    ]		              [3,   31, 32, 33]   ]		            [3, .70, .80, .90]    ]
-						
-=900						
+											
 
 So, for yesred_nohwy we'd expect  xferWaitTime = walkTime = 450   (single-leg journeys, as specified in the map file).  Fare =900 (applied to two-leg journey).  Distance = 450
 (single-leg journey).   Time=1350 (two commute combined, one with double occupancy - won't affect distance, but will double time)
+
+Benefits apply the formula: .5 * (base_trips + test_trips)*(base_costs - test_costs)
+
+
+
 
 TODO:  write tests for these values, time permitting.  Presently using "eyeball" test method on output from sum_costs_from_db.
 
@@ -150,16 +170,19 @@ TODO:  write tests for these values, time permitting.  Presently using "eyeball"
 def main():
 	write_files()
 	#create the map file
-	with open(map_file, 'w') as file:
-		#writer=csv.writer(file, delimiter=',', quoting=csv.QUOTE_ALL)
-		writer=csv.writer(file, delimiter=',')
-		for line in my_map:
-			writer.writerow(line)
-	a=1
+	#with open(map_file, 'w') as file:
+		##writer=csv.writer(file, delimiter=',', quoting=csv.QUOTE_ALL)
+		#writer=csv.writer(file, delimiter=',')
+		#for line in my_map:
+			#writer.writerow(line)
+	#a=1
 	
 	rollups_main(scenarios=scenarios, DB=DB, ROOT_DIR=ROOT_DIR, ZONES=ZONES, map_file=map_file)
+	
+	analyze_main(scenarios=scenarios, DB=DB, ROOT_DIR=ROOT_DIR, ZONES=ZONES, map_file=map_file)
 
 if __name__=='__main__':
 	main()
 	import sum_costs_from_db
 	sum_costs_from_db.sum_costs(test=True)
+	a=1
