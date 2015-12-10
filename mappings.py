@@ -28,18 +28,22 @@ LOG_LEVEL=logging.DEBUG
 #assuming square matrices, the number of transportation zones (rows/columns)
 ZONES=1179
 
-ROOT_DIR= '/home/pat/Dropbox/Maryland_TDM_RedLine_ProjectShare'
+#ROOT_DIR= '/home/pat/Dropbox/Maryland_TDM_RedLine_ProjectShare'
+ROOT_DIR='/home/pat/workspace/mary'
 scenarios = [
                {'name': 'nored_nohwy',
-                'location': os.path.join(ROOT_DIR, 'MSTM_Output_2030_NoRedLine - NoHwyImprovements')
+                #'location': os.path.join(ROOT_DIR, 'MSTM_Output_2030_NoRedLine - NoHwyImprovements')
+                 'location': os.path.join(ROOT_DIR, 'nored_nohwy')
                 },
  
                {'name': 'yesred_nohwy',
-                'location': os.path.join(ROOT_DIR, 'MSTM_Output_2030_RedLine - NoHwyImprovement')
+                #'location': os.path.join(ROOT_DIR, 'MSTM_Output_2030_RedLine - NoHwyImprovement')
+                'location': os.path.join(ROOT_DIR, 'yesred_nohwy')
                },
                
 			   {'name': 'nored_yeshwy',
-				'location': os.path.join(ROOT_DIR, 'MSTM_Output_2030_ NoRedLine - HwyImprovement')
+				#'location': os.path.join(ROOT_DIR, 'MSTM_Output_2030_ NoRedLine - HwyImprovement')
+                'location': os.path.join(ROOT_DIR, 'nored_yeshwy')
 				},               
                ]
 
