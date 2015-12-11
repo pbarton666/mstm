@@ -1,4 +1,22 @@
+"""generate_carl_tables.py
 
+NB:  This code is horrible and NEEDS to be refactored before any re-use (it done in a hurry, etc.).
+
+TODO:
+
+- Field names (column) names should come from the database, not the input files.  This is not robust if 
+  the database fails to contain all the intended trip/cost pairs.  A series of assert statements screen for this
+  possibility, but it's far from the ideal.  The table names should also come from the database - presently
+  they're hard-coded to match the current incarnation of the map_file.csv, the setup file specified with the
+  current incarnation of mappings.py.
+  
+  -The if __name__='__main__' block needs to be refactored, moving ensuring that the output file names can
+   come from an input file and the SQL documentation file production is integrated with the data output
+   production.
+  
+  -Beyond the assert statements there are not tests.  'Plan A' should to build them into test_all.py.
+
+"""
 from  database import *
 import psycopg2
 import csv
@@ -7,6 +25,7 @@ import os
 
 
 def sum_costs(test=False):
+	sql_file=open("for_the_record_sql_statements_used.txt", 'w')
 	if test:
 		from test_all import scenarios, map_file, DB
 	else:
@@ -98,7 +117,7 @@ def sum_costs(test=False):
 				
 				sql+="ORDER BY t1.zone"
 				
-				#print(sql)
+				print(sql)
 				curs.execute(sql)	
 				
 				result=curs.fetchall()
@@ -109,22 +128,28 @@ def sum_costs(test=False):
 					writer=csv.writer(ofile)
 					writer.writerow(['zone', 'inc1', 'inc2', 'inc3', 'inc4', 'inc5'])
 					writer.writerows(result)
-					#for row in result:
-						#a=1
-						#write.writerow(row)
+				
+				sql_file.write('{}:\n\n'.format(fn))
+				sql_file.write('{}\n\n=====================\n\n'.format(sql))
 	
 				#print(sql)
-				a=1
 
+	sql_file.close()
+	
 if __name__=='__main__':
-	test=False
+	test=True
+	outdir='scratch_outdir'
 	if test:
 		try:
 			shutil.rmtree(outdir)
+			os.mkdir(outdir)
+			
 		except:
-		
-			os.mkdir(outdir)			
+			pass
+		#os.mkdir(outdir)			
 	else:		
-		outdir='/home/pat/Dropbox/Maryland_TDM_RedLine_ProjectShare/Cost_Benefit_Tables'
+		#outdir='/home/pat/Dropbox/Maryland_TDM_RedLine_ProjectShare/Cost_Benefit_Tables'
+		#outdir='myout'
+		pass
 
 	sum_costs(test=False)
