@@ -1,0 +1,24 @@
+import os
+import pickle #cPickle
+import numpy as np
+from timeit import timeit
+
+def open_and_convert():
+	fn='TRANSIT_OP_WRail_NumberofXfers.csv'
+	my_pickle='my_pickle.pkl'
+	npa=np.genfromtxt( fn, delimiter=',', dtype='float')
+
+def make_pickle():
+	with open(my_pickle, 'w') as file:
+		cPickle.dump(npa, file)
+
+def open_pickle():
+	with open(my_pickle, 'r' ) as file:
+		unpickled_npa=cPickle.load(file)
+
+if __name__=='__main__':
+	open_and_convert()
+	make_pickle()
+	print(timeit.timeit("open_and_convert()", setup="from __main__ import open_and_convert"))
+	print(timeit.timeit("open_pickle()", setup="from __main__ import open_pickle"))
+a=1
