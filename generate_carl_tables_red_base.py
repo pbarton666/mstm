@@ -25,12 +25,12 @@ import os
 
 
 def sum_costs(test=False):
-	#sql_file=open("for_the_record_sql_statements_used.txt", 'w')
+	sql_file=open("for_the_record_sql_statements_used.txt", 'w')
 	if test:
 		from test_all import scenarios, map_file, DB
 	else:
-		from mappings import scenarios, map_file
-		from mappings import DB 
+		from mappings_redline_base import scenarios, map_file
+		from mappings_redline_base import DB 
 
 
 
@@ -59,7 +59,7 @@ def sum_costs(test=False):
 
 	for s in scenarios[1:]:
 		name=s['name']
-		print('\nCosts deltas for {}: (relative to the "no highway, no Red Line" case)\n'.format(name))
+		print('\nCosts deltas for {}: (relative to the "Red Line" case w/o hwy improvements)\n'.format(name))
 		for table_set in [cs_tables, totals_tables]:
 			
 			
@@ -117,7 +117,7 @@ def sum_costs(test=False):
 				
 				sql+="ORDER BY t1.zone"
 				
-				#print(sql)
+				print(sql)
 				curs.execute(sql)	
 				
 				result=curs.fetchall()
@@ -129,16 +129,16 @@ def sum_costs(test=False):
 					writer.writerow(['zone', 'inc1', 'inc2', 'inc3', 'inc4', 'inc5'])
 					writer.writerows(result)
 				
-				#sql_file.write('{}:\n\n'.format(fn))
-				#sql_file.write('{}\n\n=====================\n\n'.format(sql))
+				sql_file.write('{}:\n\n'.format(fn))
+				sql_file.write('{}\n\n=====================\n\n'.format(sql))
 	
 				#print(sql)
 
-	#sql_file.close()
+	sql_file.close()
 	
 if __name__=='__main__':
 	test=False
-	outdir='scratch_outdir'
+	#outdir='scratch_outdir_red_base'
 	if test:
 		try:
 			shutil.rmtree(outdir)
@@ -146,10 +146,10 @@ if __name__=='__main__':
 			
 		except:
 			pass
-		os.mkdir(outdir)			
+		#os.mkdir(outdir)			
 	else:		
-		#outdir='/home/pat/Dropbox/Maryland_TDM_RedLine_ProjectShare (1) (1)/Cost_Benefit_Tables'
-		outdir='outdir'
+		outdir='/home/pat/Dropbox/Maryland_TDM_RedLine_ProjectShare (1) (1)/Cost_Benefit_Tables_Red_Base'
+		outdir='outdir_redline_base'
 		pass
 
 	sum_costs(test=False)

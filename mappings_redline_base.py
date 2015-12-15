@@ -10,7 +10,7 @@ import logging
 map_file = 'map_file.csv'
 
 #database for results
-DB = 'naacp_benefits'
+DB = 'naacp_benefits_red_base'
 
 #Set following to True to delete existing data tables.  If set to False, any new columns 
 #   created will overwrite existing ones of the same name.  If the columns do not yet
@@ -33,10 +33,10 @@ ZONES=1179
 ROOT_DIR='/home/pat/Dropbox/Maryland_TDM_RedLine_ProjectShare (1) (1)'
 #ROOD_DIR='/home/pat/mary'
 scenarios = [
-               {'name': 'nored_nohwy',
-                'location': os.path.join(ROOT_DIR, 'MSTM_Output_2030_NoRedLine - NoHwyImprovements')
-                # 'location': os.path.join(ROOT_DIR, 'nored_nohwy')
-                },
+               #{'name': 'nored_nohwy',
+               # 'location': os.path.join(ROOT_DIR, 'MSTM_Output_2030_NoRedLine - NoHwyImprovements')
+               # # 'location': os.path.join(ROOT_DIR, 'nored_nohwy')
+                #},
  
                {'name': 'yesred_nohwy',
                 'location': os.path.join(ROOT_DIR, 'MSTM_Output_2030_RedLine - NoHwyImprovement')
