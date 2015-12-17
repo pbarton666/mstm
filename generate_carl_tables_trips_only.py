@@ -29,8 +29,8 @@ def sum_costs(test=False):
 	if test:
 		from test_all import scenarios, map_file, DB
 	else:
-		from mappings import scenarios, map_file
-		from mappings import DB 
+		from mappings_trips_only import scenarios, map_file
+		from mappings_trips_only import DB 
 
 
 
@@ -59,7 +59,7 @@ def sum_costs(test=False):
 
 	for s in scenarios[1:]:
 		name=s['name']
-		print('\nCosts deltas for {}: (relative to the "no highway, no Red Line" case)\n'.format(name))
+		print('\nTrips for "Red Line only" case)\n'.format(name))
 		for table_set in [cs_tables, totals_tables]:
 			
 			
@@ -149,7 +149,7 @@ if __name__=='__main__':
 		os.mkdir(outdir)			
 	else:		
 		#outdir='/home/pat/Dropbox/Maryland_TDM_RedLine_ProjectShare (1) (1)/Cost_Benefit_Tables'
-		outdir='outdir_nored_base'
+		outdir='outdir_trips_only'
 		pass
 
 	sum_costs(test=False)
