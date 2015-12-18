@@ -57,10 +57,11 @@ def sum_costs(test=False):
 
 	curs = conn.cursor() 
 
-	for s in scenarios[1:]:
+	for s in scenarios[0:]:
 		name=s['name']
-		print('\nTrips for "Red Line only" case)\n'.format(name))
-		for table_set in [cs_tables, totals_tables]:
+		print('\nTrips for "Red Line only" case\n'.format(name))
+		#for table_set in [cs_tables, totals_tables]:
+		for table_set in [cs_tables]:
 			
 			
 			#Tables all begin with income, like "inc1"
@@ -86,7 +87,7 @@ def sum_costs(test=False):
 			for costix in range(len(cols_inc1)):
 				sql="SELECT\n"
 				sql+="\tt1.zone,\n"			
-				this_col=cols_inc1[costix]
+				this_col="_".join(cols_inc1[costix].split("_")[1:])
 				
 				sql+="\tt1.{},\n".format( cols_inc1[costix])
 				sql+="\tt2.{},\n".format( cols_inc2[costix])
@@ -102,13 +103,13 @@ def sum_costs(test=False):
 				assert target in cols_inc5[costix]
 				sql=sql[:-2] +'\n'
 				
-				#print(sql)
+				print(sql)
 					
 				sql+="FROM\n"
 				for cix in range(len(sorted_tables)):
 					sql+="\t{}_{}   {},\n".format(name,  sorted_tables[cix],  't' + str(cix+1))
 				sql=sql[:-2]	+'\n'
-				#print(sql)
+				print(sql)
 				
 				sql+="WHERE\n"
 				for cix in range(len(sorted_tables)):
@@ -117,12 +118,12 @@ def sum_costs(test=False):
 				
 				sql+="ORDER BY t1.zone"
 				
-				#print(sql)
+				print(sql)
 				curs.execute(sql)	
 				
 				result=curs.fetchall()
 				
-				fn=name+"_"+"_".join(this_col.split("_")[1:] ) + "_"+table_set_name+'.csv'
+				fn=name+"_"+this_col + "_"+table_set_name+'.csv'
 				print(fn)
 				with open(os.path.join(outdir,fn), 'w') as ofile:
 					writer=csv.writer(ofile)

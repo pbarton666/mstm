@@ -327,6 +327,7 @@ def store_data(arr_dict=None, db = DB, create_new_tables=CREATE_NEW_TABLES, zone
 
 		#create a data column if we need to; popluate it with array data
 		try:
+			print(arr_column)
 			curs.execute("SELECT {} FROM {} LIMIT 1".format(arr_column, arr_table))
 		except: 
 			#col does not exist

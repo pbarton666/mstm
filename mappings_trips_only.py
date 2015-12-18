@@ -7,7 +7,7 @@
 import os
 import logging
 
-map_file = 'map_file.csv'
+map_file = 'map_file_trips_only.csv'
 
 #database for results
 DB = 'naacp_benefits_trips_only'
@@ -43,10 +43,10 @@ scenarios = [
                 #'location': os.path.join(ROOT_DIR, 'yesred_nohwy')
                },
                
-			   {'name': 'nored_yeshwy',
-				'location': os.path.join(ROOT_DIR, 'MSTM_Output_2030_ NoRedLine - HwyImprovement')
-                #'location': os.path.join(ROOT_DIR, 'nored_yeshwy')
-				},               
+			   #{'name': 'nored_yeshwy',
+				#'location': os.path.join(ROOT_DIR, 'MSTM_Output_2030_ NoRedLine - HwyImprovement')
+                ##'location': os.path.join(ROOT_DIR, 'nored_yeshwy')
+				#},               
                ]
 
 #subdirectory locations (these relative to scenario root, the first bit of the file name is the key)
